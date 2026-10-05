@@ -1,0 +1,2394 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Big Easy Grass Cutting | Option A + B Combined</title>
+<meta name="description" content="Prototype homepage redesign, Option B Garden District with Option A sections, for Big Easy Grass Cutting in New Orleans.">
+<link rel="icon" href="assets/favicon.png">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F4EFE3; --cream-2:#ECE5D4; --paper:#FBF8F1;
+  --oak:#23412B; --oak-deep:#16291B; --iron:#18211A;
+  --moss:#6B8F4E; --sage:#A9B89A; --sage-pale:#DFE4D3;
+  --brass:#B88A3B; --brass-ink:#7A561C; --brass-lite:#D9B56C;
+  --brand:#3C9E3A;
+  --ink:#1D261E; --muted:#4D594C; --line:rgba(35,65,43,.18);
+  --serif:"DM Serif Display", Georgia, "Times New Roman", serif;
+  --sans:"Outfit", "Segoe UI", system-ui, sans-serif;
+  --wrap:1240px; --gut:clamp(16px,4vw,44px);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0;letter-spacing:-.005em}
+p{margin:0 0 1em}
+em.acc{font-style:italic;color:var(--moss)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--oak);color:var(--cream);padding:10px 16px;border-radius:6px;text-decoration:none}
+.skip:focus{top:12px}
+:focus-visible{outline:3px solid var(--oak);outline-offset:3px;border-radius:4px}
+.dark :focus-visible,.site-footer :focus-visible,.drawer :focus-visible{outline-color:var(--brass-lite)}
+.eyebrow{display:inline-flex;align-items:center;gap:.6em;font-family:var(--sans);font-size:.78rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-ink);margin:0 0 1rem}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.dark .eyebrow{color:var(--brass-lite)}
+.section{padding:clamp(72px,10vw,132px) 0;position:relative}
+.dark{background:var(--oak);color:var(--cream)}
+.h2{font-size:clamp(2.1rem,4.6vw,3.6rem)}
+.lede{color:var(--muted);max-width:36em;font-size:1.08rem}
+.dark .lede{color:#D6DCCB}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:48px;padding:.75em 1.5em;border-radius:999px;border:1.5px solid transparent;font-weight:600;font-size:1rem;text-decoration:none;cursor:pointer;transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease)}
+.btn-primary{background:var(--oak);color:var(--cream)}
+.btn-primary:hover{background:var(--oak-deep);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--oak);color:var(--oak);background:transparent}
+.btn-ghost:hover{background:var(--oak);color:var(--cream)}
+.btn-brass{background:var(--brass-lite);color:var(--iron)}
+.btn-brass:hover{background:#E7C886}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:60;background:rgba(244,239,227,.94);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid transparent;transition:border-color .4s,box-shadow .4s}
+.site-header.scrolled{border-color:var(--line);box-shadow:0 8px 24px -18px rgba(22,41,27,.5)}
+.hdr{display:flex;align-items:center;gap:24px;min-height:84px}
+.logo img{height:58px;width:auto}
+.nav{margin-left:auto}
+.nav>ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:4px}
+.nav-item{position:relative}
+.nav-item>a,.sub-toggle{display:inline-flex;align-items:center;gap:6px;padding:10px 12px;border-radius:8px;text-decoration:none;font-weight:500;font-size:.98rem;color:var(--ink);background:none;border:0;cursor:pointer}
+.nav-item>a:hover,.sub-toggle:hover{color:var(--oak);background:rgba(35,65,43,.06)}
+.split{display:inline-flex;align-items:center}
+.split>a{padding:10px 4px 10px 12px;border-radius:8px;text-decoration:none;font-weight:500;font-size:.98rem;color:var(--ink)}
+.split>a:hover{color:var(--oak);background:rgba(35,65,43,.06)}
+.split .sub-toggle{padding-left:4px}
+.sub-toggle svg{width:12px;height:12px;transition:transform .3s}
+.nav-item.open .sub-toggle svg{transform:rotate(180deg)}
+.submenu{position:absolute;top:calc(100% + 6px);left:0;min-width:270px;list-style:none;margin:0;padding:10px;background:var(--paper);border:1px solid var(--line);border-radius:16px 16px 14px 14px;box-shadow:0 24px 48px -24px rgba(22,41,27,.45);opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .25s,transform .25s,visibility .25s}
+.submenu.cols{columns:2;min-width:420px;column-gap:8px}
+.submenu a{display:block;padding:8px 12px;border-radius:8px;text-decoration:none;font-size:.95rem;break-inside:avoid}
+.submenu a:hover{background:var(--sage-pale);color:var(--oak)}
+.nav-item.has-sub:hover .submenu,.nav-item.open .submenu{opacity:1;visibility:visible;transform:none}
+.hdr-phone{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;color:var(--oak);white-space:nowrap}
+.hdr-phone svg{width:18px;height:18px}
+.burger{display:none;margin-left:auto;width:48px;height:48px;border-radius:12px;border:1.5px solid var(--oak);background:none;cursor:pointer;align-items:center;justify-content:center}
+.burger span{display:block;width:20px;height:2px;background:var(--oak);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--oak)}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.drawer{position:fixed;inset:0;z-index:90;background:var(--oak-deep);color:var(--cream);padding:20px var(--gut) 120px;overflow-y:auto;visibility:hidden;opacity:0;transition:opacity .35s,visibility .35s}
+.drawer.open{visibility:visible;opacity:1}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.drawer-top img{height:52px;width:auto}
+.drawer-close{width:48px;height:48px;border-radius:12px;border:1.5px solid var(--sage);background:none;color:var(--cream);font-size:1.6rem;line-height:1;cursor:pointer}
+.drawer ul{list-style:none;margin:0;padding:0}
+.drawer>nav>ul>li{border-bottom:1px solid rgba(169,184,154,.25)}
+.drawer>nav>ul>li>a,.drawer summary{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-family:var(--serif);font-size:1.6rem;text-decoration:none;cursor:pointer;list-style:none}
+.drawer summary::-webkit-details-marker{display:none}
+.drawer summary::after{content:"+";font-family:var(--sans);color:var(--brass-lite)}
+.drawer details[open] summary::after{content:"\2013"}
+.drawer details ul{padding:0 0 14px 4px}
+.drawer details a{display:block;padding:8px 0;color:#D6DCCB;text-decoration:none}
+.drawer-cta{display:grid;gap:12px;margin-top:28px}
+
+/* Hero */
+.hero{padding:clamp(28px,5vw,64px) 0 clamp(56px,8vw,104px);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(2.7rem,6.4vw,5.4rem);color:var(--oak)}
+.hero h1 em{font-style:italic;color:var(--moss)}
+.hero-sub{font-size:clamp(1.08rem,1.6vw,1.25rem);color:var(--muted);max-width:30em;margin:1.4rem 0 2rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero-trust{display:flex;flex-wrap:wrap;gap:8px 22px;margin:2.2rem 0 0;padding:1.2rem 0 0;border-top:1px solid var(--line);list-style:none;font-size:.94rem;color:var(--muted)}
+.hero-trust li{display:inline-flex;align-items:center;gap:8px}
+.hero-trust svg{width:16px;height:16px;color:var(--brand)}
+.hero-media{position:relative;justify-self:center;width:min(100%,520px)}
+.hero-arch{position:relative;aspect-ratio:4/5.4;border-radius:9999px 9999px 14px 14px;overflow:hidden;background:var(--oak);perspective:1400px;box-shadow:0 40px 80px -40px rgba(22,41,27,.6)}
+.hero-arch>img{width:100%;height:100%;object-fit:cover;transform-origin:60% 55%;animation:kenburns 34s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.16) translate(-2%,-3%)}}
+.hero-arch::after{content:"";position:absolute;inset:12px;border:1px solid rgba(217,181,108,.7);border-radius:9999px 9999px 8px 8px;pointer-events:none;z-index:3}
+.gate{position:absolute;left:0;right:0;bottom:0;height:80%;display:flex;z-index:2;pointer-events:none}
+.gate-leaf{width:50%;height:100%;color:var(--iron);filter:drop-shadow(0 10px 14px rgba(0,0,0,.35));transition:transform 2.6s cubic-bezier(.45,.05,.2,1),opacity 2.6s ease}
+.gate-leaf svg{width:100%;height:100%;display:block}
+.gate-leaf.l{transform-origin:left center;transform:rotateY(-104deg)}
+.gate-leaf.r{transform-origin:right center;transform:rotateY(104deg)}
+.gate-leaf.r svg{transform:scaleX(-1)}
+html.js .hero:not(.gate-open) .gate-leaf{transform:rotateY(0)}
+.hero.gate-open .gate-leaf{opacity:.92}
+.gate-latch{position:absolute;left:50%;top:48%;width:16px;height:46px;margin-left:-8px;border-radius:8px;background:var(--brass);z-index:2;opacity:0;transition:opacity .6s}
+html.js .hero:not(.gate-open) .gate-latch{opacity:1}
+.badge{position:absolute;left:-46px;bottom:56px;width:150px;height:150px;border-radius:50%;background:var(--cream);box-shadow:0 18px 40px -20px rgba(22,41,27,.55);display:grid;place-items:center;z-index:4}
+.badge svg.ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 40s linear infinite}
+.badge text{font-family:var(--sans);font-size:11.2px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;fill:var(--oak)}
+.badge .core{width:54px;height:54px;color:var(--brass-ink)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-vine{position:absolute;right:-40px;top:40px;width:260px;color:var(--sage);opacity:.55;pointer-events:none}
+
+/* Marquee */
+.marquee{background:var(--oak);color:var(--cream);padding:22px 0;overflow:hidden;border-block:1px solid rgba(217,181,108,.35)}
+.marquee-track{display:flex;width:max-content;animation:marq 70s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee ul{list-style:none;margin:0;padding:0;display:flex;align-items:center}
+.marquee li{display:flex;align-items:center;font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,3vw,2.2rem);white-space:nowrap}
+.marquee li svg{width:22px;height:22px;margin:0 28px;color:var(--brass-lite)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* Statement */
+.statement{padding:clamp(80px,12vw,160px) 0;position:relative}
+.statement .big{font-family:var(--serif);font-size:clamp(2rem,5.2vw,4.4rem);line-height:1.12;color:var(--oak);max-width:15em;margin:0}
+html.js .statement .big .w{color:#9AA98C;transition:color .5s var(--ease)}
+html.js .statement .big .w.lit{color:var(--oak)}
+.statement .sig{display:flex;align-items:center;gap:14px;margin-top:2.2rem;color:var(--muted);font-size:.95rem}
+.statement .sig svg{width:40px;height:40px;color:var(--brass)}
+
+/* Lawn Check */
+.check{background:var(--cream-2);overflow:hidden}
+.check-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:start}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin:2rem 0 1.4rem;padding:0;list-style:none}
+.chip{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:10px 18px 10px 12px;border-radius:999px;border:1.5px solid rgba(35,65,43,.35);background:var(--paper);cursor:pointer;font-weight:500;font-size:.98rem;color:var(--ink);transition:background .3s,border-color .3s,color .3s,transform .3s}
+.chip:hover{border-color:var(--oak);transform:translateY(-1px)}
+.chip .ic{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--sage-pale);color:var(--oak);flex:none;transition:background .3s,color .3s}
+.chip .ic svg{width:18px;height:18px}
+.chip[aria-pressed="true"]{background:var(--oak);color:var(--cream);border-color:var(--oak)}
+.chip[aria-pressed="true"] .ic{background:var(--brass-lite);color:var(--iron)}
+.chip-note{font-size:.92rem;color:var(--muted);display:flex;gap:8px;align-items:center}
+.chip-note svg{width:16px;height:16px;color:var(--brass-ink);flex:none}
+.tray{background:var(--oak);color:var(--cream);border-radius:9999px 9999px 22px 22px;padding:clamp(70px,9vw,96px) clamp(22px,3vw,36px) 32px;position:relative;min-height:440px;box-shadow:0 30px 60px -36px rgba(22,41,27,.7)}
+.tray::before{content:"";position:absolute;inset:10px;border:1px solid rgba(217,181,108,.45);border-radius:9999px 9999px 16px 16px;pointer-events:none}
+.tray h3{font-size:1.9rem;text-align:center;margin-bottom:.4rem}
+.tray-count{text-align:center;color:var(--brass-lite);font-size:.9rem;margin-bottom:1.2rem}
+.tray ul{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:10px}
+.tray li a{display:flex;align-items:center;gap:14px;padding:12px 14px;border-radius:14px;background:rgba(244,239,227,.07);border:1px solid rgba(169,184,154,.25);text-decoration:none;transition:background .3s}
+.tray li a:hover{background:rgba(244,239,227,.14)}
+.tray li img{width:38px;height:38px;flex:none;background:var(--cream);border-radius:50%;padding:5px}
+.tray li strong{display:block;font-family:var(--serif);font-weight:400;font-size:1.2rem;line-height:1.2}
+.tray li span{display:block;font-size:.88rem;color:#CBD3C0}
+.tray .empty{text-align:center;color:#CBD3C0;font-size:.98rem;padding:18px 6px 26px}
+.tray .btn{width:100%}
+.tray li.enter{animation:trayIn .7s var(--ease) both}
+@keyframes trayIn{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+
+/* Services index */
+.svc-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,56px)}
+.svc-list{list-style:none;margin:0;padding:0;border-top:1px solid rgba(169,184,154,.3)}
+.svc-row{border-bottom:1px solid rgba(169,184,154,.3)}
+.svc-row a{display:grid;grid-template-columns:72px 1fr minmax(0,.8fr) 40px;align-items:center;gap:20px;padding:22px 6px;text-decoration:none;transition:padding .45s var(--ease),background .45s}
+.svc-row a:hover,.svc-row a:focus-visible{padding-left:20px;background:rgba(244,239,227,.04)}
+.svc-num{font-family:var(--serif);font-size:1.3rem;color:var(--brass-lite)}
+.svc-row h3{font-size:clamp(1.6rem,3.4vw,2.7rem);transition:color .4s}
+.svc-row a:hover h3{color:var(--brass-lite)}
+.svc-line{color:#CBD3C0;font-size:1rem}
+.svc-arrow{width:40px;height:40px;border-radius:50%;border:1px solid rgba(169,184,154,.5);display:grid;place-items:center;transition:background .4s,transform .4s}
+.svc-arrow svg{width:16px;height:16px}
+.svc-row a:hover .svc-arrow{background:var(--brass-lite);color:var(--iron);transform:rotate(-45deg)}
+.svc-thumb{display:none}
+.svc-preview{position:fixed;left:0;top:0;width:250px;height:310px;z-index:40;pointer-events:none;border-radius:0 62% 0 62%;overflow:hidden;opacity:0;transform:translate(-999px,-999px);transition:opacity .35s;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);border:3px solid var(--brass-lite)}
+.svc-preview.show{opacity:1}
+.svc-preview img{width:100%;height:100%;object-fit:cover}
+
+/* Why */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,3vw,36px);margin-top:clamp(36px,5vw,64px)}
+.pillar{padding-top:24px;border-top:1px solid var(--line)}
+.pillar:nth-child(even){margin-top:56px}
+.pillar svg{width:76px;height:76px;color:var(--moss);margin-bottom:18px}
+.pillar svg .draw{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+html.js .pillar svg .draw{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.4s var(--ease)}
+html.js .pillar.in svg .draw{stroke-dashoffset:0}
+.pillar h3{font-size:1.6rem;color:var(--oak);margin-bottom:.6rem}
+.pillar p{color:var(--muted);font-size:1rem}
+.pillar .idx{font-family:var(--serif);font-style:italic;color:var(--brass-ink);font-size:1.05rem;display:block;margin-bottom:6px}
+
+/* Process */
+.process{background:var(--sage-pale)}
+.timeline{position:relative;margin-top:clamp(40px,5vw,72px)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,4vw,48px);list-style:none;padding:0;margin:0}
+.rail{position:absolute;left:calc(16.66% - 0px);right:calc(16.66%);top:70px;height:8px;background:rgba(35,65,43,.15);border-radius:4px}
+.rail i{position:absolute;inset:0;background:var(--iron);border-radius:4px;transform-origin:left center}
+.rail::after{content:"";position:absolute;left:0;right:0;top:22px;height:3px;background:rgba(35,65,43,.12)}
+html.js .rail i{transform:scaleX(0);transition:transform 2.4s var(--ease) .2s}
+html.js .timeline.in .rail i{transform:scaleX(1)}
+.step{position:relative;text-align:center;padding:0 6px}
+.post{width:30px;height:120px;margin:0 auto 26px;color:var(--iron);position:relative;z-index:1}
+.post svg{width:100%;height:100%}
+.step .num{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--oak);color:var(--cream);font-family:var(--serif);font-size:1.4rem;margin-bottom:16px}
+.step h3{font-size:1.65rem;color:var(--oak);margin-bottom:.6rem}
+.step p{color:var(--muted);max-width:22em;margin:0 auto}
+
+/* Gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,3vw,40px);margin-top:clamp(36px,5vw,60px);align-items:end}
+.win{position:relative;margin:0}
+.win:nth-child(2){transform:translateY(-36px)}
+.win-frame{position:relative;aspect-ratio:3/5;border-radius:9999px 9999px 6px 6px;overflow:hidden;background:var(--oak-deep);border:6px solid var(--brass);box-shadow:inset 0 0 0 2px var(--iron)}
+.win-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.win-img.on{opacity:1}
+html:not(.js) .win-img:first-child{opacity:1}
+.win-frame::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,transparent calc(50% - 2px),rgba(244,239,227,.85) calc(50% - 2px),rgba(244,239,227,.85) calc(50% + 2px),transparent calc(50% + 2px)),linear-gradient(to bottom,transparent calc(42% - 2px),rgba(244,239,227,.85) calc(42% - 2px),rgba(244,239,227,.85) calc(42% + 2px),transparent calc(42% + 2px))}
+.win-next{position:absolute;inset:0;z-index:2;background:none;border:0;cursor:pointer;border-radius:9999px 9999px 6px 6px}
+.win-sill{height:14px;margin:0 -10px;background:var(--brass);border-radius:3px;box-shadow:0 8px 16px -8px rgba(0,0,0,.6)}
+.win figcaption{margin-top:16px;font-family:var(--serif);font-style:italic;font-size:1.25rem;text-align:center;color:var(--cream);min-height:1.6em}
+.gal-controls{display:flex;justify-content:center;margin-top:36px}
+.pause-btn{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:8px 18px;border-radius:999px;border:1.5px solid var(--sage);background:transparent;color:var(--cream);cursor:pointer;font-weight:500}
+.pause-btn:hover{background:rgba(244,239,227,.08)}
+.pause-btn svg{width:14px;height:14px}
+.light .pause-btn{border-color:var(--oak);color:var(--oak)}
+.light .pause-btn:hover{background:rgba(35,65,43,.06)}
+
+/* Testimonials */
+.quotes{position:relative}
+.q-wrap{display:grid;grid-template-columns:180px 1fr;gap:clamp(20px,4vw,56px);align-items:start;margin-top:clamp(28px,4vw,48px)}
+.q-mark{font-family:var(--serif);font-size:clamp(8rem,16vw,14rem);line-height:.7;color:var(--brass);user-select:none}
+.q-slide blockquote{margin:0}
+.q-slide blockquote p{font-family:var(--serif);font-size:clamp(1.35rem,2.6vw,2.15rem);line-height:1.3;color:var(--oak);margin:0 0 1.4rem}
+.q-slide footer{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:.98rem}
+.q-slide footer strong{color:var(--ink);font-weight:600}
+.q-slide footer .vc{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;background:var(--sage-pale);color:var(--oak);font-size:.82rem;font-weight:600}
+.q-slide footer .vc svg{width:12px;height:12px;color:var(--brand)}
+html.js .q-slide{display:none}
+html.js .q-slide.on{display:block;animation:qIn .9s var(--ease) both}
+html:not(.js) .q-slide+.q-slide{margin-top:2.4rem;padding-top:2.4rem;border-top:1px solid var(--line)}
+@keyframes qIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.q-nav{display:flex;align-items:center;gap:18px;margin-top:2.4rem;flex-wrap:wrap}
+html:not(.js) .q-nav{display:none}
+.q-arrow{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--oak);background:none;color:var(--oak);cursor:pointer;display:grid;place-items:center;transition:background .3s,color .3s}
+.q-arrow:hover{background:var(--oak);color:var(--cream)}
+.q-arrow svg{width:18px;height:18px}
+.q-dots{display:flex;gap:6px}
+.q-dot{width:44px;height:44px;border:0;background:none;cursor:pointer;display:grid;place-items:center;padding:0}
+.q-dot i{display:block;width:14px;height:20px;border-radius:0 100% 0 100%;background:var(--sage);transform:rotate(45deg);transition:background .3s,transform .4s}
+.q-dot[aria-current="true"] i{background:var(--oak);transform:rotate(45deg) scale(1.25)}
+
+/* Areas */
+.areas{background:var(--cream-2)}
+.areas-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:clamp(24px,4vw,56px);margin-top:clamp(32px,4vw,56px);align-items:start}
+.map-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:clamp(10px,2vw,22px);box-shadow:0 30px 60px -44px rgba(22,41,27,.5)}
+.map-card svg{width:100%;height:auto;display:block}
+.map-note{font-size:.85rem;color:var(--muted);margin:10px 6px 0;font-style:italic}
+.map .water{fill:#C9D6C4;stroke:var(--moss);stroke-width:1.4}
+.map .river{fill:none;stroke:#8FAE95;stroke-width:7;stroke-linecap:round}
+.map .river-ink{fill:none;stroke:var(--moss);stroke-width:1.2;stroke-dasharray:2 5}
+.map .causeway{stroke:var(--brass-ink);stroke-width:2.4;stroke-dasharray:6 4}
+.map .wlabel{font-family:var(--serif);font-style:italic;fill:#2E5537;font-size:17px}
+.map .clabel{font-family:var(--sans);font-size:12.5px;font-weight:600;fill:var(--ink);transition:fill .3s}
+.map .pin circle.dot{fill:var(--oak);stroke:var(--paper);stroke-width:2;transition:fill .3s,r .3s}
+.map .pin circle.ring{fill:none;stroke:var(--moss);stroke-width:1.6;transform-box:fill-box;transform-origin:center;animation:pulse 3.6s ease-out infinite}
+.map .pin:nth-of-type(3n) circle.ring{animation-delay:1.2s}
+.map .pin:nth-of-type(3n+1) circle.ring{animation-delay:2.4s}
+.map .pin.home circle.dot{fill:var(--brass)}
+.map .pin.hot circle.dot{fill:var(--brand)}
+.map .pin.hot .clabel{fill:var(--oak);font-weight:700;text-decoration:underline}
+.map .pin:focus-visible{outline:none}
+.map .pin:focus-visible circle.dot{stroke:var(--iron);stroke-width:3}
+@keyframes pulse{0%{transform:scale(.6);opacity:.9}80%,100%{transform:scale(2.4);opacity:0}}
+.area-list h3{font-family:var(--sans);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-ink);margin:1.4rem 0 .4rem}
+.area-list h3:first-child{margin-top:0}
+.area-list ul{list-style:none;margin:0;padding:0}
+.area-list a,.area-list button{display:flex;align-items:center;justify-content:space-between;width:100%;padding:9px 12px;margin:0 -12px;border-radius:10px;text-decoration:none;font-family:var(--serif);font-size:1.35rem;background:none;border:0;cursor:pointer;text-align:left;color:var(--ink);transition:background .3s,color .3s}
+.area-list a::after,.area-list button::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--sage);transition:background .3s,transform .3s}
+.area-list .hot{background:var(--sage-pale);color:var(--oak)}
+.area-list .hot::after{background:var(--brand);transform:scale(1.4)}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(24px,4vw,64px);margin-top:clamp(32px,4vw,56px)}
+.faq-item{border-top:1px solid var(--line)}
+.faq-item:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+.faq-item h3{font-size:1rem;margin:0}
+.faq-btn{display:grid;grid-template-columns:54px 1fr 28px;gap:12px;align-items:start;width:100%;padding:24px 0;background:none;border:0;cursor:pointer;text-align:left;color:var(--ink)}
+.faq-btn .n{font-family:var(--serif);font-size:2rem;line-height:1;color:var(--brass-ink)}
+.faq-btn .q{font-family:var(--serif);font-size:clamp(1.25rem,2vw,1.5rem);line-height:1.2;color:var(--oak)}
+.faq-btn .pm{width:28px;height:28px;border-radius:50%;border:1px solid var(--oak);position:relative;margin-top:2px}
+.faq-btn .pm::before,.faq-btn .pm::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:var(--oak);transform:translate(-50%,-50%);transition:transform .35s}
+.faq-btn .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq-btn[aria-expanded="true"] .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.faq-panel{padding:0 0 24px 66px;color:var(--muted)}
+.faq-panel[hidden]{display:none}
+
+/* Blog */
+.blog-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(24px,4vw,48px);margin-top:clamp(32px,4vw,56px)}
+.post-card{position:relative}
+.post-card a.cover{position:absolute;inset:0;z-index:1;border-radius:inherit}
+.post-card time{font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-ink)}
+.post-feature .img{border-radius:9999px 9999px 18px 18px;overflow:hidden;aspect-ratio:5/4.2;margin-bottom:22px}
+.post-feature .img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.post-feature:hover .img img{transform:scale(1.04)}
+.post-feature h3{font-size:clamp(1.8rem,3vw,2.5rem);color:var(--oak);margin:.4rem 0 .8rem}
+.post-more{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--oak)}
+.post-more svg{width:16px;height:16px}
+.post-side{display:grid;gap:22px;align-content:start}
+.post-small{display:grid;grid-template-columns:130px 1fr;gap:18px;align-items:center;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.post-small .img{aspect-ratio:1;border-radius:0 50% 0 50%;overflow:hidden}
+.post-small .img img{width:100%;height:100%;object-fit:cover}
+.post-small h3{font-size:1.3rem;color:var(--oak);margin-top:.3rem;line-height:1.18}
+.post-card:hover h3{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.blog-foot{margin-top:28px}
+
+/* Estimate */
+.estimate{overflow:hidden}
+.est-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,72px);align-items:start}
+.est-info ul{list-style:none;padding:0;margin:1.6rem 0 0;display:grid;gap:14px}
+.est-info li{display:flex;gap:12px;align-items:flex-start;color:#D6DCCB}
+.est-info li svg{width:20px;height:20px;color:var(--brass-lite);flex:none;margin-top:3px}
+.est-info a{color:var(--cream);font-weight:600}
+.form-card{background:var(--paper);color:var(--ink);border-radius:26px;padding:clamp(22px,3.5vw,40px);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.pickets{display:flex;align-items:flex-end;gap:0;margin-bottom:6px}
+.pickets svg{width:100%;height:56px;display:block}
+.pickets .pk{fill:#D9DDCE;transition:fill .6s var(--ease)}
+.pickets .pk.on{fill:var(--oak)}
+.pickets .railbar{fill:#C5CBB9}
+.step-labels{display:grid;grid-template-columns:repeat(3,1fr);font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+.step-labels span{text-align:center}
+.step-labels span.cur{color:var(--oak)}
+.step-status{font-size:.9rem;color:var(--muted);margin-bottom:10px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+fieldset+fieldset{margin-top:26px}
+html.js .stepper fieldset+fieldset{margin-top:0}
+legend{font-family:var(--serif);font-size:1.7rem;color:var(--oak);padding:0;margin-bottom:16px}
+html.js .stepper legend:focus{outline:none}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fgrid .full{grid-column:1 / -1}
+.field label{display:block;font-weight:600;font-size:.92rem;margin-bottom:6px}
+.field .req{color:#9B2C1F}
+.field input,.field select,.field textarea{width:100%;min-height:50px;padding:12px 14px;border-radius:12px;border:1.5px solid #B7BFAA;background:#fff;font-size:1rem;transition:border-color .3s,box-shadow .3s}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--oak);box-shadow:0 0 0 3px rgba(35,65,43,.2)}
+.field [aria-invalid="true"]{border-color:#9B2C1F}
+.err{display:block;min-height:0;color:#9B2C1F;font-size:.86rem;margin-top:4px}
+.err:empty{display:none}
+.consent{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start;margin-top:14px;font-size:.92rem}
+.consent input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--oak)}
+.consent small{display:block;color:var(--muted);font-size:.82rem;margin-top:6px;line-height:1.5}
+.consent small a{color:var(--oak)}
+.form-actions{display:flex;justify-content:space-between;gap:12px;margin-top:24px;flex-wrap:wrap}
+.form-actions .btn{min-width:140px}
+.notice{margin-top:18px;padding:14px 16px;border-radius:12px;background:var(--sage-pale);color:var(--oak);font-weight:500;border-left:4px solid var(--brass)}
+.notice:empty{display:none}
+html.js .stepper fieldset[data-step]:not(.cur){display:none}
+html:not(.js) .stepper .pickets,html:not(.js) .stepper .step-labels,html:not(.js) .stepper .step-status,html:not(.js) .stepper .nav-btn{display:none}
+
+/* Dialog */
+dialog.est-dialog{width:min(720px,calc(100vw - 24px));max-height:calc(100vh - 32px);padding:0;border:0;border-radius:26px;background:var(--paper);color:var(--ink);box-shadow:0 40px 100px -30px rgba(0,0,0,.7)}
+dialog.est-dialog::backdrop{background:rgba(22,41,27,.62);backdrop-filter:blur(3px)}
+dialog.est-dialog[open]{animation:dlgIn .45s var(--ease)}
+@keyframes dlgIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.dlg-head{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px clamp(20px,3vw,32px);background:var(--oak);color:var(--cream);border-radius:26px 26px 0 0}
+.dlg-head h2{font-size:1.8rem}
+.dlg-close{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--sage);background:none;color:var(--cream);font-size:1.5rem;line-height:1;cursor:pointer;flex:none}
+.dlg-body{padding:clamp(20px,3vw,32px)}
+.dlg-body .intro{color:var(--muted);margin-bottom:18px}
+
+/* Footer */
+.site-footer{position:relative;background:var(--oak-deep);color:#D6DCCB;padding:clamp(64px,8vw,96px) 0 0;margin-top:62px;overflow:hidden}
+.fence-top{position:absolute;left:0;right:0;top:-60px;height:62px;background-repeat:repeat-x;background-position:left bottom;background-size:24px 62px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 62'%3E%3Cg fill='%2316291B'%3E%3Cpath d='M12 0l5 12-3 4v46h-4V16l-3-4z'/%3E%3Crect x='0' y='24' width='24' height='3'/%3E%3Crect x='0' y='48' width='24' height='3'/%3E%3C/g%3E%3C/svg%3E")}
+.site-footer{overflow:visible}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:clamp(24px,4vw,48px)}
+.foot-grid h2{font-family:var(--sans);font-weight:600;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass-lite);margin-bottom:1rem}
+.foot-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.foot-grid a{text-decoration:none;color:#D6DCCB}
+.foot-grid a:hover{color:var(--cream);text-decoration:underline;text-underline-offset:3px}
+.foot-brand img{height:84px;width:auto;margin-bottom:18px}
+.foot-brand p{font-size:.96rem;max-width:26em}
+.socials{display:flex;gap:10px;margin-top:18px}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid rgba(169,184,154,.45);display:grid;place-items:center;transition:background .3s}
+.socials a:hover{background:rgba(244,239,227,.08)}
+.socials svg{width:18px;height:18px;fill:currentColor}
+.foot-contact p{margin:0 0 .6em}
+.foot-contact a.ph{font-family:var(--serif);font-size:1.7rem;color:var(--cream)}
+.wordmark{font-family:var(--serif);font-size:clamp(5rem,23vw,21rem);line-height:.8;color:rgba(169,184,154,.13);text-align:center;margin:clamp(40px,6vw,72px) 0 0;white-space:nowrap;user-select:none;letter-spacing:-.02em}
+.foot-legal{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding:22px 0 28px;border-top:1px solid rgba(169,184,154,.2);font-size:.88rem}
+.foot-legal ul{list-style:none;margin:0;padding:0;display:flex;gap:18px;flex-wrap:wrap}
+.foot-legal a{color:#D6DCCB}
+
+/* Sticky mobile bar + back to top */
+.mbar{display:none}
+.to-top{position:fixed;right:20px;bottom:24px;z-index:50;width:52px;height:52px;border-radius:50% 50% 12px 12px;border:0;background:var(--oak);color:var(--cream);cursor:pointer;display:grid;place-items:center;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .4s,transform .4s,visibility .4s;box-shadow:0 12px 24px -12px rgba(0,0,0,.6)}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top svg{width:18px;height:18px}
+
+/* Reveal */
+html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+html.js .reveal.in{opacity:1;transform:none}
+
+/* Responsive */
+@media (max-width:1100px){
+  .nav,.hdr-phone{display:none}
+  .burger{display:inline-flex}
+  .hdr .btn-primary{margin-left:auto}
+  .hdr .burger{margin-left:0}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .pillar:nth-child(even){margin-top:0}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .hero-grid,.check-grid,.areas-grid,.est-grid,.blog-grid{grid-template-columns:1fr}
+  .hero-media{width:min(100%,440px)}
+  .q-wrap{grid-template-columns:1fr}
+  .q-mark{font-size:7rem;margin-bottom:-.3em}
+  .faq-grid{grid-template-columns:1fr}
+  .faq-item:nth-last-child(-n+2){border-bottom:0}
+  .faq-item:last-child{border-bottom:1px solid var(--line)}
+  .svc-row a{grid-template-columns:56px 1fr 40px}
+  .svc-line{grid-column:2 / 3;margin-top:-10px}
+  .svc-arrow{grid-row:1 / span 2;grid-column:3}
+  .steps{grid-template-columns:1fr;gap:40px}
+  .rail{left:50%;right:auto;top:0;bottom:0;width:8px;height:auto;margin-left:-4px;transform-origin:top}
+  .rail::after{display:none}
+  .rail i{transform-origin:top center}
+  html.js .rail i{transform:scaleY(0)}
+  html.js .timeline.in .rail i{transform:scaleY(1)}
+  .step{background:var(--sage-pale);padding:10px 6px}
+  .post{height:80px}
+}
+@media (max-width:760px){
+  body{padding-bottom:76px}
+  .hdr{min-height:72px;gap:10px}
+  .logo img{height:46px}
+  .hdr .btn-primary{display:none}
+  .burger{margin-left:auto}
+  .badge{display:none}
+  .gallery-grid{grid-template-columns:1fr;max-width:340px;margin-left:auto;margin-right:auto}
+  .win:nth-child(2){transform:none}
+  .fgrid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .post-small{grid-template-columns:96px 1fr}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:70;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--oak-deep);box-shadow:0 -10px 24px -14px rgba(0,0,0,.6)}
+  .mbar .btn{min-height:50px;padding:.6em 1em;width:100%}
+  .mbar .call{background:transparent;border-color:var(--sage);color:var(--cream)}
+  .to-top{bottom:92px;right:14px;width:46px;height:46px}
+  .hero-vine{display:none}
+  .faq-panel{padding-left:0}
+  .faq-btn{grid-template-columns:44px 1fr 28px}
+  .tray{border-radius:160px 160px 22px 22px;padding-top:92px}
+  .tray h3{font-size:1.55rem}
+}
+@media (max-width:420px){
+  .hero h1{font-size:2.45rem}
+  .chip{font-size:.92rem;padding-right:14px}
+  .statement .big{font-size:1.85rem}
+}
+
+@media (hover:none),(pointer:coarse){
+  .svc-preview{display:none}
+  .svc-row a{grid-template-columns:56px 1fr 40px}
+  .svc-thumb{display:block;grid-column:1 / -1;width:100%;height:170px;object-fit:cover;border-radius:0 46% 0 46%;order:-1;margin-bottom:4px}
+  .svc-line{grid-column:2 / 3;margin-top:-10px}
+  .svc-arrow{grid-row:2;grid-column:3}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;transition-delay:0s!important}
+  .hero-arch>img{animation:none!important;transform:none}
+  .badge svg.ring,.map .pin circle.ring{animation:none!important}
+  .map .pin circle.ring{opacity:0}
+  html.js .hero .gate-leaf.l{transform:rotateY(-104deg)!important}
+  html.js .hero .gate-leaf.r{transform:rotateY(104deg)!important}
+  html.js .hero .gate-latch{opacity:0!important}
+  .marquee-track{animation:none!important;width:auto;flex-wrap:wrap;justify-content:center}
+  .marquee-track ul[aria-hidden]{display:none}
+  .marquee ul{flex-wrap:wrap;justify-content:center;row-gap:8px}
+  html.js .statement .big .w{color:var(--oak)}
+  html.js .reveal{opacity:1;transform:none}
+  html.js .pillar svg .draw{stroke-dashoffset:0}
+  html.js .rail i{transform:none!important}
+  .win-img{transition:none}
+  .tray li.enter,html.js .q-slide.on,dialog.est-dialog[open]{animation:none}
+}
+
+/* ===== Sections carried over from Option A (scoped under .fa, fonts from Option B) ===== */
+.fa{
+  --lawn:#2F8F3A;
+  --lawn-2:#3C9E3A;
+  --lawn-dk:#277A31;
+  --ink-green:#236E2C;
+  --deep:#0F2A17;
+  --deep-2:#173B21;
+  --deep-3:#1F4A2A;
+  --cream:#F6F3E7;
+  --cream-2:#ECE6D2;
+  --mint:#DDEBCF;
+  --gold:#F2C230;
+  --gold-dk:#D9A912;
+  --wood:#E9C99A;
+  --wood-dk:#B98A52;
+  --wood-ink:#2A1A0C;
+  --text:#0F2A17;
+  --muted:#4A5A4D;
+  --on-deep:#F6F3E7;
+  --on-deep-muted:#C9DCC4;
+  --stripe-a:#3C9E3A;
+  --stripe-b:#2F8F3A;
+  --radius:22px;
+  --pill:999px;
+  --shadow:0 18px 40px -18px rgba(15,42,23,.45);
+  --display:var(--serif);
+  --body:var(--sans);
+  
+  
+--gutter:var(--gut);font-family:var(--body);color:var(--text)}
+.fa h1,.fa h2,.fa h3,.fa h4{font-family:var(--display);line-height:1.04;letter-spacing:-.02em;margin:0;font-weight:400}
+.fa h2{font-size:clamp(2.1rem, 4.6vw, 3.9rem)}
+.fa h3{font-size:clamp(1.25rem, 2vw, 1.6rem);letter-spacing:-.01em}
+.fa :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.fa .on-light :focus-visible,.fa .on-light:focus-visible{outline-color:var(--deep)}
+html.js .fa .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease}
+html.js .fa .reveal.in{opacity:1;transform:none}
+.fa .eyebrow{display:inline-flex;align-items:center;gap:.55em;font-family:var(--body);font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-green);margin:0 0 .9rem}
+.fa .eyebrow::before{content:"";width:28px;height:10px;border-radius:3px;background:repeating-linear-gradient(90deg,var(--stripe-a) 0 7px,var(--stripe-b) 7px 14px)}
+.fa .on-deep .eyebrow{color:var(--gold)}
+.fa .on-deep .eyebrow::before{background:repeating-linear-gradient(90deg,var(--gold) 0 7px,var(--gold-dk) 7px 14px)}
+.fa .lede{font-size:clamp(1.05rem,1.4vw,1.2rem);color:var(--muted);max-width:56ch}
+.fa .on-deep .lede{color:var(--on-deep-muted)}
+.fa .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:50px;padding:.8em 1.5em;border-radius:var(--pill);border:2px solid transparent;font-family:var(--body);font-weight:700;font-size:1rem;line-height:1.1;text-decoration:none;cursor:pointer;transition:transform .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease, box-shadow .2s ease}
+.fa .btn:hover{transform:translateY(-2px)}
+.fa .btn-gold{background:var(--gold);color:var(--deep);box-shadow:0 10px 24px -12px rgba(242,194,48,.9)}
+.fa .btn-gold:hover{background:#FFD24A}
+.fa .btn-ghost{background:transparent;color:var(--on-deep);border-color:rgba(246,243,231,.55)}
+.fa .btn-ghost:hover{border-color:var(--on-deep);background:rgba(246,243,231,.08)}
+.fa .btn-deep{background:var(--deep);color:var(--cream)}
+.fa .btn-deep:hover{background:var(--deep-3)}
+.fa .btn-line{background:transparent;color:var(--deep);border-color:var(--deep)}
+.fa .btn-line:hover{background:var(--deep);color:var(--cream)}
+.fa .btn svg{width:18px;height:18px;flex:none}
+.fa .btn[disabled]{opacity:.55;cursor:not-allowed;transform:none}
+.fa .ticker-zone{position:relative;z-index:3;margin-top:-80px;overflow:hidden;padding:40px 0 40px}
+.fa .ticker{transform:rotate(-2deg);margin:0 -4%;background:repeating-linear-gradient(115deg,var(--gold) 0 26px,#E8B620 26px 52px);color:var(--deep);border-block:4px solid var(--deep);box-shadow:0 18px 30px -18px rgba(15,42,23,.6)}
+.fa .ticker-track{display:flex;width:max-content;animation:tick 38s linear infinite}
+.fa .ticker:hover .ticker-track{animation-play-state:paused}
+.fa .ticker ul{list-style:none;margin:0;padding:0;display:flex}
+.fa .ticker li{display:flex;align-items:center;gap:18px;padding:16px 18px;font-family:var(--display);font-weight:400;font-size:clamp(1.05rem,2vw,1.45rem);white-space:nowrap;text-transform:uppercase;letter-spacing:.02em}
+.fa .ticker li svg{width:22px;height:22px;flex:none}
+@keyframes tick{to{transform:translateX(-50%)}}
+.fa .edge{line-height:0;background:var(--from,var(--cream));color:var(--to,var(--deep))}
+.fa .edge svg{display:block;width:100%;height:clamp(28px,4vw,52px)}
+.fa .mow-sec{padding:clamp(56px,8vw,110px) 0 clamp(56px,7vw,90px)}
+.fa .mow-head{display:grid;grid-template-columns:1.1fr .9fr;gap:30px 60px;align-items:end;margin-bottom:34px}
+.fa .mow-head p{margin:0}
+.fa .mow-stage{position:relative;border-radius:28px;overflow:hidden;height:clamp(340px,44vw,500px);background:repeating-linear-gradient(90deg,#4CAE45 0 64px,#3A9A39 64px 128px);box-shadow:var(--shadow), inset 0 0 0 4px var(--deep);user-select:none;-webkit-user-select:none}
+.fa .mow-stage::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 40%,rgba(255,255,255,.08),rgba(0,0,0,.18));border-radius:inherit}
+.fa .mow-stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.fa #mow-grass{touch-action:pan-y;cursor:none}
+.fa #mow-fx{pointer-events:none}
+.fa .mow-cursor{position:absolute;left:0;top:0;width:76px;height:52px;margin:-26px 0 0 -38px;pointer-events:none;opacity:0;transition:opacity .2s;z-index:2;filter:drop-shadow(0 6px 6px rgba(0,0,0,.4))}
+.fa .mow-cursor.on{opacity:1}
+.fa .mow-hint{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;pointer-events:none;background:rgba(15,42,23,.82);color:var(--cream);padding:12px 20px;border-radius:var(--pill);font-weight:700;display:flex;gap:10px;align-items:center;transition:opacity .4s}
+.fa .mow-hint svg{width:22px;height:22px;color:var(--gold)}
+.fa .mow-stage.is-touched .mow-hint{opacity:0}
+html:not(.js) .fa .mow-hint{display:none}
+.fa .mow-done{position:absolute;inset:0;z-index:3;display:grid;place-items:center;padding:20px;pointer-events:none}
+.fa .mow-done-card{pointer-events:auto;background:var(--cream);border-radius:24px;padding:28px 32px;text-align:center;max-width:420px;box-shadow:0 30px 60px -20px rgba(0,0,0,.55);border:4px solid var(--deep)}
+.fa .mow-done-card h3{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:10px}
+.fa .mow-done-card p{color:var(--muted)}
+html.js .fa .mow-done{opacity:0;visibility:hidden;transform:scale(.96);transition:opacity .45s ease, transform .45s ease, visibility .45s}
+html.js .fa .mow-stage.is-done .mow-done{opacity:1;visibility:visible;transform:none}
+.fa .mow-bar{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin-top:20px}
+.fa .meter{flex:1 1 260px;display:flex;align-items:center;gap:14px}
+.fa .meter-label{font-weight:700;white-space:nowrap}
+.fa .meter-track{flex:1;height:16px;border-radius:var(--pill);background:var(--cream-2);border:2px solid var(--deep);overflow:hidden}
+.fa .meter-fill{height:100%;width:0;background:repeating-linear-gradient(90deg,var(--stripe-a) 0 12px,var(--stripe-b) 12px 24px);transition:width .2s ease}
+.fa .meter-num{font-family:var(--display);font-weight:400;font-size:1.4rem;min-width:3.2ch;text-align:right;font-variant-numeric:tabular-nums}
+html:not(.js) .fa .mow-bar{display:none}
+.fa .why{padding:clamp(56px,8vw,120px) 0}
+.fa .why-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:start}
+.fa .why-intro{position:sticky;top:110px}
+.fa .why-intro .btn{margin-top:10px}
+.fa .why-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.fa .why-card{position:relative;background:#fff;border-radius:var(--radius);padding:30px 26px 76px;border:2px solid var(--deep);overflow:hidden;box-shadow:8px 8px 0 var(--deep)}
+.fa .why-cards{align-items:start}
+.fa .why-card:nth-child(even){transform:translateY(60px)}
+.fa .why-cards{padding-bottom:60px}
+.fa .why-n{font-family:var(--display);font-weight:400;font-size:3.2rem;line-height:1;color:transparent;-webkit-text-stroke:2px var(--lawn);margin-bottom:14px}
+.fa .why-card h3{margin-bottom:10px}
+.fa .why-card p{color:var(--muted);margin:0}
+.fa .why-grass{position:absolute;left:0;right:0;bottom:0;height:56px;width:100%}
+.fa .why-grass path{transform-box:fill-box;transform-origin:50% 100%}
+html.js .fa .why-grass path{transform:scaleY(0);transition:transform .9s cubic-bezier(.2,.9,.25,1.15);transition-delay:var(--d,0s)}
+html.js .fa .why-card.in .why-grass path{transform:scaleY(1)}
+.fa .process{background:var(--cream-2);padding:clamp(56px,8vw,110px) 0}
+.fa .process-head{text-align:center;max-width:760px;margin:0 auto 20px}
+.fa .process-head .lede{margin-inline:auto}
+.fa .proc-svg{display:block;width:100%;height:auto;overflow:visible}
+.fa .proc-base{fill:none;stroke:#C8D9B2;stroke-width:30;stroke-linecap:round}
+.fa .proc-cut{fill:none;stroke:var(--lawn);stroke-width:30;stroke-linecap:round}
+.fa .proc-cut-2{fill:none;stroke:var(--lawn-2);stroke-width:10;stroke-linecap:round}
+.fa .proc-node circle{fill:var(--cream);stroke:var(--deep);stroke-width:4}
+.fa .proc-node text{font-family:var(--display);font-weight:400;font-size:26px;fill:var(--deep);text-anchor:middle;dominant-baseline:central}
+.fa .proc-node.on circle{fill:var(--gold)}
+.fa .proc-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.fa .proc-step{background:var(--cream);border-radius:var(--radius);padding:26px;border:2px solid transparent;transition:border-color .4s, transform .4s}
+.fa .proc-step.on{border-color:var(--deep);transform:translateY(-4px)}
+.fa .proc-step:nth-child(2){margin-top:40px}
+.fa .proc-step h3{margin-bottom:10px}
+.fa .proc-step p{margin:0;color:var(--muted)}
+.fa .proc-step .step-k{display:none}
+.fa .proc-rail{display:none}
+@media (max-width:899px){.fa .proc-svg{display:none}
+.fa .proc-body{position:relative;padding-left:58px;margin-top:30px}
+.fa .proc-rail{display:block;position:absolute;left:14px;top:6px;bottom:6px;width:20px;border-radius:12px;background:#C8D9B2}
+.fa .proc-rail-fill{position:absolute;left:0;right:0;top:0;height:calc(var(--p,0) * 100%);border-radius:12px;background:repeating-linear-gradient(180deg,var(--stripe-a) 0 14px,var(--stripe-b) 14px 28px)}
+.fa .proc-rail-mower{position:absolute;left:50%;top:calc(var(--p,0) * 100%);width:44px;height:30px;transform:translate(-50%,-50%) rotate(90deg)}
+.fa .proc-steps{grid-template-columns:1fr;gap:18px}
+.fa .proc-step:nth-child(2){margin-top:0}
+.fa .proc-step .step-k{display:block;font-family:var(--display);font-weight:400;color:var(--ink-green);margin-bottom:6px}}
+.fa .freq{background:var(--deep);color:var(--on-deep);padding:clamp(56px,8vw,110px) 0;position:relative;overflow:hidden}
+.fa .freq::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 70px,transparent 70px 140px);pointer-events:none}
+.fa .freq-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.fa .freq blockquote{margin:24px 0;padding:0 0 0 20px;border-left:6px solid var(--gold);font-size:1.12rem;color:#E3EEDC}
+.fa .freq blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.9rem;color:var(--on-deep-muted)}
+.fa .seg{border:0;padding:0;margin:0 0 22px}
+.fa .seg legend{font-weight:700;margin-bottom:10px;padding:0}
+.fa .seg-in{position:relative;display:inline-grid;grid-template-columns:1fr 1fr;background:var(--deep-3);border-radius:var(--pill);padding:5px;border:2px solid rgba(246,243,231,.2)}
+.fa .seg input{position:absolute;opacity:0;width:1px;height:1px}
+.fa .seg label{position:relative;z-index:1;padding:12px 28px;border-radius:var(--pill);font-weight:700;cursor:pointer;text-align:center;transition:color .25s;min-width:130px}
+.fa .seg-thumb{position:absolute;top:5px;bottom:5px;left:5px;width:calc(50% - 5px);border-radius:var(--pill);background:var(--gold);transition:transform .35s cubic-bezier(.6,0,.2,1)}
+.fa .seg input:checked + label{color:var(--deep)}
+.fa .seg input:focus-visible + label{outline:3px solid var(--gold);outline-offset:4px}
+.fa .seg-in:has(#f-bi:checked) .seg-thumb{transform:translateX(100%)}
+.fa .seg-in.bi .seg-thumb{transform:translateX(100%)}
+.fa .cal{background:var(--cream);color:var(--deep);border-radius:26px;padding:26px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.fa .cal-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:16px}
+.fa .cal-month{font-family:var(--display);font-weight:400;font-size:1.5rem}
+.fa .cal-tag{font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.fa .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.fa .cal-dow{text-align:center;font-size:.78rem;font-weight:700;color:var(--muted);padding-bottom:4px}
+.fa .cal-day{aspect-ratio:1;border-radius:10px;background:var(--cream-2);display:grid;place-items:center;font-weight:600;font-size:.92rem;position:relative;overflow:hidden}
+.fa .cal-day.blank{background:transparent}
+.fa .cal-day.visit{background:repeating-linear-gradient(90deg,var(--stripe-a) 0 6px,var(--stripe-b) 6px 12px);color:#fff;box-shadow:inset 0 0 0 2px var(--deep)}
+html.js .fa .cal-day.visit{animation:pop .45s cubic-bezier(.2,.9,.3,1.3) both;animation-delay:var(--d,0s)}
+@keyframes pop{from{transform:scale(.4);opacity:0}to{transform:none;opacity:1}}
+.fa .cal-sum{margin:18px 0 0;font-weight:700}
+.fa .cal-note{margin:6px 0 0;font-size:.88rem;color:var(--muted)}
+.fa .reviews{background:var(--mint);padding:clamp(56px,8vw,110px) 0 0;overflow:hidden}
+.fa .reviews-head{text-align:center;max-width:720px;margin:0 auto 46px}
+.fa .reviews-head .lede{margin-inline:auto}
+.fa .signs{display:grid;grid-template-columns:repeat(3,1fr);gap:46px 30px;align-items:end;padding-bottom:0}
+.fa .sign{margin:0;display:flex;flex-direction:column;align-items:center;transform-origin:50% 100%}
+html.js .fa .sign{animation:sway 6s ease-in-out infinite;animation-delay:var(--d,0s)}
+.fa .sign:hover,.fa .sign:focus-within{animation-play-state:paused}
+@keyframes sway{0%,100%{transform:rotate(-1.1deg)}50%{transform:rotate(1.1deg)}}
+.fa .board{position:relative;width:100%;background:repeating-linear-gradient(0deg,rgba(120,72,30,.10) 0 3px,transparent 3px 11px),linear-gradient(180deg,#EED2A6,#E2BD86);color:var(--wood-ink);border-radius:14px;padding:26px 24px 22px;border:3px solid #8A5A2B;box-shadow:0 14px 24px -14px rgba(60,30,8,.6), inset 0 0 0 5px rgba(255,255,255,.18)}
+.fa .board::before,.fa .board::after{content:"";position:absolute;top:12px;width:9px;height:9px;border-radius:50%;background:#6B4420;box-shadow:inset 0 0 0 2px #A77843}
+.fa .board::before{left:12px}
+.fa .board::after{right:12px}
+.fa .board blockquote{margin:0 0 16px;font-size:1rem;line-height:1.55}
+.fa .board figcaption{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:2px dashed rgba(107,68,32,.4);padding-top:12px;font-weight:700}
+.fa .board .who{font-family:var(--display);font-size:1.15rem}
+.fa .board .ver{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:5px}
+.fa .board .ver svg{width:16px;height:16px;color:var(--ink-green)}
+.fa .stakes{display:flex;justify-content:space-between;width:58%;height:70px}
+.fa .stakes span{width:14px;height:100%;background:linear-gradient(90deg,#9A6A38,#7A4E24);border-radius:0 0 3px 3px;clip-path:polygon(0 0,100% 0,100% 82%,50% 100%,0 82%)}
+.fa .ground{height:70px;margin-top:-34px;position:relative;z-index:1;color:var(--lawn);background:linear-gradient(transparent 50%,var(--lawn) 50%)}
+.fa .ground svg{display:block;width:100%;height:36px}
+@media (max-width:999px){.fa .signs{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:699px){.fa .signs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:18px;padding:10px var(--gutter) 0;margin:0 calc(var(--gutter) * -1);scrollbar-width:none}
+.fa .signs::-webkit-scrollbar{display:none}
+.fa .sign{flex:0 0 84%;scroll-snap-align:center}}
+@media (max-width:899px){.fa .mow-head,.fa .why-grid,.fa .freq-grid{grid-template-columns:1fr}
+.fa .why-intro{position:static}
+.fa .freq-grid{gap:36px}}
+@media (max-width:599px){.fa .why-cards{grid-template-columns:1fr}
+.fa .why-card:nth-child(n){transform:none}
+.fa .why-cards{padding-bottom:0}
+.fa .seg label{min-width:0;padding:12px 18px}
+.fa .cal{padding:18px}
+.fa .cal-grid{gap:4px}}
+@media (prefers-reduced-motion: reduce){.fa .ticker-track{animation:none;width:auto;flex-wrap:wrap;justify-content:center}
+.fa .ticker-track ul[aria-hidden="true"]{display:none}
+.fa .ticker ul{flex-wrap:wrap;justify-content:center}
+html.js .fa .sign{animation:none}
+html.js .fa .reveal{opacity:1;transform:none}
+html.js .fa .why-grass path{transform:scaleY(1)}
+html.js .fa .cal-day.visit{animation:none}
+.fa .btn:hover,.fa .proc-step.on{transform:none}
+.fa #mow-grass{cursor:crosshair}}
+/* merge tweaks */
+.fa h1,.fa h2,.fa h3,.fa h4{letter-spacing:-.005em;line-height:1.08}
+.fa .ticker-zone{margin-top:0;padding:34px 0}
+.fa .ticker li{letter-spacing:.06em}
+.fa .why-n{-webkit-text-stroke:1.5px var(--lawn)}
+.fa .why-grid{margin-top:0}
+.fa .seg legend{font-family:var(--body);font-size:1.0625rem;font-weight:700;color:var(--on-deep);margin-bottom:10px}
+
+/* ===== Round 2 fixes (Oct 5, 2026) ===== */
+/* 1. less empty space after the promise line; Mow This Lawn gets its own background */
+.statement{padding-bottom:clamp(48px,6vw,80px)}
+.fa .mow-sec{background:#C9DEB4;padding-top:clamp(40px,6vw,80px)}
+/* 2. Option A sections use Option B's type styles */
+.fa .eyebrow{font-family:var(--sans);font-weight:600;font-size:.78rem;letter-spacing:.2em;color:var(--brass-ink);margin:0 0 1rem}
+.fa .eyebrow::before{width:28px;height:1px;border-radius:0;background:currentColor}
+.fa .on-deep .eyebrow{color:var(--brass-lite)}
+.fa .on-deep .eyebrow::before{background:currentColor}
+.fa .lede{font-size:1.08rem;color:var(--muted);max-width:36em}
+.fa .on-deep .lede{color:#D6DCCB}
+.fa h2{font-size:clamp(2.1rem,4.6vw,3.6rem)}
+.fa .on-light h2,.fa .on-light h3{color:var(--oak)}
+.fa .btn{font-family:var(--sans);font-weight:600;min-height:48px}
+.fa .meter-label,.fa .seg legend,.fa .cal-sum,.fa .board figcaption{font-weight:600}
+.fa .meter-num{font-family:var(--sans);font-weight:600;font-size:1.15rem}
+.fa .mow-hint{font-weight:600}
+/* 3. Lawn Check: when many services match, show them in two compact columns */
+.tray:has(li:nth-child(5)) ul{grid-template-columns:1fr 1fr;gap:8px}
+.tray:has(li:nth-child(5)) li a{padding:10px 10px;gap:10px}
+.tray:has(li:nth-child(5)) li img{width:32px;height:32px}
+.tray:has(li:nth-child(5)) li strong{font-size:1.02rem}
+.tray:has(li:nth-child(5)) li span{display:none}
+@media (min-width:901px){.check-grid{grid-template-columns:1fr 1fr}}
+/* 5. process on dark, weekly plans on light */
+.fa .process{background:var(--deep);color:var(--on-deep)}
+.fa .process h2,.fa .process h3{color:var(--cream)}
+.fa .proc-base{stroke:#2C4A33}
+.fa .proc-node circle{fill:var(--deep-3);stroke:var(--cream)}
+.fa .proc-node text{fill:var(--cream)}
+.fa .proc-node.on circle{fill:var(--gold);stroke:var(--gold)}
+.fa .proc-node.on text{fill:var(--deep)}
+.fa .proc-step{background:rgba(246,243,231,.06);border-color:rgba(246,243,231,.14)}
+.fa .proc-step.on{border-color:var(--gold)}
+.fa .proc-step p{color:var(--on-deep-muted)}
+.fa .proc-step .step-k{color:var(--gold)}
+.fa .proc-rail{background:#2C4A33}
+.fa .freq{background:#ECE6D2;color:var(--text)}
+.fa .freq::before{background:repeating-linear-gradient(90deg,rgba(15,42,23,.035) 0 70px,transparent 70px 140px)}
+.fa .freq h2{color:var(--oak)}
+.fa .freq blockquote{color:var(--muted)}
+.fa .freq blockquote cite{color:var(--muted)}
+.fa .seg legend{color:var(--oak)}
+.fa .seg-in{background:var(--deep);border-color:var(--deep)}
+.fa .seg label{color:var(--cream)}
+.fa .seg input:checked + label{color:var(--deep)}
+.fa .seg input:focus-visible + label{outline-color:var(--deep)}
+.fa .cal{background:#FBF8F1;border:1px solid rgba(35,65,43,.14);box-shadow:0 30px 60px -36px rgba(22,41,27,.45)}
+/* 6. service areas: town list in two columns so it matches the map height */
+@media (min-width:901px){.areas-grid{grid-template-columns:1.1fr .9fr}}
+.area-list{columns:2;column-gap:clamp(20px,3vw,40px)}
+.area-list h3{break-after:avoid}
+.area-list ul{break-inside:avoid;margin-bottom:.2rem}
+.area-list a,.area-list button{margin:0;padding:5px 10px;font-size:1.25rem}
+.area-list h3{margin:1.1rem 0 .3rem}
+/* round 3: footer sits right under its grass edge */
+.site-footer{margin-top:0}
+.fa .edge{position:relative;z-index:1;margin:-1px 0;background:linear-gradient(var(--from) 80%,var(--to) 80%)}
+/* round 4: chat launcher + greeting, back-to-top moves above it */
+.lc-chat{position:fixed;right:20px;bottom:24px;z-index:65;display:flex;flex-direction:column;align-items:flex-end;gap:12px;pointer-events:none}
+.lc-chat > *{pointer-events:auto}
+.lc-chat.handoff .lc-btn,.lc-chat.handoff .lc-greet{display:none}
+.lc-btn{position:relative;width:60px;height:60px;border-radius:50%;border:2px solid var(--brass-lite);background:var(--oak);color:var(--cream);display:grid;place-items:center;cursor:pointer;box-shadow:0 16px 30px -12px rgba(22,41,27,.7);transition:transform .3s var(--ease),background .3s}
+.lc-btn:hover{background:var(--oak-deep);transform:translateY(-2px)}
+.lc-btn .ic-chat{width:28px;height:28px}
+.lc-btn .spin{display:none;position:absolute;inset:-6px;border-radius:50%;border:2px solid transparent;border-top-color:var(--brass-lite);animation:spin 1s linear infinite}
+.lc-btn.loading .spin{display:block}
+.lc-greet{position:relative;max-width:300px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:16px;box-shadow:0 22px 44px -20px rgba(22,41,27,.55);padding:14px 40px 14px 14px;animation:lcIn .45s var(--ease) both}
+.lc-greet[hidden]{display:none}
+.lc-greet::after{content:"";position:absolute;right:22px;bottom:-8px;width:16px;height:16px;background:var(--paper);border-right:1px solid var(--line);border-bottom:1px solid var(--line);transform:rotate(45deg)}
+.lc-greet-open{display:flex;align-items:center;gap:12px;background:none;border:0;padding:0;cursor:pointer;text-align:left;font-size:1rem;line-height:1.4;color:var(--ink)}
+.lc-greet-open[hidden]{display:none}
+.lc-greet-open img{width:40px;height:40px;border-radius:50%;background:var(--cream);border:1px solid var(--line);flex:none}
+.lc-greet-x{position:absolute;top:8px;right:8px;width:28px;height:28px;border:0;border-radius:50%;background:none;color:var(--muted);cursor:pointer;display:grid;place-items:center}
+.lc-greet-x:hover{background:var(--cream-2);color:var(--ink)}
+.lc-greet-x svg{width:16px;height:16px}
+.lc-fail{margin:0;font-size:.95rem}
+.lc-fail a{color:var(--oak);font-weight:600}
+@keyframes lcIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.to-top{bottom:28px;right:94px}
+@media (max-width:760px){
+  .lc-chat{right:14px;bottom:88px}
+  .lc-btn{width:54px;height:54px}
+  .lc-greet{max-width:250px;font-size:.95rem}
+  .to-top{bottom:92px;right:80px}
+}
+@media (prefers-reduced-motion:reduce){.lc-greet{animation:none}.lc-btn .spin{animation-duration:3s}}
+/* round 5: Instagram */
+.insta{background:#C9DEB4;padding:clamp(56px,7vw,96px) 0}
+.insta-head{text-align:center;margin-bottom:clamp(24px,3vw,40px)}
+.insta-head .eyebrow{justify-content:center}
+.insta-embed{min-height:220px}
+/* round 6: live form in a short scrolling box */
+.lc-form{height:min(560px,70vh);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;border-radius:16px;background:#fff;border:1px solid var(--line)}
+.lc-form iframe{display:block;min-height:788px}
+.lc-form:focus-visible{outline:3px solid var(--oak);outline-offset:3px}
+.lc-form-hint{margin:10px 2px 0;font-size:.85rem;color:var(--muted)}
+.lc-form-dlg{height:min(520px,calc(100vh - 240px))}
+/* 7. FAQ on green */
+.faq-dark .faq-item{border-color:rgba(244,239,227,.18)!important}
+.faq-dark .faq-btn{color:var(--cream)}
+.faq-dark .faq-btn .n{color:var(--brass-lite)}
+.faq-dark .faq-btn .q{color:var(--cream)}
+.faq-dark .faq-btn .pm{border-color:var(--cream)}
+.faq-dark .faq-btn .pm::before,.faq-dark .faq-btn .pm::after{background:var(--cream)}
+.faq-dark .faq-panel{color:#D6DCCB}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-fleur" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5c-2.3 3.2-2.3 6.4 0 9.6 2.3-3.2 2.3-6.4 0-9.6zM11.4 11.6C8.6 7.6 3.5 8.1 3.5 12c0 2.3 2.2 3.4 3.4 2.3-1.3-2.1.6-3.6 2.8-1.6l1.7.9zM12.6 11.6c2.8-4 7.9-3.5 7.9.4 0 2.3-2.2 3.4-3.4 2.3 1.3-2.1-.6-3.6-2.8-1.6l-1.7.9zM7.6 13.2h8.8v1.7H7.6zM11.1 14.9h1.8v4.6c1 .2 2 1.1 2 2.5H9.1c0-1.4 1-2.3 2-2.5z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 20C4 10 10 4 20 4c0 10-6 16-16 16zM4 20L14 10"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 12.5l5 5L20 6.5"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path fill="currentColor" d="M6 4h4v16H6zM14 4h4v16h-4z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M7 4l13 8-13 8z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+    <symbol id="gateLeaf" viewBox="0 0 200 560">
+      <g fill="currentColor">
+        <rect x="0" y="34" width="10" height="526"/><rect x="190" y="34" width="10" height="526"/>
+        <rect x="0" y="110" width="200" height="8"/><rect x="0" y="466" width="200" height="8"/><rect x="0" y="546" width="200" height="14"/>
+        <rect x="25.5" y="28" width="5" height="520"/><rect x="49.5" y="28" width="5" height="520"/><rect x="73.5" y="28" width="5" height="520"/><rect x="97.5" y="28" width="5" height="520"/><rect x="121.5" y="28" width="5" height="520"/><rect x="145.5" y="28" width="5" height="520"/><rect x="169.5" y="28" width="5" height="520"/>
+        <path d="M28 2l8 20-8 10-8-10z"/><path d="M52 2l8 20-8 10-8-10z"/><path d="M76 2l8 20-8 10-8-10z"/><path d="M100 2l8 20-8 10-8-10z"/><path d="M124 2l8 20-8 10-8-10z"/><path d="M148 2l8 20-8 10-8-10z"/><path d="M172 2l8 20-8 10-8-10z"/>
+        <path d="M5 14l7 18-7 8-7-8z"/><path d="M195 14l7 18-7 8-7-8z"/>
+      </g>
+      <g fill="none" stroke="currentColor" stroke-width="5">
+        <circle cx="40" cy="140" r="9"/><circle cx="64" cy="140" r="9"/><circle cx="88" cy="140" r="9"/><circle cx="112" cy="140" r="9"/><circle cx="136" cy="140" r="9"/><circle cx="160" cy="140" r="9"/>
+        <circle cx="100" cy="292" r="56"/><circle cx="100" cy="292" r="30"/>
+        <path d="M44 292c0-34 26-54 56-50M156 292c0 34-26 54-56 50"/>
+        <path d="M40 440c0-14 12-20 20-12M160 440c0-14-12-20-20-12"/>
+        <circle cx="40" cy="508" r="9"/><circle cx="64" cy="508" r="9"/><circle cx="88" cy="508" r="9"/><circle cx="112" cy="508" r="9"/><circle cx="136" cy="508" r="9"/><circle cx="160" cy="508" r="9"/>
+      </g>
+    </symbol>
+  <symbol id="grass" viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="currentColor" d="M0 60 L0 44 Q3.8 48.0 6.4 36.0 Q6.6 48.0 9.3 46 Q11.4 40.3 11.4 20.6 Q13.7 40.3 16.8 46 Q17.7 40.9 14.9 21.7 Q19.9 40.9 24.2 46 Q26.2 49.6 24.3 39.2 Q29.2 49.6 34.2 46 Q36.4 34.5 34.7 8.9 Q39.3 34.5 44.2 46 Q48.8 38.5 53.8 16.9 Q51.4 38.5 52.7 46 Q58.3 43.1 64.0 26.1 Q61.6 43.1 63.8 46 Q65.6 33.8 64.9 7.7 Q67.8 33.8 71.1 46 Q73.2 48.6 72.8 37.3 Q75.6 48.6 79.1 46 Q83.9 47.4 86.5 34.8 Q87.7 47.4 91.8 46 Q96.0 43.6 98.1 27.1 Q99.5 43.6 103.3 46 Q104.9 49.8 103.5 39.6 Q107.1 49.8 110.8 46 Q114.2 42.4 114.4 24.9 Q117.7 42.4 122.5 46 Q125.7 41.9 125.7 23.9 Q129.0 41.9 133.6 46 Q137.1 37.0 136.8 14.0 Q140.9 37.0 146.2 46 Q151.4 40.5 156.2 21.0 Q154.7 40.5 157.2 46 Q163.2 45.2 169.0 30.5 Q166.8 45.2 169.3 46 Q173.0 42.6 176.3 25.3 Q175.3 42.6 177.1 46 Q178.3 41.2 175.6 22.4 Q180.7 41.2 185.2 46 Q189.5 35.7 191.9 11.4 Q193.0 35.7 196.9 46 Q202.2 44.7 205.8 29.5 Q206.1 44.7 210.0 46 Q213.7 39.4 215.1 18.8 Q217.1 39.4 221.2 46 Q225.6 32.1 227.3 4.2 Q229.4 32.1 234.0 46 Q238.8 49.8 242.3 39.6 Q242.3 49.8 245.7 46 Q250.9 31.1 255.3 2.3 Q254.3 31.1 257.2 46 Q261.0 43.3 263.7 26.6 Q263.7 43.3 266.2 46 Q267.5 41.8 265.8 23.5 Q269.7 41.8 273.4 46 Q277.1 49.8 280.5 39.6 Q279.4 49.8 281.2 46 Q283.6 46.0 283.8 32.1 Q285.9 46.0 289.1 46 Q293.5 49.4 295.0 38.8 Q297.4 49.4 302.2 46 Q307.1 33.3 311.4 6.7 Q310.4 33.3 313.0 46 Q317.3 45.4 318.5 30.9 Q321.2 45.4 326.1 46 Q331.1 33.3 336.3 6.6 Q333.9 33.3 335.6 46 Q337.5 47.5 336.4 35.0 Q339.9 47.5 343.7 46 Q347.0 41.3 349.0 22.6 Q349.6 41.3 352.3 46 Q355.1 50.9 355.7 41.8 Q357.7 50.9 361.1 46 Q366.1 39.7 371.4 19.3 Q369.0 39.7 370.7 46 Q375.3 40.7 378.0 21.4 Q378.8 40.7 382.5 46 Q388.1 49.9 393.2 39.8 Q391.6 49.9 394.3 46 Q399.7 33.5 404.1 7.0 Q403.4 33.5 406.7 46 Q408.7 43.0 406.9 26.0 Q411.6 43.0 416.5 46 Q418.9 49.8 417.0 39.5 Q422.4 49.8 427.9 46 Q430.3 47.8 430.2 35.5 Q432.8 47.8 436.4 46 Q437.7 51.0 435.9 42.0 Q439.9 51.0 443.8 46 Q444.7 43.7 441.9 27.5 Q447.1 43.7 451.5 46 Q454.8 38.7 453.8 17.4 Q458.7 38.7 464.6 46 Q467.2 44.1 467.3 28.1 Q469.8 44.1 473.3 46 Q477.9 34.0 483.2 8.0 Q480.2 34.0 481.2 46 Q483.3 41.3 481.4 22.6 Q486.4 41.3 491.5 46 Q493.3 44.1 492.5 28.3 Q495.6 44.1 499.2 46 Q501.9 47.8 499.9 35.5 Q505.8 47.8 512.0 46 Q515.5 40.4 514.6 20.9 Q519.6 40.4 525.6 46 Q529.5 50.5 531.4 40.9 Q532.8 50.5 536.4 46 Q542.0 33.7 545.7 7.5 Q546.2 33.7 550.3 46 Q552.2 43.7 550.7 27.3 Q554.8 43.7 559.1 46 Q564.5 40.3 568.7 20.7 Q568.2 40.3 571.5 46 Q575.9 46.5 579.9 33.1 Q578.7 46.5 580.8 46 Q586.8 33.9 591.5 7.9 Q591.0 33.9 594.7 46 Q598.2 36.2 597.8 12.4 Q602.0 36.2 607.5 46 Q609.5 43.9 607.1 27.8 Q612.7 43.9 618.1 46 Q619.7 45.4 618.8 30.8 Q621.9 45.4 625.3 46 Q629.2 31.9 630.6 3.7 Q632.8 31.9 637.1 46 Q643.5 31.2 649.4 2.5 Q647.6 31.2 650.7 46 Q653.0 46.6 652.2 33.2 Q655.9 46.6 660.2 46 Q663.6 46.9 665.9 33.8 Q666.1 46.9 668.6 46 Q673.2 34.2 675.0 8.4 Q677.2 34.2 681.9 46 Q684.5 35.0 682.7 10.0 Q687.9 35.0 693.5 46 Q698.6 32.8 702.7 5.6 Q702.1 32.8 705.1 46 Q708.2 41.4 707.4 22.9 Q711.9 41.4 717.4 46 Q722.8 44.3 727.2 28.7 Q726.6 44.3 729.9 46 Q734.4 43.1 735.6 26.2 Q738.5 43.1 743.7 46 Q747.3 36.5 746.5 13.0 Q751.4 36.5 757.3 46 Q761.5 48.0 766.1 36.0 Q763.9 48.0 765.2 46 Q770.8 48.1 775.4 36.2 Q774.6 48.1 777.8 46 Q782.2 37.9 783.0 15.7 Q786.3 37.9 791.7 46 Q793.8 48.4 791.3 36.8 Q797.0 48.4 802.6 46 Q807.5 38.0 809.8 16.0 Q811.6 38.0 816.3 46 Q822.4 42.3 827.6 24.6 Q826.5 42.3 829.9 46 Q833.5 46.8 833.3 33.6 Q837.3 46.8 842.7 46 Q846.1 46.2 848.2 32.4 Q848.9 46.2 851.7 46 Q853.5 42.6 851.7 25.2 Q856.1 42.6 860.5 46 Q865.1 43.9 866.7 27.8 Q869.1 43.9 873.9 46 Q877.5 32.9 878.5 5.8 Q880.8 32.9 885.0 46 Q889.8 41.0 892.1 21.9 Q893.8 41.0 898.4 46 Q901.9 50.6 903.0 41.3 Q905.1 50.6 909.1 46 Q913.1 50.9 916.8 41.8 Q915.5 50.9 917.4 46 Q921.0 41.5 924.2 23.1 Q923.5 41.5 925.6 46 Q929.4 44.5 931.2 29.0 Q932.7 44.5 936.5 46 Q938.9 35.3 937.2 10.6 Q942.1 35.3 947.3 46 Q950.4 46.0 950.1 32.1 Q953.6 46.0 958.3 46 Q962.8 40.8 965.2 21.7 Q966.6 40.8 970.7 46 Q974.8 32.8 976.2 5.5 Q978.5 32.8 983.0 46 Q987.0 40.9 988.8 21.8 Q990.4 40.9 994.3 46 Q998.5 42.0 1000.6 23.9 Q1002.1 42.0 1006.1 46 Q1010.5 32.2 1013.7 4.3 Q1013.6 32.2 1016.5 46 Q1020.2 32.2 1020.2 4.3 Q1024.2 32.2 1029.6 46 Q1034.7 32.1 1039.2 4.3 Q1037.9 32.1 1040.5 46 Q1043.1 48.6 1043.8 37.1 Q1045.5 48.6 1048.5 46 Q1049.6 46.2 1047.1 32.4 Q1051.8 46.2 1056.0 46 Q1061.5 35.3 1066.6 10.6 Q1065.0 35.3 1067.7 46 Q1071.1 36.7 1073.6 13.4 Q1073.5 36.7 1075.8 46 Q1080.2 33.3 1085.4 6.7 Q1082.6 33.3 1083.8 46 Q1086.4 31.9 1086.8 3.9 Q1088.9 31.9 1092.3 46 Q1097.1 31.2 1101.5 2.4 Q1100.3 31.2 1102.7 46 Q1105.6 42.4 1107.0 24.7 Q1108.1 42.4 1110.8 46 Q1113.5 47.1 1113.4 34.2 Q1116.3 47.1 1120.2 46 Q1124.6 50.6 1126.9 41.2 Q1128.2 50.6 1132.3 46 Q1135.2 50.6 1135.3 41.3 Q1138.2 50.6 1142.4 46 Q1144.8 40.8 1142.8 21.5 Q1148.2 40.8 1153.7 46 Q1160.3 35.2 1166.3 10.5 Q1164.5 35.2 1167.6 46 Q1168.7 45.7 1166.0 31.4 Q1171.0 45.7 1175.4 46 Q1178.4 45.6 1177.1 31.2 Q1182.1 45.6 1187.8 46 Q1192.4 32.8 1196.6 5.5 Q1195.4 32.8 1197.8 46 Q1202.4 48.0 1207.2 36.0 Q1205.0 48.0 1206.6 46 Q1208.9 37.0 1207.1 14.0 Q1212.2 37.0 1217.6 46 Q1219.9 37.2 1220.4 14.5 Q1222.1 37.2 1225.0 46 Q1228.1 32.2 1230.3 4.5 Q1230.3 32.2 1232.5 46 Q1238.2 49.3 1243.1 38.7 Q1242.0 49.3 1245.1 46 Q1247.5 33.7 1248.3 7.5 Q1249.8 33.7 1252.6 46 Q1257.4 39.9 1262.4 19.9 Q1260.2 39.9 1261.9 46 Q1265.1 48.4 1266.7 36.8 Q1267.8 48.4 1270.8 46 Q1272.6 48.8 1271.1 37.6 Q1275.2 48.8 1279.5 46 Q1281.4 47.0 1280.9 33.9 Q1283.6 47.0 1286.8 46 Q1289.3 35.8 1288.9 11.6 Q1292.0 35.8 1296.0 46 Q1299.1 47.4 1299.4 34.9 Q1302.2 47.4 1306.5 46 Q1307.2 46.0 1304.2 32.0 Q1309.3 46.0 1313.6 46 Q1316.7 40.0 1315.9 20.0 Q1320.4 40.0 1325.7 46 Q1327.9 32.3 1326.2 4.6 Q1331.0 32.3 1336.0 46 Q1340.5 42.4 1342.3 24.7 Q1344.3 42.4 1348.8 46 Q1353.3 43.1 1355.3 26.3 Q1357.1 43.1 1361.6 46 Q1365.2 31.4 1365.6 2.7 Q1368.7 31.4 1373.4 46 Q1378.4 36.9 1381.5 13.7 Q1382.3 36.9 1386.3 46 Q1388.1 44.0 1385.8 28.1 Q1391.0 44.0 1396.1 46 Q1399.7 49.6 1402.9 39.2 Q1402.1 49.6 1404.0 46 Q1405.6 47.7 1403.4 35.5 Q1408.2 47.7 1412.8 46 Q1417.9 33.6 1421.3 7.2 Q1421.8 33.6 1425.7 46 Q1428.1 46.2 1427.7 32.3 Q1430.8 46.2 1434.7 46 Q1438.0 47.8 1439.1 35.7 Q1441.1 47.8 1444.9 46 L1440 60Z"/></symbol><symbol id="mower" viewBox="0 0 130 88">
+      <path d="M2 30 H34 M2 58 H34 M4 30 V58" stroke="#1A1A1A" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <rect x="40" y="6" width="18" height="12" rx="4" fill="#161616"/>
+      <rect x="40" y="70" width="18" height="12" rx="4" fill="#161616"/>
+      <rect x="98" y="6" width="18" height="12" rx="4" fill="#161616"/>
+      <rect x="98" y="70" width="18" height="12" rx="4" fill="#161616"/>
+      <rect x="32" y="13" width="94" height="62" rx="20" fill="#F2C230" stroke="#0F2A17" stroke-width="3"/>
+      <rect x="40" y="20" width="16" height="48" rx="6" fill="#D9A912"/>
+      <circle cx="86" cy="44" r="19" fill="#0F2A17"/>
+      <circle cx="86" cy="44" r="8" fill="#3C9E3A"/>
+      <circle cx="86" cy="44" r="3" fill="#F6F3E7"/>
+    </symbol><symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5zm-1.2 13.6l6-6-1.4-1.4-4.6 4.6-2.2-2.2-1.4 1.4z"/></symbol><symbol id="i-blade" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22c-1-6-1-12 3-20-1 7 0 13 1 20z M7 22c0-4-1-8-4-12 3 2 5 6 6 12z M17 22c1-3 2-6 5-8-2 3-3 6-3 8z"/></symbol>
+</defs>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="wrap hdr">
+    <a class="logo" href="https://www.bigeasygrasscutting.com/"><img src="assets/logo.png" alt="Big Easy Grass Cutting home" width="263" height="139"></a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="nav-item"><a href="https://www.bigeasygrasscutting.com/">Home</a></li>
+        <li class="nav-item has-sub">
+          <span class="split"><a href="https://www.bigeasygrasscutting.com/about/">About Us</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-about"><span class="sr-only">Show About Us pages</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
+          <ul class="submenu" id="sub-about">
+            <li><a href="https://www.bigeasygrasscutting.com/gallery/">Gallery</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/testimonials/">Testimonials</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-sub">
+          <span class="split"><a href="https://www.bigeasygrasscutting.com/services/">Services</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services"><span class="sr-only">Show all services</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
+          <ul class="submenu cols" id="sub-services">
+            <li><a href="https://www.bigeasygrasscutting.com/services/residential-lawn-mowing/">Residential Lawn Mowing</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/services/commercial-lawn-maintenance/">Commercial Lawn Maintenance</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/services/lawn-edging/">Lawn Edging</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/services/weed-control/">Weed Control</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/services/lawn-fertilization/">Lawn Fertilization</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/services/lawn-aeration/">Lawn Aeration</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/services/overseeding/">Overseeding</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/services/sod-installation/">Sod Installation</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/services/lawn-cleanup/">Lawn Cleanup</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/services/irrigation-system-maintenance/">Irrigation System Maintenance</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-sub">
+          <span class="split"><a href="https://www.bigeasygrasscutting.com/service-areas/">Service Areas</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-areas"><span class="sr-only">Show all service areas</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
+          <ul class="submenu cols" id="sub-areas">
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/baton-rouge/">Baton Rouge</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/covington/">Covington</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/gretna/">Gretna</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/hammond/">Hammond</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/harahan/">Harahan</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/kenner/">Kenner</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/laplace/">LaPlace</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/madisonville/">Madisonville</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/mandeville/">Mandeville</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/metairie/">Metairie</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/river-ridge/">River Ridge</a></li>
+            <li><a href="https://www.bigeasygrasscutting.com/service-areas/slidell/">Slidell</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="https://www.bigeasygrasscutting.com/blog/">Blog</a></li>
+        <li class="nav-item"><a href="https://www.bigeasygrasscutting.com/contact/">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="hdr-phone" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
+    <button class="btn btn-primary" type="button" data-open-estimate>Free Estimate</button>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="drawer"><span></span><b class="sr-only">Open menu</b></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-label="Mobile menu" role="dialog" aria-modal="true">
+  <div class="drawer-top">
+    <img src="assets/logo-footer.png" alt="Big Easy Grass Cutting" width="210" height="127">
+    <button class="drawer-close" type="button" aria-label="Close menu">&times;</button>
+  </div>
+  <nav aria-label="Mobile">
+    <ul>
+      <li><a href="https://www.bigeasygrasscutting.com/">Home</a></li>
+      <li><details><summary>About Us</summary><ul>
+        <li><a href="https://www.bigeasygrasscutting.com/about/">About Us</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/gallery/">Gallery</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/testimonials/">Testimonials</a></li></ul></details></li>
+      <li><details><summary>Services</summary><ul>
+        <li><a href="https://www.bigeasygrasscutting.com/services/">All Services</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/services/residential-lawn-mowing/">Residential Lawn Mowing</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/services/commercial-lawn-maintenance/">Commercial Lawn Maintenance</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/services/lawn-edging/">Lawn Edging</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/services/weed-control/">Weed Control</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/services/lawn-fertilization/">Lawn Fertilization</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/services/lawn-aeration/">Lawn Aeration</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/services/overseeding/">Overseeding</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/services/sod-installation/">Sod Installation</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/services/lawn-cleanup/">Lawn Cleanup</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/services/irrigation-system-maintenance/">Irrigation System Maintenance</a></li></ul></details></li>
+      <li><details><summary>Service Areas</summary><ul>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/">All Service Areas</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/baton-rouge/">Baton Rouge</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/covington/">Covington</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/gretna/">Gretna</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/hammond/">Hammond</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/harahan/">Harahan</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/kenner/">Kenner</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/laplace/">LaPlace</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/madisonville/">Madisonville</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/mandeville/">Mandeville</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/metairie/">Metairie</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/river-ridge/">River Ridge</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/service-areas/slidell/">Slidell</a></li></ul></details></li>
+      <li><a href="https://www.bigeasygrasscutting.com/blog/">Blog</a></li>
+      <li><a href="https://www.bigeasygrasscutting.com/contact/">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="drawer-cta">
+    <button class="btn btn-brass" type="button" data-open-estimate>Get a Free Estimate</button>
+    <a class="btn btn-ghost" style="border-color:var(--sage);color:var(--cream)" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call 504-910-7829</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- 2. Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <svg class="hero-vine" viewBox="0 0 200 300" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M180 10C120 60 120 140 60 290"/><path d="M150 60c-20-4-34 6-40 22 18 4 32-4 40-22zM132 112c22-8 40 0 46 18-20 6-38-2-46-18zM112 160c-20-6-36 2-44 20 20 6 36-2 44-20zM96 210c22-6 38 4 42 22-20 4-36-4-42-22z"/></g></svg>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">The Crescent City's Choice</p>
+      <h1 id="hero-title">Professional <em>Lawn Care</em> in New Orleans, Tended Like a Garden</h1>
+      <p class="hero-sub">Expert lawn maintenance for greener, healthier residential and commercial properties.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <a class="btn btn-ghost" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
+      </div>
+      <ul class="hero-trust">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Licensed &amp; Insured</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>No hidden costs</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Weekly or bi-weekly plans</li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <div class="hero-arch">
+        <img src="assets/work-2.jpg" alt="Wide manicured lawn bordered by flower beds" width="1200" height="1600" fetchpriority="high">
+        <div class="gate" aria-hidden="true">
+          <div class="gate-leaf l"><svg viewBox="0 0 200 560" preserveAspectRatio="none"><use href="#gateLeaf"/></svg></div>
+          <div class="gate-leaf r"><svg viewBox="0 0 200 560" preserveAspectRatio="none"><use href="#gateLeaf"/></svg></div>
+        </div>
+        <span class="gate-latch" aria-hidden="true"></span>
+      </div>
+      <div class="badge" aria-hidden="true">
+        <svg class="ring" viewBox="0 0 150 150"><defs><path id="badgePath" d="M75 75m-57 0a57 57 0 1 1 114 0a57 57 0 1 1-114 0"/></defs><text><textPath href="#badgePath">Free Estimates · Licensed &amp; Insured · Free Estimates · Licensed &amp; Insured ·</textPath></text></svg>
+        <svg class="core"><use href="#i-fleur"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="fa">
+<!-- 3. TRUST TICKER -->
+<div class="ticker-zone">
+  <div class="ticker">
+    <div class="ticker-track">
+      <ul aria-label="Trust Highlights">
+        <li><svg aria-hidden="true"><use href="#i-blade"/></svg>Licensed &amp; Insured</li>
+        <li><svg aria-hidden="true"><use href="#i-blade"/></svg>100% Satisfaction</li>
+        <li><svg aria-hidden="true"><use href="#i-blade"/></svg>Free Estimates</li>
+        <li><svg aria-hidden="true"><use href="#i-blade"/></svg>Weekly or Bi-Weekly Plans</li>
+        <li><svg aria-hidden="true"><use href="#i-blade"/></svg>Locally Owned</li>
+        <li><svg aria-hidden="true"><use href="#i-blade"/></svg>Serving Greater New Orleans</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li><svg><use href="#i-blade"/></svg>Licensed &amp; Insured</li>
+        <li><svg><use href="#i-blade"/></svg>100% Satisfaction</li>
+        <li><svg><use href="#i-blade"/></svg>Free Estimates</li>
+        <li><svg><use href="#i-blade"/></svg>Weekly or Bi-Weekly Plans</li>
+        <li><svg><use href="#i-blade"/></svg>Locally Owned</li>
+        <li><svg><use href="#i-blade"/></svg>Serving Greater New Orleans</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- 4. Scroll-filled statement -->
+<section class="statement" aria-label="Our Promise">
+  <div class="wrap">
+    <p class="eyebrow">Our Promise</p>
+    <p class="big" id="statement-text">Precision, Passion, Perfection: Our Grass Cutting Promise for Businesses and Residents of New Orleans</p>
+    <div class="sig"><svg aria-hidden="true"><use href="#i-fleur"/></svg><span>Fast, friendly New Orleans lawn care with no hidden costs.</span></div>
+  </div>
+</section>
+
+<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#C9DEB4" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<div class="fa">
+<!-- 4. MOW THIS LAWN -->
+<section class="mow-sec on-light" aria-labelledby="mow-title">
+  <div class="wrap">
+    <div class="mow-head reveal">
+      <div>
+        <p class="eyebrow">Try It Yourself</p>
+        <h2 id="mow-title">Mow This Lawn</h2>
+      </div>
+      <p class="lede">That patch below got away from somebody. Drag across it to mow (on a mouse, just hover). In a hurry? Let the mower take the passes for you.</p>
+    </div>
+    <div class="mow-stage" id="mow-stage">
+      <canvas id="mow-grass" role="img" aria-label="Overgrown lawn you can mow by dragging across it"></canvas>
+      <canvas id="mow-fx" aria-hidden="true"></canvas>
+      <svg class="mow-cursor" id="mow-cursor" viewBox="0 0 130 88" aria-hidden="true"><use href="#mower"/></svg>
+      <p class="mow-hint" aria-hidden="true"><svg><use href="#i-arrow"/></svg>Drag to mow</p>
+      <div class="mow-done" id="mow-done">
+        <div class="mow-done-card">
+          <h3>Your Lawn, Handled</h3>
+          <p>Fresh stripes without lifting a finger. We'll keep the real one looking this sharp.</p>
+          <button class="btn btn-gold" type="button" data-open-estimate>Get a Free Estimate</button>
+        </div>
+      </div>
+    </div>
+    <div class="mow-bar">
+      <div class="meter">
+        <span class="meter-label" id="meter-label">Lawn mowed</span>
+        <div class="meter-track" role="progressbar" aria-labelledby="meter-label" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="meter"><div class="meter-fill" id="meter-fill"></div></div>
+        <span class="meter-num" id="meter-num" aria-hidden="true">0%</span>
+      </div>
+      <button class="btn btn-deep" type="button" id="mow-auto">Mow It for Me</button>
+      <button class="btn btn-line" type="button" id="mow-reset">Let It Grow Back</button>
+    </div>
+    <p class="sr-only" role="status" id="mow-status"></p>
+  </div>
+</section>
+</div>
+
+<div class="fa"><div class="edge" style="--from:#C9DEB4;--to:#ECE5D4" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- 5. Lawn Check -->
+<section class="section check" aria-labelledby="check-title">
+  <div class="wrap check-grid">
+    <div>
+      <p class="eyebrow">Lawn Check</p>
+      <h2 class="h2" id="check-title" style="color:var(--oak)">What Is Your Lawn <em class="acc">Telling You?</em></h2>
+      <p class="lede" style="margin-top:1rem">Tap everything you are seeing out there. We will point you to the services that usually fix it.</p>
+      <ul class="chips" aria-label="Lawn Symptoms">
+        <li><button class="chip" type="button" aria-pressed="false" data-sym="overgrown"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M3 21c1-6 2-10 4-15M8 21c0-5 1-9 3-13M13 21c0-6 2-11 5-16M18 21c0-4 1-7 3-9"/></svg></span>Overgrown and Shaggy</button></li>
+        <li><button class="chip" type="button" aria-pressed="false" data-sym="patchy"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 20h18"/><path d="M5 20v-5M7 20v-4M15 20v-6M17 20v-5M19 20v-3"/><path d="M9.5 18.5h3" stroke-dasharray="1 2"/></g></svg></span>Patchy or Bare Spots</button></li>
+        <li><button class="chip" type="button" aria-pressed="false" data-sym="weeds"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V10"/><path d="M12 14c-4 0-6-2-6-5 3 0 6 2 6 5zM12 12c3 0 5-2 5-5-3 0-5 2-5 5z"/><circle cx="12" cy="6" r="2.2"/></g></svg></span>Weeds Taking Over</button></li>
+        <li><button class="chip" type="button" aria-pressed="false" data-sym="compact"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 9h18M3 14h18M3 19h18"/><path d="M7 9l-1 5M14 14l1 5M17 9l-1 5"/></g></svg></span>Hard, Compacted Soil</button></li>
+        <li><button class="chip" type="button" aria-pressed="false" data-sym="debris"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14c0-5 4-9 9-9 0 5-4 9-9 9zM4 14l5-5"/><path d="M13 20c0-3 2-6 6-6 0 3-2 6-6 6zM13 20l3-3"/></g></svg></span>Leaves and Storm Debris</button></li>
+        <li><button class="chip" type="button" aria-pressed="false" data-sym="dull"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 21c0-4 1-7 2-10M12 21V9M18 21c0-4-1-7-2-10"/><path d="M8 11c-1-1-2-1-3 0M16 11c1-1 2-1 3 0"/></g></svg></span>Dull or Thin Growth</button></li>
+        <li><button class="chip" type="button" aria-pressed="false" data-sym="edges"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16h18"/><path d="M4 16l1-3 1 3 1-4 1 4 1-2 1 2 1-5 1 5"/><path d="M14 16v4M18 16v4"/></g></svg></span>Ragged Edges</button></li>
+        <li><button class="chip" type="button" aria-pressed="false" data-sym="sprink"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 21v-7M9 14h6"/><path d="M12 11c-2-3-5-4-8-3M12 11c2-3 5-4 8-3M12 11V5"/></g></svg></span>Sprinklers Acting Up</button></li>
+        <li><button class="chip" type="button" aria-pressed="false" data-sym="commercial"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 21V5h10v16M14 9h6v12M2 21h20"/><path d="M7 8h2M7 12h2M7 16h2M17 13h1M17 17h1"/></g></svg></span>I Manage a Commercial Property</button></li>
+      </ul>
+      <p class="chip-note"><svg aria-hidden="true"><use href="#i-leaf"/></svg>Suggestions only. We confirm everything on a free visit.</p>
+    </div>
+    <div class="tray" id="tray">
+      <h3>Where We Would Start</h3>
+      <div aria-live="polite" id="tray-live">
+        <p class="tray-count" id="tray-count">Nothing picked yet</p>
+        <ul id="tray-list"></ul>
+        <p class="empty" id="tray-empty">Choose a symptom or two. Matching services will settle in here.</p>
+      </div>
+      <button class="btn btn-brass" type="button" data-open-estimate>Get a Free Estimate</button>
+    </div>
+  </div>
+</section>
+
+<div class="fa"><div class="edge" style="--from:#ECE5D4;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- 6. Services index -->
+<section class="section dark" aria-labelledby="svc-title" id="services">
+  <div class="wrap">
+    <div class="svc-head reveal">
+      <div>
+        <p class="eyebrow">Services</p>
+        <h2 class="h2" id="svc-title">Ten Ways We Care for a <em class="acc" style="color:var(--brass-lite)">New Orleans Lawn</em></h2>
+      </div>
+      <a class="btn btn-ghost" style="border-color:var(--sage);color:var(--cream)" href="https://www.bigeasygrasscutting.com/services/">View All Services</a>
+    </div>
+    <ul class="svc-list" id="svc-list">
+      <li class="svc-row" data-img="assets/work-1.jpg"><a href="https://www.bigeasygrasscutting.com/services/residential-lawn-mowing/"><img class="svc-thumb" src="assets/work-1.jpg" alt="" loading="lazy"><span class="svc-num">01</span><h3>Residential Lawn Mowing</h3><span class="svc-line">Lawn perfection at your doorstep.</span><span class="svc-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="svc-row" data-img="assets/work-9.jpg"><a href="https://www.bigeasygrasscutting.com/services/commercial-lawn-maintenance/"><img class="svc-thumb" src="assets/work-9.jpg" alt="" loading="lazy"><span class="svc-num">02</span><h3>Commercial Lawn Maintenance</h3><span class="svc-line">Greening your business with professional upkeep.</span><span class="svc-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="svc-row" data-img="assets/work-7.jpg"><a href="https://www.bigeasygrasscutting.com/services/lawn-edging/"><img class="svc-thumb" src="assets/work-7.jpg" alt="" loading="lazy"><span class="svc-num">03</span><h3>Lawn Edging</h3><span class="svc-line">Picture-perfect precision along every bed, walk and drive.</span><span class="svc-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="svc-row" data-img="assets/work-10.jpg"><a href="https://www.bigeasygrasscutting.com/services/weed-control/"><img class="svc-thumb" src="assets/work-10.jpg" alt="" loading="lazy"><span class="svc-num">04</span><h3>Weed Control</h3><span class="svc-line">Banish weeds before they take over a beautiful lawn.</span><span class="svc-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="svc-row" data-img="assets/work-15.jpg"><a href="https://www.bigeasygrasscutting.com/services/lawn-fertilization/"><img class="svc-thumb" src="assets/work-15.jpg" alt="" loading="lazy"><span class="svc-num">05</span><h3>Lawn Fertilization</h3><span class="svc-line">Nourish your lawn for lush, vibrant growth.</span><span class="svc-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="svc-row" data-img="assets/work-5.jpg"><a href="https://www.bigeasygrasscutting.com/services/lawn-aeration/"><img class="svc-thumb" src="assets/work-5.jpg" alt="" loading="lazy"><span class="svc-num">06</span><h3>Lawn Aeration</h3><span class="svc-line">Breathing life into compacted soil.</span><span class="svc-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="svc-row" data-img="assets/hero-left.jpg"><a href="https://www.bigeasygrasscutting.com/services/overseeding/"><img class="svc-thumb" src="assets/hero-left.jpg" alt="" loading="lazy"><span class="svc-num">07</span><h3>Overseeding</h3><span class="svc-line">Fill in patchy, sparse turf for a lush, resilient lawn.</span><span class="svc-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="svc-row" data-img="assets/work-2.jpg"><a href="https://www.bigeasygrasscutting.com/services/sod-installation/"><img class="svc-thumb" src="assets/work-2.jpg" alt="" loading="lazy"><span class="svc-num">08</span><h3>Sod Installation</h3><span class="svc-line">Instant lawn, stunning landscape.</span><span class="svc-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="svc-row" data-img="assets/work-8.jpg"><a href="https://www.bigeasygrasscutting.com/services/lawn-cleanup/"><img class="svc-thumb" src="assets/work-8.jpg" alt="" loading="lazy"><span class="svc-num">09</span><h3>Lawn Cleanup</h3><span class="svc-line">Transforming chaos to beauty.</span><span class="svc-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="svc-row" data-img="assets/work-11.jpg"><a href="https://www.bigeasygrasscutting.com/services/irrigation-system-maintenance/"><img class="svc-thumb" src="assets/work-11.jpg" alt="" loading="lazy"><span class="svc-num">10</span><h3>Irrigation System Maintenance</h3><span class="svc-line">Keep the flow for a thriving landscape.</span><span class="svc-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+    </ul>
+  </div>
+  <div class="svc-preview" id="svc-preview" aria-hidden="true"><img src="assets/work-1.jpg" alt=""></div>
+</section>
+
+<div class="fa"><div class="edge" style="--from:var(--oak);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<div class="fa">
+<!-- 6. WHY CHOOSE -->
+<section class="why on-light" aria-labelledby="why-title">
+  <div class="wrap why-grid">
+    <div class="why-intro reveal">
+      <p class="eyebrow">Why Big Easy</p>
+      <h2 id="why-title">Experience, Expertise, Excellence in Every Mow</h2>
+      <p class="lede">From Uptown estates to French Quarter retreats, here's what shows up with every visit.</p>
+      <button class="btn btn-deep" type="button" data-open-estimate>Get a Free Estimate</button>
+    </div>
+    <div class="why-cards">
+      <article class="why-card" style="--i:0">
+        <div class="why-n" aria-hidden="true">01</div>
+        <h3>Quality Workmanship</h3>
+        <p>A meticulous approach on every lawn. Every blade trimmed evenly, using state-of-the-art equipment for precise, clean-cut edges.</p>
+        <svg class="why-grass" viewBox="0 0 300 56" preserveAspectRatio="none" aria-hidden="true"></svg>
+      </article>
+      <article class="why-card">
+        <div class="why-n" aria-hidden="true">02</div>
+        <h3>Customized Solutions</h3>
+        <p>Every lawn is unique. Yours gets a tailored plan for mowing, edging and the related services it actually needs.</p>
+        <svg class="why-grass" viewBox="0 0 300 56" preserveAspectRatio="none" aria-hidden="true"></svg>
+      </article>
+      <article class="why-card">
+        <div class="why-n" aria-hidden="true">03</div>
+        <h3>Reliable, On-Time Service</h3>
+        <p>The crew arrives on schedule. Flexible weekly and bi-weekly plans. No missed appointments.</p>
+        <svg class="why-grass" viewBox="0 0 300 56" preserveAspectRatio="none" aria-hidden="true"></svg>
+      </article>
+      <article class="why-card">
+        <div class="why-n" aria-hidden="true">04</div>
+        <h3>Licensed, Local &amp; Fully Insured</h3>
+        <p>A locally owned, fully insured team that treats your property like its own.</p>
+        <svg class="why-grass" viewBox="0 0 300 56" preserveAspectRatio="none" aria-hidden="true"></svg>
+      </article>
+    </div>
+  </div>
+</section>
+</div>
+<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#0F2A17" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<div class="fa">
+<!-- 7. PROCESS -->
+<section class="process on-deep" id="process" aria-labelledby="proc-title">
+  <div class="wrap">
+    <div class="process-head reveal">
+      <p class="eyebrow">How It Works</p>
+      <h2 id="proc-title">Three Steps to a Fresh-Cut Lawn</h2>
+      <p class="lede">Scroll along and watch the mower work the path.</p>
+    </div>
+    <svg class="proc-svg" id="proc-svg" viewBox="0 0 1000 230" aria-hidden="true">
+      <path class="proc-base" id="proc-path" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
+      <path class="proc-cut" id="proc-cut" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
+      <path class="proc-cut-2" id="proc-cut-2" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
+      <g class="proc-node" data-at="0.2"><circle cx="167" cy="90" r="26"/><text x="167" y="90">1</text></g>
+      <g class="proc-node" data-at="0.5"><circle cx="500" cy="165" r="26"/><text x="500" y="165">2</text></g>
+      <g class="proc-node" data-at="0.8"><circle cx="833" cy="90" r="26"/><text x="833" y="90">3</text></g>
+      <g id="proc-mower"><use href="#mower" x="-33" y="-22" width="66" height="45"/></g>
+    </svg>
+    <div class="proc-body" id="proc-body">
+      <div class="proc-rail" aria-hidden="true"><div class="proc-rail-fill"></div><svg class="proc-rail-mower" viewBox="0 0 130 88"><use href="#mower"/></svg></div>
+      <ol class="proc-steps">
+        <li class="proc-step" data-at="0.2">
+          <span class="step-k" aria-hidden="true">Step 1</span>
+          <h3>Schedule a Consultation</h3>
+          <p>Contact us to talk through your lawn care needs. Our team visits your property to assess its size, condition and specific requirements.</p>
+        </li>
+        <li class="proc-step" data-at="0.5">
+          <span class="step-k" aria-hidden="true">Step 2</span>
+          <h3>Tailored Lawn Care Plan</h3>
+          <p>Based on that assessment, we build a customized plan that suits what your lawn needs.</p>
+        </li>
+        <li class="proc-step" data-at="0.8">
+          <span class="step-k" aria-hidden="true">Step 3</span>
+          <h3>Professional Maintenance</h3>
+          <p>Sit back and relax while our experienced team carries out the plan with attention to detail and professional-grade equipment.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+</div>
+<div class="fa"><div class="edge" style="--from:#0F2A17;--to:#ECE6D2" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<div class="fa">
+<!-- 8. WEEKLY VS BI-WEEKLY -->
+<section class="freq on-light" aria-labelledby="freq-title">
+  <div class="wrap freq-grid">
+    <div class="reveal">
+      <p class="eyebrow">Plans</p>
+      <h2 id="freq-title">Weekly or Bi-Weekly Mowing</h2>
+      <blockquote>
+        <p>The frequency of grass cutting depends on various factors such as grass growth rate, weather conditions, and your preferences. Generally, we recommend scheduling services on a weekly or bi-weekly basis to keep your lawn looking neat and well-maintained.</p>
+        <cite>From our FAQ</cite>
+      </blockquote>
+      <fieldset class="seg">
+        <legend>See How a Month Looks</legend>
+        <div class="seg-in" id="seg-in">
+          <span class="seg-thumb" aria-hidden="true"></span>
+          <input type="radio" name="freq" id="f-wk" value="weekly" checked><label for="f-wk">Weekly</label>
+          <input type="radio" name="freq" id="f-bi" value="biweekly"><label for="f-bi">Bi-Weekly</label>
+        </div>
+      </fieldset>
+      <button class="btn btn-gold" type="button" data-open-estimate>Ask About a Plan</button>
+    </div>
+    <div class="cal reveal">
+      <div class="cal-top"><span class="cal-month" id="cal-month">This Month</span><span class="cal-tag">Sample Schedule</span></div>
+      <div class="cal-grid" id="cal-grid" aria-hidden="true"></div>
+      <p class="cal-sum" id="cal-sum" aria-live="polite">Weekly plan: one visit every week, about 4 to 5 a month.</p>
+      <p class="cal-note">Illustration only. Your actual visit day gets set in your tailored plan.</p>
+    </div>
+  </div>
+</section>
+</div>
+<div class="fa"><div class="edge" style="--from:#ECE6D2;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+
+<!-- 9. Gallery -->
+<section class="section dark" aria-labelledby="gal-title" id="gallery">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <p class="eyebrow">Gallery</p>
+      <h2 class="h2" id="gal-title">From Uptown Estates to <em class="acc" style="color:var(--brass-lite)">French Quarter Retreats</em></h2>
+      <p class="lede" style="margin:1rem auto 0">Tap a window to see the next photo.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="win">
+        <div class="win-frame">
+          <img class="win-img on" src="assets/about-1.jpg" alt="Worker running a string trimmer along a fence line" loading="lazy" data-cap="Trim Work Along the Fence">
+          <img class="win-img" src="assets/work-12.jpg" alt="Worker in an orange vest trimming grass in a park" loading="lazy" data-cap="Trimming Around the Grounds">
+          <img class="win-img" src="assets/work-6.jpg" alt="String trimmer head throwing fresh clippings" loading="lazy" data-cap="Clippings in Flight">
+          <button class="win-next" type="button" aria-label="Show next photo in window 1"></button>
+        </div>
+        <div class="win-sill" aria-hidden="true"></div>
+        <figcaption>Trim Work Along the Fence</figcaption>
+      </figure>
+      <figure class="win">
+        <div class="win-frame">
+          <img class="win-img on" src="assets/work-15.jpg" alt="Flat green lawn framed by red shrubs" loading="lazy" data-cap="A Formal Lawn and Red Shrubs">
+          <img class="win-img" src="assets/hero-left.jpg" alt="Push mower leaving stripes on a lawn, seen from above" loading="lazy" data-cap="Fresh Stripes">
+          <img class="win-img" src="assets/work-1.jpg" alt="Mower view down a striped lawn path lined with trees" loading="lazy" data-cap="Down the Tree Line">
+          <button class="win-next" type="button" aria-label="Show next photo in window 2"></button>
+        </div>
+        <div class="win-sill" aria-hidden="true"></div>
+        <figcaption>A Formal Lawn and Red Shrubs</figcaption>
+      </figure>
+      <figure class="win">
+        <div class="win-frame">
+          <img class="win-img on" src="assets/work-4.jpg" alt="Red mower cutting along a strip of tall grass" loading="lazy" data-cap="Cutting Back Tall Grass">
+          <img class="win-img" src="assets/hero-right.jpg" alt="Close view of a red mower and its grass bag" loading="lazy" data-cap="Bagging the Clippings">
+          <img class="win-img" src="assets/work-14.jpg" alt="String trimmer head working through grass" loading="lazy" data-cap="Detail Work">
+          <button class="win-next" type="button" aria-label="Show next photo in window 3"></button>
+        </div>
+        <div class="win-sill" aria-hidden="true"></div>
+        <figcaption>Cutting Back Tall Grass</figcaption>
+      </figure>
+    </div>
+    <div class="gal-controls">
+      <button class="pause-btn" type="button" id="gal-pause" aria-pressed="false"><svg aria-hidden="true"><use href="#i-pause"/></svg><span>Pause slideshow</span></button>
+    </div>
+  </div>
+</section>
+
+<div class="fa"><div class="edge" style="--from:var(--oak);--to:#DDEBCF" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<div class="fa">
+<!-- 10. TESTIMONIALS -->
+<section class="reviews on-light" id="testimonials" aria-labelledby="rev-title">
+  <div class="wrap">
+    <div class="reviews-head reveal">
+      <p class="eyebrow">Testimonials</p>
+      <h2 id="rev-title">Signs of a Happy Yard</h2>
+      <p class="lede">Straight from customers, word for word.</p>
+    </div>
+    <div class="signs">
+      <figure class="sign" style="--d:-.4s"><div class="board"><blockquote><p>"I can't thank Big Easy Grass Cutting enough for the exceptional job they did on my lawn. They transformed my unkempt yard into a beautiful space that I can now enjoy with my family. Their attention to detail and commitment to quality is unmatched. I highly recommend their services!"</p></blockquote><figcaption><span class="who">David L.</span><span class="ver"><svg aria-hidden="true"><use href="#i-check"/></svg>Verified Customer</span></figcaption></div><div class="stakes" aria-hidden="true"><span></span><span></span></div></figure>
+      <figure class="sign" style="--d:-2.1s"><div class="board"><blockquote><p>"Big Easy Grass Cutting provides excellent customer service and delivers outstanding results. Their team is friendly, punctual, and genuinely cares about the appearance of my lawn. I have recommended them to my neighbors, and they have all been equally satisfied with their services."</p></blockquote><figcaption><span class="who">Jennifer H.</span><span class="ver"><svg aria-hidden="true"><use href="#i-check"/></svg>Verified Customer</span></figcaption></div><div class="stakes" aria-hidden="true"><span></span><span></span></div></figure>
+      <figure class="sign" style="--d:-3.6s"><div class="board"><blockquote><p>"Big Easy Grass Cutting did an amazing job transforming my overgrown lawn into a beautifully manicured space. Their attention to detail and professional approach exceeded my expectations. I highly recommend their services!"</p></blockquote><figcaption><span class="who">Sarah T.</span><span class="ver"><svg aria-hidden="true"><use href="#i-check"/></svg>Verified Customer</span></figcaption></div><div class="stakes" aria-hidden="true"><span></span><span></span></div></figure>
+      <figure class="sign" style="--d:-1.2s"><div class="board"><blockquote><p>"I've been using Big Easy Grass Cutting for years, and I couldn't be happier with their consistent and reliable service. They always arrive on time, and my lawn looks fantastic every single time. I highly recommend them to anyone in need of a top-notch grass cutting service."</p></blockquote><figcaption><span class="who">John D.</span><span class="ver"><svg aria-hidden="true"><use href="#i-check"/></svg>Verified Customer</span></figcaption></div><div class="stakes" aria-hidden="true"><span></span><span></span></div></figure>
+      <figure class="sign" style="--d:-4.8s"><div class="board"><blockquote><p>"Big Easy Grass Cutting saved me so much time and effort. As a busy professional, I struggled to find time to maintain my lawn. With their regular service, I no longer have to worry about it. Their team is professional, efficient, and always leaves my lawn looking immaculate."</p></blockquote><figcaption><span class="who">Lisa M.</span><span class="ver"><svg aria-hidden="true"><use href="#i-check"/></svg>Verified Customer</span></figcaption></div><div class="stakes" aria-hidden="true"><span></span><span></span></div></figure>
+      <figure class="sign" style="--d:-2.8s"><div class="board"><blockquote><p>"I recently moved into a new house with an overgrown yard. Big Easy Grass Cutting came to the rescue and transformed my lawn into a beautiful oasis. Their crew was friendly, knowledgeable, and worked quickly. I couldn't be happier with the results"</p></blockquote><figcaption><span class="who">Mark S.</span><span class="ver"><svg aria-hidden="true"><use href="#i-check"/></svg>Verified Customer</span></figcaption></div><div class="stakes" aria-hidden="true"><span></span><span></span></div></figure>
+    </div>
+  </div>
+  <div class="ground" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><use href="#grass"/></svg></div>
+</section>
+</div>
+<div class="fa"><div class="edge" style="--from:#2F8F3A;--to:#ECE5D4" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+
+<!-- 11. Service areas -->
+<section class="section areas" aria-labelledby="areas-title" id="areas">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Service Areas</p>
+      <h2 class="h2" id="areas-title" style="color:var(--oak);max-width:15em">Passionately Serving NOLA and <em class="acc">Neighboring Communities</em></h2>
+    </div>
+    <div class="areas-grid">
+      <div class="map-card">
+        <svg class="map" viewBox="0 0 800 520" role="group" aria-label="Illustrated Map of Our Service Area">
+          <!-- Lake Maurepas -->
+          <path class="water" d="M352 238c6-18 30-26 48-20 16 6 20 22 10 34-12 14-38 16-50 6-8-6-11-12-8-20z"/>
+          <!-- Lake Pontchartrain -->
+          <path class="water" d="M418 300c2-48 52-84 120-102 52-14 104-18 146-6 34 10 46 44 40 88-6 44-30 80-78 94-50 12-100 8-140 8-50-2-90-34-88-82z"/>
+          <path d="M724 250c18 4 36 14 52 32" class="river" style="stroke-width:5"/>
+          <!-- Mississippi River -->
+          <path class="river" d="M30 92C84 138 104 190 168 228S262 300 304 330s86 50 116 54 70 30 92 62 64 24 92 6 52-14 74 16 70 46 122 52"/>
+          <path class="river-ink" d="M30 92C84 138 104 190 168 228S262 300 304 330s86 50 116 54 70 30 92 62 64 24 92 6 52-14 74 16 70 46 122 52"/>
+          <!-- Causeway -->
+          <line class="causeway" x1="586" y1="184" x2="558" y2="398"/>
+          <text class="wlabel" x="655" y="272" text-anchor="middle">Lake Pontchartrain</text>
+          <text class="wlabel" x="380" y="276" text-anchor="middle" style="font-size:13px">Lake Maurepas</text>
+          <text class="wlabel" x="200" y="282" transform="rotate(34 200 282)" style="font-size:14px">Mississippi River</text>
+          <text x="552" y="356" transform="rotate(-82 552 356)" style="font-family:var(--sans);font-size:10px;letter-spacing:.14em;fill:var(--brass-ink)">CAUSEWAY</text>
+          <!-- Compass -->
+          <g transform="translate(90 440)" aria-hidden="true"><circle r="26" fill="none" stroke="var(--brass)" stroke-width="1"/><path d="M0-34L6 0 0 8-6 0z" fill="var(--oak)"/><text y="-40" text-anchor="middle" style="font-family:var(--serif);font-size:14px;fill:var(--oak)">N</text></g>
+          <!-- Pins -->
+          <a class="pin" data-city="baton-rouge" href="https://www.bigeasygrasscutting.com/service-areas/baton-rouge/" aria-label="Baton Rouge"><circle class="ring" cx="71" cy="110" r="9"/><circle class="dot" cx="71" cy="110" r="7"/><text class="clabel" x="84" y="104">Baton Rouge</text></a>
+          <a class="pin" data-city="hammond" href="https://www.bigeasygrasscutting.com/service-areas/hammond/" aria-label="Hammond"><circle class="ring" cx="406" cy="78" r="9"/><circle class="dot" cx="406" cy="78" r="7"/><text class="clabel" x="418" y="72">Hammond</text></a>
+          <a class="pin" data-city="covington" href="https://www.bigeasygrasscutting.com/service-areas/covington/" aria-label="Covington"><circle class="ring" cx="580" cy="96" r="9"/><circle class="dot" cx="580" cy="96" r="7"/><text class="clabel" x="592" y="90">Covington</text></a>
+          <a class="pin" data-city="madisonville" href="https://www.bigeasygrasscutting.com/service-areas/madisonville/" aria-label="Madisonville"><circle class="ring" cx="530" cy="146" r="9"/><circle class="dot" cx="530" cy="146" r="7"/><text class="clabel" x="518" y="140" text-anchor="end">Madisonville</text></a>
+          <a class="pin" data-city="mandeville" href="https://www.bigeasygrasscutting.com/service-areas/mandeville/" aria-label="Mandeville"><circle class="ring" cx="596" cy="168" r="9"/><circle class="dot" cx="596" cy="168" r="7"/><text class="clabel" x="608" y="164">Mandeville</text></a>
+          <a class="pin" data-city="slidell" href="https://www.bigeasygrasscutting.com/service-areas/slidell/" aria-label="Slidell"><circle class="ring" cx="740" cy="206" r="9"/><circle class="dot" cx="740" cy="206" r="7"/><text class="clabel" x="736" y="186" text-anchor="middle">Slidell</text></a>
+          <a class="pin" data-city="laplace" href="https://www.bigeasygrasscutting.com/service-areas/laplace/" aria-label="LaPlace"><circle class="ring" cx="404" cy="372" r="9"/><circle class="dot" cx="404" cy="372" r="7"/><text class="clabel" x="392" y="368" text-anchor="end">LaPlace</text></a>
+          <a class="pin" data-city="kenner" href="https://www.bigeasygrasscutting.com/service-areas/kenner/" aria-label="Kenner"><circle class="ring" cx="500" cy="404" r="9"/><circle class="dot" cx="500" cy="404" r="7"/><text class="clabel" x="488" y="400" text-anchor="end">Kenner</text></a>
+          <a class="pin" data-city="river-ridge" href="https://www.bigeasygrasscutting.com/service-areas/river-ridge/" aria-label="River Ridge"><circle class="ring" cx="512" cy="430" r="9"/><circle class="dot" cx="512" cy="430" r="7"/><text class="clabel" x="500" y="434" text-anchor="end">River Ridge</text></a>
+          <a class="pin" data-city="harahan" href="https://www.bigeasygrasscutting.com/service-areas/harahan/" aria-label="Harahan"><circle class="ring" cx="530" cy="454" r="9"/><circle class="dot" cx="530" cy="454" r="7"/><text class="clabel" x="518" y="470" text-anchor="end">Harahan</text></a>
+          <a class="pin" data-city="metairie" href="https://www.bigeasygrasscutting.com/service-areas/metairie/" aria-label="Metairie"><circle class="ring" cx="552" cy="414" r="9"/><circle class="dot" cx="552" cy="414" r="7"/><text class="clabel" x="566" y="420">Metairie</text></a>
+          <a class="pin home" data-city="new-orleans" href="#estimate" data-open-estimate aria-label="New Orleans, home base, get a free estimate"><circle class="ring" cx="606" cy="438" r="11"/><circle class="dot" cx="606" cy="438" r="9"/><text class="clabel" x="622" y="436" style="font-family:var(--serif);font-size:16px;font-weight:400">New Orleans</text></a>
+          <a class="pin" data-city="gretna" href="https://www.bigeasygrasscutting.com/service-areas/gretna/" aria-label="Gretna"><circle class="ring" cx="612" cy="484" r="9"/><circle class="dot" cx="612" cy="484" r="7"/><text class="clabel" x="626" y="490">Gretna</text></a>
+        </svg>
+        <p class="map-note">Illustrative map, not to scale. Pin spots are approximate.</p>
+      </div>
+      <div class="area-list" id="area-list">
+        <h3>Home Base</h3>
+        <ul><li><button type="button" data-city="new-orleans" data-open-estimate>New Orleans</button></li></ul>
+        <h3>Southshore and East Bank</h3>
+        <ul>
+          <li><a data-city="metairie" href="https://www.bigeasygrasscutting.com/service-areas/metairie/">Metairie</a></li>
+          <li><a data-city="kenner" href="https://www.bigeasygrasscutting.com/service-areas/kenner/">Kenner</a></li>
+          <li><a data-city="harahan" href="https://www.bigeasygrasscutting.com/service-areas/harahan/">Harahan</a></li>
+          <li><a data-city="river-ridge" href="https://www.bigeasygrasscutting.com/service-areas/river-ridge/">River Ridge</a></li>
+        </ul>
+        <h3>West Bank and River Parishes</h3>
+        <ul>
+          <li><a data-city="gretna" href="https://www.bigeasygrasscutting.com/service-areas/gretna/">Gretna</a></li>
+          <li><a data-city="laplace" href="https://www.bigeasygrasscutting.com/service-areas/laplace/">LaPlace</a></li>
+        </ul>
+        <h3>Northshore</h3>
+        <ul>
+          <li><a data-city="covington" href="https://www.bigeasygrasscutting.com/service-areas/covington/">Covington</a></li>
+          <li><a data-city="mandeville" href="https://www.bigeasygrasscutting.com/service-areas/mandeville/">Mandeville</a></li>
+          <li><a data-city="madisonville" href="https://www.bigeasygrasscutting.com/service-areas/madisonville/">Madisonville</a></li>
+          <li><a data-city="slidell" href="https://www.bigeasygrasscutting.com/service-areas/slidell/">Slidell</a></li>
+        </ul>
+        <h3>Further Out</h3>
+        <ul>
+          <li><a data-city="hammond" href="https://www.bigeasygrasscutting.com/service-areas/hammond/">Hammond</a></li>
+          <li><a data-city="baton-rouge" href="https://www.bigeasygrasscutting.com/service-areas/baton-rouge/">Baton Rouge</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="fa"><div class="edge" style="--from:#ECE5D4;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- 12. FAQ -->
+<section class="section dark faq-dark" aria-labelledby="faq-title" id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">FAQs</p>
+      <h2 class="h2" id="faq-title" style="color:var(--cream)">Questions We <em class="acc" style="color:var(--brass-lite)">Hear Most</em></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b1"><span class="n" aria-hidden="true">01</span><span class="q">How Often Should I Schedule Grass Cutting Services?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-b1"><p>The frequency of grass cutting depends on various factors such as grass growth rate, weather conditions, and your preferences. Generally, we recommend scheduling services on a weekly or bi-weekly basis to keep your lawn looking neat and well-maintained.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-b2"><span class="n" aria-hidden="true">02</span><span class="q">What Types of Services Does Big Easy Grass Cutting Offer?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-b2"><p>Apart from grass cutting, we offer a range of lawn care services, including edging, trimming, weed control, fertilization, and leaf removal. Our goal is to provide comprehensive care to ensure your lawn stays healthy and beautiful.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b3"><span class="n" aria-hidden="true">03</span><span class="q">How Can I Request a Quote for Grass Cutting Services?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-b3"><p>You can easily request a quote by contacting us through our website or giving us a call. We'll ask you a few questions about your lawn size, specific needs, and desired frequency of service to provide an accurate quote.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b4"><span class="n" aria-hidden="true">04</span><span class="q">Is Big Easy Grass Cutting Insured and Licensed?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-b4"><p>Yes, we are fully insured and licensed. We prioritize the safety of our clients and employees, and our insurance coverage provides protection in case of any unexpected incidents during the service.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b5"><span class="n" aria-hidden="true">05</span><span class="q">Do I Need to Be Home During the Grass Cutting Service?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-b5"><p>It's not necessary for you to be present during the service if you have provided access to your yard. We can work based on the agreed-upon schedule and securely lock up upon completion. However, if you prefer to be present, we can accommodate that as well.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b6"><span class="n" aria-hidden="true">06</span><span class="q">What Happens to the Grass Clippings After the Service?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-b6"><p>As part of our standard practice, we collect and bag the grass clippings. We can either dispose of them for you or leave them in designated areas of your choice to serve as natural mulch.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="fa"><div class="edge" style="--from:var(--oak);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- 13. Blog -->
+<section class="section" aria-labelledby="blog-title">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">From the Blog</p>
+      <h2 class="h2" id="blog-title" style="color:var(--oak)">Notes From <em class="acc">the Yard</em></h2>
+    </div>
+    <div class="blog-grid">
+      <article class="post-card post-feature reveal">
+        <div class="img"><img src="assets/work-7.jpg" alt="Mower beside a curved stone bed edge" loading="lazy"></div>
+        <time datetime="2026-09-21">September 21, 2026</time>
+        <h3>When to Fertilize Your Lawn in New Orleans: A Month-by-Month Schedule</h3>
+        <span class="post-more">Read the guide <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        <a class="cover" href="https://www.bigeasygrasscutting.com/when-to-fertilize-lawn-in-new-orleans/"><span class="sr-only">Read: When to Fertilize Your Lawn in New Orleans</span></a>
+      </article>
+      <div class="post-side">
+        <article class="post-card post-small reveal">
+          <div class="img"><img src="assets/work-2.jpg" alt="Wide park lawn with flower beds" loading="lazy"></div>
+          <div><time datetime="2026-09-14">September 14, 2026</time><h3>Lawn Care in Covington, LA: A Northshore Guide to Healthier Grass</h3></div>
+          <a class="cover" href="https://www.bigeasygrasscutting.com/lawn-care-covington-la/"><span class="sr-only">Read: Lawn Care in Covington, LA</span></a>
+        </article>
+        <article class="post-card post-small reveal">
+          <div class="img"><img src="assets/work-8.jpg" alt="Grass clippings being emptied from a mower catcher" loading="lazy"></div>
+          <div><time datetime="2026-09-07">September 7, 2026</time><h3>What Does a Yard Cleanup Include? A New Orleans Lawn Cleanup Guide</h3></div>
+          <a class="cover" href="https://www.bigeasygrasscutting.com/what-does-yard-cleanup-include-new-orleans/"><span class="sr-only">Read: What Does a Yard Cleanup Include?</span></a>
+        </article>
+        <article class="post-card post-small reveal">
+          <div class="img"><img src="assets/work-15.jpg" alt="Flat green lawn with red shrubs" loading="lazy"></div>
+          <div><time datetime="2026-08-31">August 31, 2026</time><h3>Lawn Care in Kenner, LA: A Local Guide to Heat, Rain and Saint Augustine Grass</h3></div>
+          <a class="cover" href="https://www.bigeasygrasscutting.com/lawn-care-kenner-la/"><span class="sr-only">Read: Lawn Care in Kenner, LA</span></a>
+        </article>
+        <div class="blog-foot"><a class="btn btn-ghost" href="https://www.bigeasygrasscutting.com/blog/">View More Blogs</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#C9DEB4" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- 13b. Instagram -->
+<section class="section insta" aria-labelledby="insta-title" id="instagram">
+  <div class="wrap">
+    <div class="insta-head reveal">
+      <p class="eyebrow">Follow Us</p>
+      <h2 class="h2" id="insta-title" style="color:var(--oak)">Follow Us on <em class="acc">Instagram</em></h2>
+    </div>
+    <div class="insta-embed">
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-eb184f53-5da4-4e30-8c2f-46e330f427ed" data-elfsight-app-lazy></div>
+    </div>
+  </div>
+</section>
+
+<div class="fa"><div class="edge" style="--from:#C9DEB4;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- 14. Estimate stepper -->
+<section class="section dark estimate" aria-labelledby="est-title" id="estimate">
+  <div class="wrap est-grid">
+    <div class="est-info reveal">
+      <p class="eyebrow">Free Estimate</p>
+      <h2 class="h2" id="est-title">Request Your <em class="acc" style="color:var(--brass-lite)">Free Estimate</em></h2>
+      <p class="lede" style="margin-top:1rem">Trusted by homeowners and businesses across New Orleans. Get a free, no-obligation quote today.</p>
+      <ul>
+        <li><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Rather talk? Call <a href="tel:+15049107829">504-910-7829</a></span></li>
+        <li><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Monday to Friday, 8am to 3pm Central Time. Closed Saturday and Sunday.</span></li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Serving Greater New Orleans, LA</span></li>
+      </ul>
+    </div>
+    <div class="form-card">
+      <div class="lc-form" tabindex="0" role="region" aria-label="Free estimate form, scroll inside to see every field">
+        <iframe src="https://api.leadconnectorhq.com/widget/form/m7YFSkpX7GTkpdHBMaTO" id="inline-m7YFSkpX7GTkpdHBMaTO" title="Free Estimate Request" style="width:100%;height:788px;border:none;border-radius:3px" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Banner Form" data-height="788" data-layout-iframe-id="inline-m7YFSkpX7GTkpdHBMaTO" data-form-id="m7YFSkpX7GTkpdHBMaTO"></iframe>
+      </div>
+      <p class="lc-form-hint">Scroll inside the form to see every field.</p>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="fa"><div class="edge" style="--from:var(--oak);--to:#16291B" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- 15. Footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/logo-footer.png" alt="Big Easy Grass Cutting" width="210" height="127" loading="lazy">
+        <p>Big Easy Grass Cutting delivers expert lawn maintenance and precise grass cutting that keeps residential and commercial properties across Greater New Orleans healthy, green and beautifully maintained all year round.</p>
+        <div class="socials">
+          <a href="https://www.youtube.com/@BigEasyGrassCutting" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15.1V8.9l5.4 3.1-5.4 3.1z"/></svg></a>
+          <a href="https://www.facebook.com/BigEasyGrassCutting" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.6c0-.9.6-1.1 1-1.1h2.6V1.6H14c-3.9 0-4.8 2.9-4.8 4.8v2.1H6.9v4h2.3v9.9H14v-9.9h3.2l.4-4H14z"/></svg></a>
+          <a href="https://twitter.com/BEGrassCutting" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 2.5h3.3l-7.2 8.2 8.5 10.8h-6.6l-5.2-6.6-5.9 6.6H1.4l7.7-8.8L1 2.5h6.8l4.7 6.1 5.3-6.1zm-1.2 17.1h1.8L7.1 4.3H5.1l11.5 15.3z"/></svg></a>
+          <a href="https://www.linkedin.com/company/be-grass-cutting/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4v12H3v-12zm6.5 0h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6v6.3h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7h-4v-12z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li><a href="https://www.bigeasygrasscutting.com/services/residential-lawn-mowing/">Residential Lawn Mowing</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/services/commercial-lawn-maintenance/">Commercial Lawn Maintenance</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/services/lawn-edging/">Lawn Edging</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/services/weed-control/">Weed Control</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/services/lawn-fertilization/">Lawn Fertilization</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/services/lawn-aeration/">Lawn Aeration</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/services/overseeding/">Overseeding</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/services/sod-installation/">Sod Installation</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/services/lawn-cleanup/">Lawn Cleanup</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/services/irrigation-system-maintenance/">Irrigation System Maintenance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="https://www.bigeasygrasscutting.com/">Home</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/about/">About Us</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/services/">Services</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/service-areas/">Service Areas</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/testimonials/">Testimonials</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/gallery/">Gallery</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/faqs/">FAQs</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/blog/">Blog</a></li>
+          <li><a href="https://www.bigeasygrasscutting.com/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-contact">
+        <h2>Hours and Contact</h2>
+        <p>Monday to Friday: 8am to 3pm<br>Saturday and Sunday: Closed<br><small>Central Time</small></p>
+        <p><a class="ph" href="tel:+15049107829">504-910-7829</a></p>
+        <p>Serving Greater New Orleans, LA</p>
+        <button class="btn btn-brass" type="button" data-open-estimate style="margin-top:8px">Free Estimate</button>
+      </div>
+    </div>
+    <div class="wordmark" aria-hidden="true">Big Easy</div>
+    <div class="foot-legal">
+      <p style="margin:0">&copy; 2026 BigEasyGrassCutting.com · All Rights Reserved</p>
+      <ul>
+        <li><a href="https://www.bigeasygrasscutting.com/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/sitemap/">Sitemap</a></li>
+        <li><a href="https://www.bigeasygrasscutting.com/terms-and-conditions/">Terms and Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky phone bar -->
+
+<!-- Chat (LeadConnector widget 66c33ddf69673593d8a94f9b, loaded on click) -->
+<div class="lc-chat" id="lc-chat">
+  <div class="lc-greet" id="lc-greet" hidden>
+    <button class="lc-greet-x" type="button" id="lc-greet-x" aria-label="Close chat greeting"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    <button class="lc-greet-open" type="button" id="lc-greet-open">
+      <img src="assets/favicon.png" alt="" width="40" height="40">
+      <span>Hi there, have a question? Text us here.</span>
+    </button>
+    <p class="lc-fail" id="lc-fail" hidden>Chat didn't load. Call us at <a href="tel:+15049107829">504-910-7829</a> or send a free estimate request.</p>
+  </div>
+  <button class="lc-btn" type="button" id="lc-btn" aria-label="Open chat">
+    <svg class="ic-chat" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.2 3.6c-.5.4-1.3.1-1.3-.6V16A2.5 2.5 0 0 1 4 13.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="9.5" r="1.1" fill="currentColor"/><circle cx="12" cy="9.5" r="1.1" fill="currentColor"/><circle cx="15.5" cy="9.5" r="1.1" fill="currentColor"/></svg>
+    <span class="spin" aria-hidden="true"></span>
+  </button>
+  <p class="sr-only" role="status" id="lc-status"></p>
+</div>
+
+<div class="mbar" role="region" aria-label="Quick Contact">
+  <a class="btn call" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <button class="btn btn-brass" type="button" data-open-estimate>Free Estimate</button>
+</div>
+
+<button class="to-top" type="button" id="to-top" aria-label="Back to top"><svg aria-hidden="true" style="transform:rotate(-90deg)"><use href="#i-arrow"/></svg></button>
+
+<!-- Estimate popup -->
+<dialog class="est-dialog" id="est-dialog" aria-labelledby="dlg-title">
+  <div class="dlg-head">
+    <h2 id="dlg-title">Get a Free Estimate</h2>
+    <button class="dlg-close" type="button" aria-label="Close estimate form" data-close>&times;</button>
+  </div>
+  <div class="dlg-body">
+    <p class="intro">A few details and we will get back to you. Prefer the phone? Call <a href="tel:+15049107829">504-910-7829</a>.</p>
+    <div class="lc-form lc-form-dlg" tabindex="0" role="region" aria-label="Free estimate form, scroll inside to see every field">
+      <iframe data-src="https://api.leadconnectorhq.com/widget/form/m7YFSkpX7GTkpdHBMaTO" title="Free Estimate Request" style="width:100%;height:788px;border:none;border-radius:3px"></iframe>
+    </div>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  'use strict';
+  var d = document;
+  var RM = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+  function reduced(){ return !!RM.matches; }
+  function $(s, c){ return (c || d).querySelector(s); }
+  function $$(s, c){ return Array.prototype.slice.call((c || d).querySelectorAll(s)); }
+
+  /* ---------- Hero gate ---------- */
+  var hero = $('.hero');
+  function openGate(){ if (hero) hero.classList.add('gate-open'); }
+  if (reduced()) { openGate(); }
+  else {
+    var opened = false;
+    var go = function(){ if (opened) return; opened = true; setTimeout(function(){ requestAnimationFrame(openGate); }, 650); };
+    if (d.readyState === 'complete') go(); else window.addEventListener('load', go);
+    setTimeout(go, 2500); /* safety: never leave the gate shut */
+  }
+
+  /* ---------- Header ---------- */
+  var header = $('.site-header');
+  var toTop = $('#to-top');
+  function onScrollUI(){
+    var y = window.pageYOffset || d.documentElement.scrollTop;
+    if (header) header.classList.toggle('scrolled', y > 10);
+    if (toTop) toTop.classList.toggle('show', y > 900);
+  }
+  window.addEventListener('scroll', onScrollUI, { passive: true });
+  onScrollUI();
+  if (toTop) toTop.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: reduced() ? 'auto' : 'smooth' });
+    var logo = $('.logo'); if (logo) logo.focus({ preventScroll: true });
+  });
+
+  var subItems = $$('.nav-item.has-sub');
+  function closeSubs(except){
+    subItems.forEach(function(li){
+      if (li === except) return;
+      li.classList.remove('open');
+      var b = $('.sub-toggle', li); if (b) b.setAttribute('aria-expanded', 'false');
+    });
+  }
+  subItems.forEach(function(li){
+    var btn = $('.sub-toggle', li);
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var isOpen = btn.getAttribute('aria-expanded') === 'true';
+      closeSubs(li);
+      li.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+    li.addEventListener('focusout', function(e){
+      if (!li.contains(e.relatedTarget)) { li.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+    });
+  });
+  d.addEventListener('click', function(e){ if (!e.target.closest('.nav-item.has-sub')) closeSubs(); });
+
+  var burger = $('.burger'), drawer = $('#drawer'), drawerClose = $('.drawer-close');
+  function setDrawer(open){
+    drawer.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    d.body.style.overflow = open ? 'hidden' : '';
+    if (open) { drawerClose.focus(); } else { burger.focus(); }
+  }
+  burger.addEventListener('click', function(){ setDrawer(true); });
+  drawerClose.addEventListener('click', function(){ setDrawer(false); });
+  drawer.addEventListener('click', function(e){ if (e.target.closest('a')) { drawer.classList.remove('open'); burger.setAttribute('aria-expanded','false'); d.body.style.overflow=''; } });
+  drawer.addEventListener('keydown', function(e){
+    if (e.key !== 'Tab') return;
+    var f = $$('a,button,summary', drawer).filter(function(el){ return el.offsetParent !== null; });
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && d.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && d.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+  d.addEventListener('keydown', function(e){
+    if (e.key !== 'Escape') return;
+    if (drawer.classList.contains('open')) { setDrawer(false); return; }
+    var openLi = $('.nav-item.open');
+    if (openLi) { closeSubs(); $('.sub-toggle', openLi).focus(); }
+  });
+
+  /* ---------- Reveal + line draw + rail ---------- */
+  var revealEls = $$('.reveal, .pillar, .timeline');
+  if (reduced() || !('IntersectionObserver' in window)) {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  }
+
+  /* ---------- Scroll-filled statement ---------- */
+  var st = $('#statement-text');
+  if (st) {
+    var words = st.textContent.trim().split(/\s+/);
+    st.innerHTML = '';
+    words.forEach(function(w, i){
+      var s = d.createElement('span'); s.className = 'w'; s.textContent = w;
+      st.appendChild(s);
+      if (i < words.length - 1) st.appendChild(d.createTextNode(' '));
+    });
+    var spans = $$('.w', st);
+    var ticking = false;
+    var fill = function(){
+      ticking = false;
+      if (reduced()) { spans.forEach(function(s){ s.classList.add('lit'); }); return; }
+      var r = st.getBoundingClientRect(), vh = window.innerHeight || 800;
+      var start = vh * 0.88, end = vh * 0.35;
+      var p = (start - r.top) / ((start - end) + r.height * 0.6);
+      p = Math.max(0, Math.min(1, p));
+      var n = Math.round(p * spans.length);
+      spans.forEach(function(s, i){ s.classList.toggle('lit', i < n); });
+    };
+    window.addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(fill); } }, { passive: true });
+    window.addEventListener('resize', fill);
+    fill();
+  }
+
+  /* ---------- Lawn Check ---------- */
+  var BASE = 'https://www.bigeasygrasscutting.com/services/';
+  var SVC = {
+    mow: ['Residential Lawn Mowing', 'residential-lawn-mowing', 'Lawn perfection at your doorstep'],
+    commercial: ['Commercial Lawn Maintenance', 'commercial-lawn-maintenance', 'Greening your business with professional upkeep'],
+    edge: ['Lawn Edging', 'lawn-edging', 'Picture-perfect precision along every bed, walk and drive'],
+    weed: ['Weed Control', 'weed-control', 'Banish weeds before they take over a beautiful lawn'],
+    fert: ['Lawn Fertilization', 'lawn-fertilization', 'Nourish your lawn for lush, vibrant growth'],
+    aerate: ['Lawn Aeration', 'lawn-aeration', 'Breathing life into compacted soil'],
+    overseed: ['Overseeding', 'overseeding', 'Fill in patchy, sparse turf for a lush, resilient lawn'],
+    sod: ['Sod Installation', 'sod-installation', 'Instant lawn, stunning landscape'],
+    cleanup: ['Lawn Cleanup', 'lawn-cleanup', 'Transforming chaos to beauty'],
+    irrig: ['Irrigation System Maintenance', 'irrigation-system-maintenance', 'Keep the flow for a thriving landscape']
+  };
+  var MAP = {
+    overgrown: ['mow', 'cleanup'], patchy: ['overseed', 'sod'], weeds: ['weed', 'fert'],
+    compact: ['aerate'], debris: ['cleanup'], dull: ['fert', 'aerate', 'overseed'],
+    edges: ['edge'], sprink: ['irrig'], commercial: ['commercial']
+  };
+  var chips = $$('.chip'), trayList = $('#tray-list'), trayCount = $('#tray-count'), trayEmpty = $('#tray-empty');
+  var shown = {};
+  function renderTray(){
+    var score = {}, order = [];
+    chips.forEach(function(c){
+      if (c.getAttribute('aria-pressed') !== 'true') return;
+      (MAP[c.getAttribute('data-sym')] || []).forEach(function(k, i){
+        if (!(k in score)) { score[k] = 0; order.push(k); }
+        score[k] += 3 - Math.min(i, 2);
+      });
+    });
+    order.sort(function(a, b){ return score[b] - score[a]; });
+    var next = {};
+    trayList.innerHTML = '';
+    order.forEach(function(k){
+      var s = SVC[k];
+      var li = d.createElement('li');
+      if (!shown[k]) li.className = 'enter';
+      var a = d.createElement('a'); a.href = BASE + s[1] + '/';
+      var img = d.createElement('img'); img.src = 'assets/svc-' + s[1] + '.png'; img.alt = ''; img.width = 38; img.height = 38;
+      var txt = d.createElement('div');
+      var strong = d.createElement('strong'); strong.textContent = s[0];
+      var span = d.createElement('span'); span.textContent = s[2];
+      txt.appendChild(strong); txt.appendChild(span);
+      a.appendChild(img); a.appendChild(txt); li.appendChild(a); trayList.appendChild(li);
+      next[k] = true;
+    });
+    shown = next;
+    trayEmpty.hidden = order.length > 0;
+    trayCount.textContent = order.length ? (order.length === 1 ? '1 service matches' : order.length + ' services match') : 'Nothing picked yet';
+  }
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      c.setAttribute('aria-pressed', String(c.getAttribute('aria-pressed') !== 'true'));
+      renderTray();
+    });
+  });
+
+  /* ---------- Services cursor preview ---------- */
+  var list = $('#svc-list'), prev = $('#svc-preview');
+  var fine = window.matchMedia ? window.matchMedia('(hover: hover) and (pointer: fine)') : { matches: false };
+  if (list && prev && fine.matches) {
+    var pimg = $('img', prev), tx = 0, ty = 0, cx = 0, cy = 0, active = false, raf = 0;
+    var place = function(){
+      var k = reduced() ? 1 : 0.14;
+      cx += (tx - cx) * k; cy += (ty - cy) * k;
+      var x = Math.min(cx + 28, window.innerWidth - 270), y = Math.max(10, Math.min(cy - 155, window.innerHeight - 320));
+      prev.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+      if (active) raf = requestAnimationFrame(place);
+    };
+    $$('.svc-row', list).forEach(function(row){
+      row.addEventListener('mouseenter', function(e){
+        var src = row.getAttribute('data-img');
+        if (pimg.getAttribute('src') !== src) pimg.setAttribute('src', src);
+        if (!active) { cx = tx = e.clientX; cy = ty = e.clientY; active = true; cancelAnimationFrame(raf); raf = requestAnimationFrame(place); }
+        prev.classList.add('show');
+      });
+    });
+    list.addEventListener('mousemove', function(e){ tx = e.clientX; ty = e.clientY; });
+    list.addEventListener('mouseleave', function(){ active = false; prev.classList.remove('show'); });
+    window.addEventListener('scroll', function(){ if (active) { active = false; prev.classList.remove('show'); } }, { passive: true });
+  }
+
+  /* ---------- Gallery windows ---------- */
+  var wins = $$('.win').map(function(w){
+    return { imgs: $$('.win-img', w), cap: $('figcaption', w), i: 0, btn: $('.win-next', w) };
+  });
+  function showWin(w, i){
+    w.i = (i + w.imgs.length) % w.imgs.length;
+    w.imgs.forEach(function(img, k){ img.classList.toggle('on', k === w.i); });
+    w.cap.textContent = w.imgs[w.i].getAttribute('data-cap');
+  }
+  wins.forEach(function(w){
+    w.btn.addEventListener('click', function(){ showWin(w, w.i + 1); });
+  });
+  var galPause = $('#gal-pause'), galTimer = null, galTurn = 0, galPaused = reduced();
+  function setPauseBtn(btn, paused, playLabel, pauseLabel){
+    btn.setAttribute('aria-pressed', String(paused));
+    $('span', btn).textContent = paused ? playLabel : pauseLabel;
+    $('use', btn).setAttribute('href', paused ? '#i-play' : '#i-pause');
+  }
+  function galStart(){
+    clearInterval(galTimer);
+    if (galPaused) return;
+    galTimer = setInterval(function(){
+      if (d.hidden) return;
+      var w = wins[galTurn % wins.length]; galTurn++;
+      showWin(w, w.i + 1);
+    }, 3400);
+  }
+  if (galPause) {
+    setPauseBtn(galPause, galPaused, 'Play slideshow', 'Pause slideshow');
+    galPause.addEventListener('click', function(){
+      galPaused = !galPaused;
+      setPauseBtn(galPause, galPaused, 'Play slideshow', 'Pause slideshow');
+      galStart();
+    });
+  }
+  galStart();
+
+  /* ---------- Map pin / list sync ---------- */
+  var cityEls = $$('[data-city]');
+  function hot(city, on){ cityEls.forEach(function(el){ if (el.getAttribute('data-city') === city) el.classList.toggle('hot', on); }); }
+  cityEls.forEach(function(el){
+    var c = el.getAttribute('data-city');
+    el.addEventListener('mouseenter', function(){ hot(c, true); });
+    el.addEventListener('mouseleave', function(){ hot(c, false); });
+    el.addEventListener('focus', function(){ hot(c, true); });
+    el.addEventListener('blur', function(){ hot(c, false); });
+  });
+
+  /* ---------- FAQ accordion ---------- */
+  $$('.faq-btn').forEach(function(btn){
+    var panel = d.getElementById(btn.getAttribute('aria-controls'));
+    panel.hidden = true;
+    btn.addEventListener('click', function(){
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      panel.hidden = open;
+    });
+  });
+
+  /* ---------- Validation ---------- */
+  var NOTICE = 'Prototype only. At launch this form connects to your existing LeadConnector form.';
+  function setErr(inp, msg){
+    var err = d.getElementById(inp.id + '-err');
+    if (err) err.textContent = msg;
+    if (msg) inp.setAttribute('aria-invalid', 'true'); else inp.removeAttribute('aria-invalid');
+    return !msg;
+  }
+  function checkField(inp){
+    var v = inp.value.trim(), msg = '';
+    if (inp.required && !v) msg = (inp.type === 'email' ? 'Email' : 'Phone') + ' is required.';
+    else if (v && inp.type === 'tel') {
+      var digits = v.replace(/\D/g, '');
+      if (!(digits.length === 10 || (digits.length === 11 && digits.charAt(0) === '1'))) msg = 'Enter a 10-digit US phone number.';
+    } else if (v && inp.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) msg = 'Enter a valid email address.';
+    else if (v && inp.hasAttribute('data-zip') && !/^\d{5}(-\d{4})?$/.test(v)) msg = 'Enter a 5-digit ZIP code.';
+    return setErr(inp, msg);
+  }
+  function validateIn(scope){
+    var bad = null;
+    $$('input[required], input[type="tel"], input[type="email"], input[data-zip]', scope).forEach(function(inp){
+      if (!checkField(inp) && !bad) bad = inp;
+    });
+    return bad;
+  }
+  $$('.est-form input').forEach(function(inp){
+    inp.addEventListener('blur', function(){ if (inp.value.trim() || inp.getAttribute('aria-invalid')) checkField(inp); });
+    inp.addEventListener('input', function(){ if (inp.getAttribute('aria-invalid')) checkField(inp); });
+  });
+
+  /* ---------- Stepper ---------- */
+  var sf = $('#step-form');
+  if (sf) {
+    var steps = $$('fieldset[data-step]', sf), cur = 1;
+    var status = $('#step-status', sf);
+    var showStep = function(n, focus){
+      cur = n;
+      steps.forEach(function(fs){ fs.classList.toggle('cur', +fs.getAttribute('data-step') === n); });
+      $$('.pk', sf).forEach(function(p){ p.classList.toggle('on', +p.getAttribute('data-s') <= n); });
+      $$('[data-l]', sf).forEach(function(l){ l.classList.toggle('cur', +l.getAttribute('data-l') === n); });
+      status.textContent = 'Step ' + n + ' of 3';
+      if (focus) { var lg = $('fieldset[data-step="' + n + '"] legend', sf); if (lg) lg.focus(); }
+    };
+    $$('[data-next]', sf).forEach(function(b){
+      b.addEventListener('click', function(){
+        var bad = validateIn(steps[cur - 1]);
+        if (bad) { bad.focus(); return; }
+        showStep(cur + 1, true);
+      });
+    });
+    $$('[data-back]', sf).forEach(function(b){ b.addEventListener('click', function(){ showStep(cur - 1, true); }); });
+    sf.addEventListener('submit', function(e){
+      e.preventDefault();
+      var notice = $('[data-notice]', sf);
+      for (var i = 0; i < steps.length; i++) {
+        var bad = validateIn(steps[i]);
+        if (bad) { showStep(i + 1, false); bad.focus(); notice.textContent = ''; return; }
+      }
+      notice.textContent = NOTICE;
+    });
+    showStep(1, false);
+  }
+
+  /* ---------- Dialog ---------- */
+  var dlg = $('#est-dialog'), lastFocus = null;
+  var dlgForm = $('#dlg-form');
+  function openDlg(){
+    lastFocus = d.activeElement;
+    if (drawer.classList.contains('open')) { drawer.classList.remove('open'); burger.setAttribute('aria-expanded','false'); d.body.style.overflow=''; }
+    if (dlg && typeof dlg.showModal === 'function') {
+      dlg.showModal();
+      var first = $('#d-name'); if (first) first.focus();
+    } else {
+      var est = $('#estimate'); if (est) { est.scrollIntoView(); var f = $('#s-service'); if (f) f.focus(); }
+    }
+  }
+  function closeDlg(){ if (dlg.open) dlg.close(); }
+  if (dlg) {
+    dlg.addEventListener('close', function(){ if (lastFocus && lastFocus.focus) lastFocus.focus(); });
+    $('[data-close]', dlg).addEventListener('click', closeDlg);
+    dlg.addEventListener('click', function(e){
+      if (e.target !== dlg) return;
+      var r = dlg.getBoundingClientRect();
+      if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) closeDlg();
+    });
+  }
+  $$('[data-open-estimate]').forEach(function(el){
+    el.addEventListener('click', function(e){ e.preventDefault(); openDlg(); });
+  });
+  if (dlgForm) dlgForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var notice = $('[data-notice]', dlgForm);
+    var bad = validateIn(dlgForm);
+    if (bad) { bad.focus(); notice.textContent = ''; return; }
+    notice.textContent = NOTICE;
+  });
+})();
+</script>
+<script>
+/* Sections carried over from Option A */
+(function(){
+  'use strict';
+  var $ = function(s, c){ return (c || document).querySelector(s); };
+  var $$ = function(s, c){ return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+  var mqReduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var reduced = function(){ return mqReduce.matches; };
+
+  /* Option A reveals + why cards */
+  var aReveal = $$('.fa .why-card, .fa .reveal');
+  if ('IntersectionObserver' in window && !reduced()){
+    var aio = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('in'); aio.unobserve(en.target); } });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    aReveal.forEach(function(el){ aio.observe(el); });
+  } else { aReveal.forEach(function(el){ el.classList.add('in'); }); }
+
+  /* ---------- Why cards: grass blades ---------- */
+  $$('.why-grass').forEach(function(svg, ci){
+    var ns = 'http://www.w3.org/2000/svg';
+    var seed = 11 + ci * 97;
+    var rnd = function(){ seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+    var cols = ['#2F8F3A', '#3C9E3A', '#277A31', '#4DAE45', '#236E2C'];
+    for (var i = 0; i < 46; i++){
+      var x = i * 6.6 + rnd() * 4;
+      var h = 16 + rnd() * 36;
+      var lean = (rnd() - 0.5) * 14;
+      var w = 4 + rnd() * 3;
+      var p = document.createElementNS(ns, 'path');
+      p.setAttribute('d', 'M' + x.toFixed(1) + ' 56 Q' + (x + lean * 0.3).toFixed(1) + ' ' + (56 - h * 0.6).toFixed(1) + ' ' + (x + w / 2 + lean).toFixed(1) + ' ' + (56 - h).toFixed(1) + ' Q' + (x + w + lean * 0.3).toFixed(1) + ' ' + (56 - h * 0.6).toFixed(1) + ' ' + (x + w).toFixed(1) + ' 56Z');
+      p.setAttribute('fill', cols[Math.floor(rnd() * cols.length)]);
+      p.style.setProperty('--d', (0.15 + rnd() * 0.5).toFixed(2) + 's');
+      svg.appendChild(p);
+    }
+  });
+
+  /* ---------- Mow This Lawn canvas ---------- */
+  (function(){
+    var stage = $('#mow-stage');
+    var cv = $('#mow-grass');
+    var fx = $('#mow-fx');
+    if (!stage || !cv || !cv.getContext) return;
+    var ctx = cv.getContext('2d');
+    var fctx = fx.getContext('2d');
+    var cursor = $('#mow-cursor');
+    var fill = $('#meter-fill'), num = $('#meter-num'), meter = $('#meter');
+    var statusEl = $('#mow-status');
+    var autoBtn = $('#mow-auto'), resetBtn = $('#mow-reset');
+    var W = 0, H = 0, R = 26, CELL = 12, cols = 0, rows = 0, cells = null, total = 1, cleared = 0;
+    var done = false, pressed = false, last = null, auto = false, parts = [], fxRun = false, lastW = 0;
+    var palette = ['#2B6A2E', '#337A33', '#3D8936', '#48973B', '#57A644', '#6AB352', '#275E2A', '#7DBF5C'];
+
+    function seeded(s){ return function(){ s = (s * 16807) % 2147483647; return s / 2147483647; }; }
+
+    function size(){
+      var r = stage.getBoundingClientRect();
+      W = Math.max(1, Math.round(r.width)); H = Math.max(1, Math.round(r.height));
+      var dpr = Math.min(2, window.devicePixelRatio || 1);
+      [cv, fx].forEach(function(c){ c.width = Math.round(W * dpr); c.height = Math.round(H * dpr); });
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      fctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      R = Math.max(18, Math.min(34, W / 22));
+      cols = Math.ceil(W / CELL); rows = Math.ceil(H / CELL);
+      cells = new Uint8Array(cols * rows); total = cols * rows; cleared = 0;
+      lastW = W;
+    }
+
+    function drawGrass(){
+      var rnd = seeded(20260);
+      ctx.globalCompositeOperation = 'source-over';
+      var g = ctx.createLinearGradient(0, 0, 0, H);
+      g.addColorStop(0, '#22532A'); g.addColorStop(1, '#173E1F');
+      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+      ctx.lineCap = 'round';
+      var perRow = Math.ceil(W / 5);
+      var hasP2D = typeof Path2D === 'function';
+      for (var y = -6; y < H + 60; y += 4){
+        var buckets = palette.map(function(){ return hasP2D ? new Path2D() : null; });
+        for (var i = 0; i < perRow; i++){
+          var x = rnd() * W, h = 26 + rnd() * 40, lean = (rnd() - 0.5) * 24;
+          var bi = Math.floor(rnd() * palette.length);
+          if (hasP2D){
+            var p = buckets[bi];
+            p.moveTo(x, y); p.quadraticCurveTo(x + lean * 0.2, y - h * 0.55, x + lean, y - h);
+          } else {
+            ctx.beginPath(); ctx.moveTo(x, y); ctx.quadraticCurveTo(x + lean * 0.2, y - h * 0.55, x + lean, y - h);
+            ctx.strokeStyle = palette[bi]; ctx.lineWidth = 1.7; ctx.stroke();
+          }
+        }
+        if (hasP2D){
+          ctx.lineWidth = 1.7;
+          for (var b = 0; b < palette.length; b++){ ctx.strokeStyle = palette[b]; ctx.stroke(buckets[b]); }
+        }
+      }
+    }
+
+    function updateMeter(){
+      var pct = Math.min(100, Math.round(cleared / total * 100));
+      if (done) pct = Math.max(pct, 60);
+      fill.style.width = pct + '%';
+      num.textContent = pct + '%';
+      meter.setAttribute('aria-valuenow', String(pct));
+    }
+
+    function markCells(px, py){
+      var c0 = Math.max(0, Math.floor((px - R) / CELL)), c1 = Math.min(cols - 1, Math.floor((px + R) / CELL));
+      var r0 = Math.max(0, Math.floor((py - R) / CELL)), r1 = Math.min(rows - 1, Math.floor((py + R) / CELL));
+      var R2 = R * R;
+      for (var r = r0; r <= r1; r++){
+        for (var c = c0; c <= c1; c++){
+          var idx = r * cols + c;
+          if (cells[idx]) continue;
+          var dx = c * CELL + CELL / 2 - px, dy = r * CELL + CELL / 2 - py;
+          if (dx * dx + dy * dy <= R2){ cells[idx] = 1; cleared++; }
+        }
+      }
+    }
+
+    function cut(x0, y0, x1, y1){
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      ctx.lineWidth = R * 2;
+      ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1 + 0.01, y1); ctx.stroke();
+      ctx.globalCompositeOperation = 'source-over';
+      var d = Math.hypot(x1 - x0, y1 - y0), steps = Math.max(1, Math.ceil(d / (R * 0.5)));
+      for (var s = 0; s <= steps; s++){ markCells(x0 + (x1 - x0) * s / steps, y0 + (y1 - y0) * s / steps); }
+      if (!reduced() && d > 2 && parts.length < 240){ spawn(x1, y1, 2, 1.6); }
+      updateMeter();
+      if (!done && cleared / total >= 0.6) finish();
+    }
+
+    function spawn(x, y, n, power){
+      var greens = ['#6AB352', '#8FCB6A', '#4DAE45', '#B8E08F', '#F2C230'];
+      for (var i = 0; i < n; i++){
+        var a = Math.random() * Math.PI * 2, sp = (0.6 + Math.random()) * power;
+        parts.push({ x: x, y: y, vx: Math.cos(a) * sp * 2, vy: Math.sin(a) * sp * 2 - power * 1.5, life: 1, rot: Math.random() * 6, vr: (Math.random() - 0.5) * 0.4, c: greens[Math.floor(Math.random() * (i % 7 === 0 ? 5 : 4))], w: 2 + Math.random() * 2, h: 5 + Math.random() * 6 });
+      }
+      if (!fxRun){ fxRun = true; requestAnimationFrame(tickFx); }
+    }
+    function tickFx(){
+      fctx.clearRect(0, 0, W, H);
+      for (var i = parts.length - 1; i >= 0; i--){
+        var p = parts[i];
+        p.vy += 0.18; p.x += p.vx; p.y += p.vy; p.rot += p.vr; p.life -= 0.016;
+        if (p.life <= 0 || p.y > H + 20){ parts.splice(i, 1); continue; }
+        fctx.save(); fctx.globalAlpha = Math.max(0, p.life); fctx.translate(p.x, p.y); fctx.rotate(p.rot);
+        fctx.fillStyle = p.c; fctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h); fctx.restore();
+      }
+      if (parts.length){ requestAnimationFrame(tickFx); } else { fxRun = false; fctx.clearRect(0, 0, W, H); }
+    }
+
+    function finish(quiet){
+      done = true;
+      stage.classList.add('is-done');
+      if (!quiet) statusEl.textContent = 'Lawn mowed. Your lawn, handled. A free estimate button is now available.';
+      if (!reduced()){
+        for (var k = 0; k < 5; k++){ spawn(W * (0.2 + k * 0.15), H * 0.55, 24, 3.2); }
+      }
+      updateMeter();
+    }
+
+    function clearAll(){
+      ctx.clearRect(0, 0, W, H);
+      cells.fill(1); cleared = total;
+    }
+
+    function grow(){
+      done = false; auto = false; autoBtn.disabled = false;
+      stage.classList.remove('is-done', 'is-touched');
+      statusEl.textContent = '';
+      parts = [];
+      size(); drawGrass(); updateMeter();
+    }
+
+    function pos(e){
+      var r = cv.getBoundingClientRect();
+      return { x: e.clientX - r.left, y: e.clientY - r.top };
+    }
+    var lastAngle = 0;
+    function moveCursor(p, from){
+      if (from){
+        var dx = p.x - from.x, dy = p.y - from.y;
+        if (dx * dx + dy * dy > 4) lastAngle = Math.atan2(dy, dx) * 180 / Math.PI;
+      }
+      cursor.style.transform = 'translate(' + p.x + 'px,' + p.y + 'px) rotate(' + lastAngle + 'deg)';
+    }
+
+    cv.addEventListener('pointerdown', function(e){
+      if (auto) return;
+      pressed = true; last = pos(e);
+      stage.classList.add('is-touched');
+      if (e.pointerType !== 'mouse'){ cursor.classList.add('on'); }
+      cut(last.x, last.y, last.x, last.y);
+      moveCursor(last);
+    });
+    cv.addEventListener('pointermove', function(e){
+      if (auto) return;
+      var p = pos(e);
+      if (e.pointerType === 'mouse' || pressed){
+        stage.classList.add('is-touched');
+        cursor.classList.add('on');
+        if (last) cut(last.x, last.y, p.x, p.y);
+        moveCursor(p, last);
+        last = p;
+      }
+    });
+    function endPointer(e){
+      pressed = false; last = null;
+      if (!e || e.pointerType !== 'mouse' || e.type === 'pointerleave'){ cursor.classList.remove('on'); }
+    }
+    cv.addEventListener('pointerup', endPointer);
+    cv.addEventListener('pointercancel', endPointer);
+    cv.addEventListener('pointerleave', endPointer);
+
+    autoBtn.addEventListener('click', function(){
+      if (auto) return;
+      stage.classList.add('is-touched');
+      if (reduced()){ clearAll(); if (!done) finish(); updateMeter(); return; }
+      auto = true; autoBtn.disabled = true;
+      var pts = [], rowH = R * 1.5, y = R * 0.7, dir = 1;
+      while (y < H + R * 0.5){
+        pts.push({ x: dir > 0 ? -R : W + R, y: y });
+        pts.push({ x: dir > 0 ? W + R : -R, y: y });
+        y += rowH; dir *= -1;
+      }
+      var segs = [], len = 0;
+      for (var i = 1; i < pts.length; i++){
+        var l = Math.hypot(pts[i].x - pts[i - 1].x, pts[i].y - pts[i - 1].y);
+        segs.push({ a: pts[i - 1], b: pts[i], s: len, l: l }); len += l;
+      }
+      var speed = Math.max(1100, W * 2.2), t0 = null, prev = pts[0], si = 0;
+      cursor.classList.add('on');
+      function at(d){
+        while (si < segs.length - 1 && d > segs[si].s + segs[si].l) si++;
+        var sg = segs[si], k = Math.min(1, Math.max(0, (d - sg.s) / sg.l));
+        return { x: sg.a.x + (sg.b.x - sg.a.x) * k, y: sg.a.y + (sg.b.y - sg.a.y) * k };
+      }
+      function step(ts){
+        if (!auto) return;
+        if (t0 === null) t0 = ts;
+        var d = Math.min(len, (ts - t0) / 1000 * speed);
+        var p = at(d);
+        cut(prev.x, prev.y, p.x, p.y);
+        moveCursor(p, prev);
+        prev = p;
+        if (d < len){ requestAnimationFrame(step); }
+        else {
+          auto = false; autoBtn.disabled = false; cursor.classList.remove('on');
+          clearAll(); if (!done) finish(); updateMeter();
+        }
+      }
+      requestAnimationFrame(step);
+    });
+    resetBtn.addEventListener('click', grow);
+
+    size(); drawGrass(); updateMeter();
+    if (reduced()){ clearAll(); finish(true); }
+
+    if ('ResizeObserver' in window){
+      var rt = null;
+      new ResizeObserver(function(){
+        clearTimeout(rt);
+        rt = setTimeout(function(){
+          var w = Math.round(stage.getBoundingClientRect().width);
+          if (Math.abs(w - lastW) < 2) return;
+          var wasDone = done;
+          auto = false; autoBtn.disabled = false;
+          size(); drawGrass();
+          if (wasDone){ clearAll(); }
+          updateMeter();
+        }, 160);
+      }).observe(stage);
+    }
+  })();
+
+  /* ---------- Process: scroll-linked mower ---------- */
+  var proc = (function(){
+    var sec = $('#process'), path = $('#proc-path'), cutP = $('#proc-cut'), cut2 = $('#proc-cut-2'), mower = $('#proc-mower');
+    if (!sec || !path || !path.getTotalLength) return function(){};
+    var svg = $('#proc-svg'), L = 0;
+    try { L = path.getTotalLength(); } catch (err) { L = 0; }
+    if (L) [cutP, cut2].forEach(function(p){ p.style.strokeDasharray = L + ' ' + L; });
+    var nodes = $$('.proc-node', sec), steps = $$('.proc-step', sec);
+    var body = $('#proc-body');
+    function drawPath(p){
+      if (!L || !svg.getClientRects().length) return;
+      try {
+        var d = L * p;
+        [cutP, cut2].forEach(function(el){ el.style.strokeDashoffset = String(L - d); });
+        var a = path.getPointAtLength(Math.max(0, d - 1)), b = path.getPointAtLength(Math.min(L, d + 1));
+        var pt = path.getPointAtLength(d);
+        var ang = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
+        mower.setAttribute('transform', 'translate(' + pt.x.toFixed(1) + ' ' + pt.y.toFixed(1) + ') rotate(' + ang.toFixed(1) + ')');
+      } catch (err) { /* geometry unavailable; leave static */ }
+    }
+    return function(){
+      var p;
+      if (reduced()) p = 1;
+      else {
+        var vh = window.innerHeight;
+        if (svg.getClientRects().length) {
+          var sr = svg.getBoundingClientRect();
+          p = (vh * 0.85 - sr.top) / (vh * 0.55);
+        } else {
+          var br = body.getBoundingClientRect();
+          p = (vh * 0.8 - br.top) / (br.height * 0.9);
+        }
+        p = Math.max(0, Math.min(1, p));
+      }
+      drawPath(p);
+      body.style.setProperty('--p', p.toFixed(3));
+      nodes.forEach(function(n){ n.classList.toggle('on', p >= parseFloat(n.getAttribute('data-at'))); });
+      steps.forEach(function(s){ s.classList.toggle('on', p >= parseFloat(s.getAttribute('data-at'))); });
+    };
+  })();
+
+  var aTick = false;
+  function aScroll(){
+    if (aTick) return; aTick = true;
+    requestAnimationFrame(function(){ proc(); aTick = false; });
+  }
+  window.addEventListener('scroll', aScroll, { passive: true });
+  window.addEventListener('resize', aScroll);
+  aScroll();
+
+  /* ---------- Weekly vs bi-weekly calendar ---------- */
+  (function(){
+    var grid = $('#cal-grid'), sum = $('#cal-sum'), monthEl = $('#cal-month'), seg = $('#seg-in');
+    if (!grid) return;
+    var now = new Date(), y = now.getFullYear(), m = now.getMonth();
+    var monthName = now.toLocaleString('en-US', { month: 'long' });
+    monthEl.textContent = monthName + ' ' + y;
+    var first = new Date(y, m, 1).getDay(), days = new Date(y, m + 1, 0).getDate();
+    var VISIT = 2; /* sample visit weekday (Tuesday) */
+    var tuesdays = [];
+    for (var d = 1; d <= days; d++){ if (new Date(y, m, d).getDay() === VISIT) tuesdays.push(d); }
+    function listText(arr){
+      if (arr.length === 1) return monthName + ' ' + arr[0];
+      return monthName + ' ' + arr.slice(0, -1).join(', ') + ' and ' + arr[arr.length - 1];
+    }
+    function render(mode){
+      var visits = mode === 'biweekly' ? tuesdays.filter(function(_, i){ return i % 2 === 0; }) : tuesdays;
+      var html = '';
+      ['S', 'M', 'T', 'W', 'T', 'F', 'S'].forEach(function(l){ html += '<span class="cal-dow">' + l + '</span>'; });
+      for (var b = 0; b < first; b++) html += '<span class="cal-day blank"></span>';
+      var n = 0;
+      for (var dd = 1; dd <= days; dd++){
+        var v = visits.indexOf(dd) > -1;
+        html += '<span class="cal-day' + (v ? ' visit' : '') + '"' + (v ? ' style="--d:' + (n++ * 0.08).toFixed(2) + 's"' : '') + '>' + dd + '</span>';
+      }
+      grid.innerHTML = html;
+      sum.textContent = (mode === 'biweekly' ? 'Bi-weekly plan: ' : 'Weekly plan: ') + visits.length + ' visits this month, on ' + listText(visits) + '.';
+      seg.classList.toggle('bi', mode === 'biweekly');
+    }
+    $$('input[name="freq"]').forEach(function(r){ r.addEventListener('change', function(){ if (r.checked) render(r.value); }); });
+    var checked = $('input[name="freq"]:checked');
+    render(checked ? checked.value : 'weekly');
+  })();
+
+})();
+</script>
+<script>
+/* Chat launcher: loads the client's real LeadConnector chat on first click */
+(function(){
+  'use strict';
+  var LC_ID = '66c33ddf69673593d8a94f9b';
+  var d = document, wrap = d.getElementById('lc-chat'), btn = d.getElementById('lc-btn'),
+      greet = d.getElementById('lc-greet'), gx = d.getElementById('lc-greet-x'), gopen = d.getElementById('lc-greet-open'),
+      fail = d.getElementById('lc-fail'), stat = d.getElementById('lc-status');
+  if (!wrap) return;
+  var state = 'idle', closed = false;
+  try { closed = sessionStorage.getItem('begcGreetClosed') === '1'; } catch (e) {}
+  if (!closed) setTimeout(function(){ if (state === 'idle') greet.hidden = false; }, 2500);
+  function hideGreet(remember){
+    greet.hidden = true;
+    if (remember) { try { sessionStorage.setItem('begcGreetClosed', '1'); } catch (e) {} }
+  }
+  function lcOpen(){ try { window.leadConnector.chatWidget.openWidget(); return true; } catch (e) { return false; } }
+  function failed(){
+    state = 'idle'; btn.classList.remove('loading'); btn.removeAttribute('aria-busy');
+    greet.hidden = false; gopen.hidden = true; fail.hidden = false;
+    stat.textContent = "Chat didn't load. Call 504-910-7829.";
+  }
+  function start(){
+    if (state === 'ready') { lcOpen(); return; }
+    if (state === 'loading') return;
+    hideGreet(false);
+    state = 'loading'; btn.classList.add('loading'); btn.setAttribute('aria-busy', 'true');
+    stat.textContent = 'Opening chat';
+    var timer = setTimeout(function(){ if (state !== 'ready') failed(); }, 12000);
+    window.addEventListener('LC_chatWidgetLoaded', function(){
+      state = 'ready'; clearTimeout(timer); btn.removeAttribute('aria-busy');
+      setTimeout(function(){ lcOpen(); wrap.classList.add('handoff'); stat.textContent = 'Chat opened'; }, 250);
+    }, { once: true });
+    var s = d.createElement('script');
+    s.src = 'https://widgets.leadconnectorhq.com/loader.js';
+    s.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+    s.setAttribute('data-widget-id', LC_ID);
+    s.async = true;
+    s.onerror = function(){ clearTimeout(timer); failed(); };
+    d.body.appendChild(s);
+  }
+  btn.addEventListener('click', start);
+  gopen.addEventListener('click', start);
+  gx.addEventListener('click', function(){ hideGreet(true); btn.focus(); });
+  d.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !greet.hidden) hideGreet(true); });
+})();
+</script>
+<script>
+/* Popup form: load the live form only when the popup opens */
+(function(){
+  var f = document.querySelector('.lc-form-dlg iframe');
+  if (!f) return;
+  function load(){ if (!f.getAttribute('src')) f.setAttribute('src', f.getAttribute('data-src')); }
+  document.querySelectorAll('[data-open-estimate]').forEach(function(el){ el.addEventListener('click', load); });
+})();
+</script>
+</body>
+</html>
