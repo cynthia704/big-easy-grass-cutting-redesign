@@ -914,6 +914,12 @@ html.js .fa .cal-day.visit{animation:none}
 }
 
 /* ===== Service page ===== */
+.sv-time{background:#ECE6D2}
+.time-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:clamp(14px,2vw,22px)}
+.time-card{background:var(--paper);border-radius:20px;padding:24px 24px 22px;border:1px solid var(--line);border-top:4px solid var(--brass)}
+.time-k{display:block;font-family:var(--serif);font-size:clamp(1.5rem,2.2vw,2rem);line-height:1.1;color:var(--moss);margin-bottom:10px}
+.time-card h3{font-size:1.3rem;color:var(--oak);margin-bottom:.4rem}
+.time-card p{margin:0;color:var(--muted);font-size:.97rem}
 .ph-kicker{display:inline-flex;align-items:center;gap:.7em;font-family:var(--sans)!important;font-size:.95rem!important;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-lite)!important;line-height:1.3!important;margin:0 0 .9rem;white-space:normal!important}
 .ph-kicker::before{content:"";width:28px;height:1px;background:currentColor;flex:none}
 .ph-display{font-size:clamp(2rem,3.5vw,3.2rem);line-height:1.1;color:var(--cream);margin:0;max-width:22em}
@@ -965,6 +971,7 @@ html.js .fa .cal-day.visit{animation:none}
 .town-chips a:hover,.town-chips button:hover{background:rgba(244,239,227,.16);border-color:var(--brass-lite)}
 .town-chips button{background:var(--brass-lite);color:var(--iron);border-color:var(--brass-lite)}
 @media (min-width:1100px){.sv-head .h2{white-space:nowrap;font-size:min(3.1vw,2.85rem)}}
+.sv-head .h2.h2-long,.sv-areas .h2.h2-long{white-space:normal!important}
 @media (min-width:1100px){.sv-areas .h2{white-space:nowrap;font-size:min(3.1vw,2.85rem)}}
 @media (max-width:1100px){.pair-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:900px){
@@ -1040,14 +1047,14 @@ html.js .fa .cal-day.visit{animation:none}
           <ul class="submenu cols" id="sub-services">
             <li><a href="residential-lawn-mowing.html" aria-current="page">Residential Lawn Mowing</a></li>
             <li><a href="commercial-lawn-maintenance.html">Commercial Lawn Maintenance</a></li>
-            <li><a href="https://www.bigeasygrasscutting.com/services/lawn-edging/">Lawn Edging</a></li>
-            <li><a href="https://www.bigeasygrasscutting.com/services/weed-control/">Weed Control</a></li>
-            <li><a href="https://www.bigeasygrasscutting.com/services/lawn-fertilization/">Lawn Fertilization</a></li>
-            <li><a href="https://www.bigeasygrasscutting.com/services/lawn-aeration/">Lawn Aeration</a></li>
-            <li><a href="https://www.bigeasygrasscutting.com/services/overseeding/">Overseeding</a></li>
-            <li><a href="https://www.bigeasygrasscutting.com/services/sod-installation/">Sod Installation</a></li>
-            <li><a href="https://www.bigeasygrasscutting.com/services/lawn-cleanup/">Lawn Cleanup</a></li>
-            <li><a href="https://www.bigeasygrasscutting.com/services/irrigation-system-maintenance/">Irrigation System Maintenance</a></li>
+            <li><a href="lawn-edging.html">Lawn Edging</a></li>
+            <li><a href="weed-control.html">Weed Control</a></li>
+            <li><a href="lawn-fertilization.html">Lawn Fertilization</a></li>
+            <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
+            <li><a href="overseeding.html">Overseeding</a></li>
+            <li><a href="sod-installation.html">Sod Installation</a></li>
+            <li><a href="lawn-cleanup.html">Lawn Cleanup</a></li>
+            <li><a href="irrigation-system-maintenance.html">Irrigation System Maintenance</a></li>
           </ul>
         </li>
         <li class="nav-item has-sub">
@@ -1093,14 +1100,14 @@ html.js .fa .cal-day.visit{animation:none}
         <li><a href="services.html">All Services</a></li>
         <li><a href="residential-lawn-mowing.html" aria-current="page">Residential Lawn Mowing</a></li>
         <li><a href="commercial-lawn-maintenance.html">Commercial Lawn Maintenance</a></li>
-        <li><a href="https://www.bigeasygrasscutting.com/services/lawn-edging/">Lawn Edging</a></li>
-        <li><a href="https://www.bigeasygrasscutting.com/services/weed-control/">Weed Control</a></li>
-        <li><a href="https://www.bigeasygrasscutting.com/services/lawn-fertilization/">Lawn Fertilization</a></li>
-        <li><a href="https://www.bigeasygrasscutting.com/services/lawn-aeration/">Lawn Aeration</a></li>
-        <li><a href="https://www.bigeasygrasscutting.com/services/overseeding/">Overseeding</a></li>
-        <li><a href="https://www.bigeasygrasscutting.com/services/sod-installation/">Sod Installation</a></li>
-        <li><a href="https://www.bigeasygrasscutting.com/services/lawn-cleanup/">Lawn Cleanup</a></li>
-        <li><a href="https://www.bigeasygrasscutting.com/services/irrigation-system-maintenance/">Irrigation System Maintenance</a></li></ul></details></li>
+        <li><a href="lawn-edging.html">Lawn Edging</a></li>
+        <li><a href="weed-control.html">Weed Control</a></li>
+        <li><a href="lawn-fertilization.html">Lawn Fertilization</a></li>
+        <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
+        <li><a href="overseeding.html">Overseeding</a></li>
+        <li><a href="sod-installation.html">Sod Installation</a></li>
+        <li><a href="lawn-cleanup.html">Lawn Cleanup</a></li>
+        <li><a href="irrigation-system-maintenance.html">Irrigation System Maintenance</a></li></ul></details></li>
       <li><details><summary>Service Areas</summary><ul>
         <li><a href="https://www.bigeasygrasscutting.com/service-areas/">All Service Areas</a></li>
         <li><a href="https://www.bigeasygrasscutting.com/service-areas/baton-rouge/">Baton Rouge</a></li>
@@ -1288,10 +1295,10 @@ html.js .fa .cal-day.visit{animation:none}
       <p class="lede">Every lawn is unique. Add any of these and we build them into one tailored plan.</p>
     </div>
     <ul class="pair-grid">
-      <li class="pair-card reveal"><a href="https://www.bigeasygrasscutting.com/services/lawn-edging/"><img src="assets/svc-lawn-edging.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Edging</span><span class="pair-d">Picture-perfect precision along every bed, walk and drive.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="https://www.bigeasygrasscutting.com/services/weed-control/"><img src="assets/svc-weed-control.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Weed Control</span><span class="pair-d">Banish weeds before they take over a beautiful lawn.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="https://www.bigeasygrasscutting.com/services/lawn-fertilization/"><img src="assets/svc-lawn-fertilization.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Fertilization</span><span class="pair-d">Nourish your lawn for lush, vibrant growth.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="https://www.bigeasygrasscutting.com/services/lawn-cleanup/"><img src="assets/svc-lawn-cleanup.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Cleanup</span><span class="pair-d">Transforming chaos to beauty.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li class="pair-card reveal"><a href="lawn-edging.html"><img src="assets/svc-lawn-edging.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Edging</span><span class="pair-d">Picture-perfect precision along every bed, walk and drive.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li class="pair-card reveal"><a href="weed-control.html"><img src="assets/svc-weed-control.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Weed Control</span><span class="pair-d">Banish weeds before they take over a beautiful lawn.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li class="pair-card reveal"><a href="lawn-fertilization.html"><img src="assets/svc-lawn-fertilization.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Fertilization</span><span class="pair-d">Nourish your lawn for lush, vibrant growth.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li class="pair-card reveal"><a href="lawn-cleanup.html"><img src="assets/svc-lawn-cleanup.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Cleanup</span><span class="pair-d">Transforming chaos to beauty.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
     </ul>
     <p class="pair-all"><a class="btn btn-ghost" href="services.html">See All 10 Services <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
   </div>
@@ -1378,14 +1385,14 @@ html.js .fa .cal-day.visit{animation:none}
         <ul>
           <li><a href="residential-lawn-mowing.html">Residential Lawn Mowing</a></li>
           <li><a href="commercial-lawn-maintenance.html">Commercial Lawn Maintenance</a></li>
-          <li><a href="https://www.bigeasygrasscutting.com/services/lawn-edging/">Lawn Edging</a></li>
-          <li><a href="https://www.bigeasygrasscutting.com/services/weed-control/">Weed Control</a></li>
-          <li><a href="https://www.bigeasygrasscutting.com/services/lawn-fertilization/">Lawn Fertilization</a></li>
-          <li><a href="https://www.bigeasygrasscutting.com/services/lawn-aeration/">Lawn Aeration</a></li>
-          <li><a href="https://www.bigeasygrasscutting.com/services/overseeding/">Overseeding</a></li>
-          <li><a href="https://www.bigeasygrasscutting.com/services/sod-installation/">Sod Installation</a></li>
-          <li><a href="https://www.bigeasygrasscutting.com/services/lawn-cleanup/">Lawn Cleanup</a></li>
-          <li><a href="https://www.bigeasygrasscutting.com/services/irrigation-system-maintenance/">Irrigation System Maintenance</a></li>
+          <li><a href="lawn-edging.html">Lawn Edging</a></li>
+          <li><a href="weed-control.html">Weed Control</a></li>
+          <li><a href="lawn-fertilization.html">Lawn Fertilization</a></li>
+          <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
+          <li><a href="overseeding.html">Overseeding</a></li>
+          <li><a href="sod-installation.html">Sod Installation</a></li>
+          <li><a href="lawn-cleanup.html">Lawn Cleanup</a></li>
+          <li><a href="irrigation-system-maintenance.html">Irrigation System Maintenance</a></li>
         </ul>
       </div>
       <div>
@@ -1585,7 +1592,7 @@ html.js .fa .cal-day.visit{animation:none}
 
   /* ---------- Lawn Check ---------- */
   var BASE = 'https://www.bigeasygrasscutting.com/services/';
-  var LOCAL = ["residential-lawn-mowing", "commercial-lawn-maintenance"];
+  var LOCAL = ["residential-lawn-mowing", "commercial-lawn-maintenance", "lawn-edging", "weed-control", "lawn-fertilization", "lawn-aeration", "overseeding", "sod-installation", "lawn-cleanup", "irrigation-system-maintenance"];
   var SVC = {
     mow: ['Residential Lawn Mowing', 'residential-lawn-mowing', 'Lawn perfection at your doorstep'],
     commercial: ['Commercial Lawn Maintenance', 'commercial-lawn-maintenance', 'Greening your business with professional upkeep'],
