@@ -914,6 +914,11 @@ html.js .fa .cal-day.visit{animation:none}
 }
 
 /* ===== Service page ===== */
+.ph-kicker{display:inline-flex;align-items:center;gap:.7em;font-family:var(--sans)!important;font-size:.95rem!important;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-lite)!important;line-height:1.3!important;margin:0 0 .9rem;white-space:normal!important}
+.ph-kicker::before{content:"";width:28px;height:1px;background:currentColor;flex:none}
+.ph-display{font-size:clamp(2rem,3.5vw,3.2rem);line-height:1.1;color:var(--cream);margin:0;max-width:22em}
+.ph-display em{font-style:italic;color:var(--brass-lite)}
+@media (max-width:600px){.ph-display{font-size:1.65rem;line-height:1.15}.ph-kicker{font-size:.8rem!important;letter-spacing:.1em}}
 .sv-ben{background:#C9DEB4}
 .ben-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,72px);align-items:center}
 .ben-media img{aspect-ratio:4/4.2!important}
@@ -1129,8 +1134,8 @@ html.js .fa .cal-day.visit{animation:none}
     <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="./">Home</a></li><li><a href="services.html">Services</a></li><li aria-current="page">Residential Lawn Mowing</li></ol></nav>
     <div class="ph-svc-grid">
       <div class="ph-copy">
-        <p class="eyebrow">Lawn Care Service</p>
-        <h1 id="hero-title">Residential Lawn <em>Mowing</em> in New Orleans</h1>
+        <h1 class="ph-kicker" id="hero-title">Residential Lawn Mowing in New Orleans</h1>
+        <h2 class="ph-display">Lawn Perfection at Your Doorstep: Unleash the Beauty of <em>Residential Lawn Mowing</em></h2>
         <p class="ph-sub">Precise, consistent mowing at the right height for your grass, so your lawn stays pristine and perfectly groomed all year.</p>
         <div class="hero-ctas">
           <button class="btn btn-brass" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
@@ -1147,7 +1152,7 @@ html.js .fa .cal-day.visit{animation:none}
   <div class="wrap sv-intro-grid">
     <div class="sv-intro-copy reveal">
       <p class="eyebrow">Residential Lawn Mowing</p>
-      <h2 class="h2" id="intro-title" style="color:var(--oak)">Lawn Perfection at Your Doorstep: Unleash the Beauty of <em class="acc">Residential Lawn Mowing</em></h2>
+      <h2 class="h2" id="intro-title" style="color:var(--oak)">Residential Lawn Mowing Built Around <em class="acc">Your Home</em></h2>
       <p>A well-maintained lawn is the centerpiece of any beautiful residential property. Our Residential Lawn Mowing service keeps your New Orleans lawn looking pristine and perfectly groomed throughout the year.</p><p>Your lawn is an essential part of your home, and our goal is to make it a source of pride and enjoyment for you and your family. You get a perfectly manicured lawn without the hassle of doing it yourself.</p>
       <div class="sfeat-actions">
         <button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate</button>
