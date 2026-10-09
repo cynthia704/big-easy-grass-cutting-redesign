@@ -1008,22 +1008,25 @@ html.js .fa .cal-day.visit{animation:none}
 .pc-lane h3{font-size:1.35rem;color:var(--oak);margin-bottom:.4rem}
 .pc-lane p{margin:0;color:#3F4B3E;font-size:.96rem}
 .pc-svcs .lede{color:#D6DCCB}
-.pc-picker{display:grid;grid-template-columns:minmax(230px,.42fr) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:start}
-.pc-tabs{display:grid;gap:6px}
-.pc-tab{display:flex;align-items:center;gap:12px;min-height:50px;padding:8px 14px;border-radius:14px;border:1px solid rgba(217,181,108,.22);background:rgba(244,239,227,.04);color:var(--cream);font:500 1rem var(--sans);text-align:left;cursor:pointer;transition:background .25s,border-color .25s,transform .25s}
-.pc-tab img{width:30px;height:30px;padding:3px;border-radius:8px;background:var(--cream);flex:none}
-.pc-tab:hover{background:rgba(244,239,227,.1);border-color:rgba(217,181,108,.5)}
-.pc-tab[aria-selected="true"]{background:var(--brass-lite);color:var(--iron);border-color:var(--brass-lite);transform:translateX(6px)}
-.pc-tab:focus-visible{outline:2px solid var(--cream);outline-offset:2px}
-.pc-panel{display:grid;grid-template-columns:minmax(0,1fr);border-radius:24px;overflow:hidden;background:rgba(244,239,227,.06);border:1px solid rgba(217,181,108,.28)}
-.pc-panel[hidden]{display:none}
-.pc-panel:not([hidden]){animation:pcIn .45s var(--ease)}
-@keyframes pcIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-.pc-panel>img{width:100%;height:auto;aspect-ratio:16/7;object-fit:cover}
-.pc-panel-body{padding:clamp(20px,3vw,32px)}
-.pc-panel-body h3{font-size:clamp(1.6rem,2.4vw,2.1rem);color:var(--cream);margin-bottom:.6rem}
-.pc-panel-body .h3-geo{font-style:italic;color:var(--brass-lite)}
-.pc-panel-body p{color:#D6DCCB;font-size:1.05rem;margin:0 0 1.4rem}
+.pc-probs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.6vw,18px)}
+.pc-prob{perspective:1200px}
+.pc-in{position:relative;display:grid;height:100%;min-height:250px;transform-style:preserve-3d;transition:transform .6s var(--ease)}
+.pc-prob.flip .pc-in{transform:rotateY(180deg)}
+.pc-face{grid-area:1/1;display:flex;flex-direction:column;padding:24px 22px 22px;border-radius:20px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.pc-front{background:#2B4B33;border:1px solid rgba(217,181,108,.28);visibility:visible;transition:visibility 0s .3s}
+.pc-back{background:var(--cream);color:var(--ink);transform:rotateY(180deg);visibility:hidden;transition:visibility 0s .3s}
+.pc-prob.flip .pc-front{visibility:hidden}
+.pc-prob.flip .pc-back{visibility:visible}
+.pc-q{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;margin-bottom:auto;background:rgba(217,181,108,.16);color:var(--brass-lite);font-family:var(--serif);font-size:1.6rem}
+.pc-front h3{font-size:clamp(1.35rem,1.8vw,1.6rem);color:var(--cream);margin:18px 0 14px;line-height:1.15}
+.pc-flip,.pc-unflip{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid var(--brass-lite);background:transparent;color:var(--brass-lite);font:600 .92rem var(--sans);cursor:pointer;transition:background .25s,color .25s}
+.pc-flip svg{width:15px;height:15px}
+.pc-flip:hover{background:var(--brass-lite);color:var(--iron)}
+.pc-back img{width:44px;height:44px}
+.pc-fix-l{margin:10px 0 6px;font-family:var(--serif);font-size:1.25rem;line-height:1.2;color:var(--oak)}
+.pc-back p:not(.pc-fix-l){margin:0;font-size:.95rem;color:#3F4B3E}
+.pc-unflip{margin-top:auto;border-color:var(--oak);color:var(--oak)}
+.pc-unflip:hover{background:var(--oak);color:var(--cream)}
 .pc-why{background:#F4EFE3}
 .pc-why-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:start}
 .pc-why-head{position:sticky;top:110px}
@@ -1054,22 +1057,18 @@ html.js .fa .cal-day.visit{animation:none}
 .pc-all{display:inline-flex;align-items:center;gap:6px;margin-top:16px;min-height:44px;color:var(--cream);font-weight:600;text-decoration:none}
 .pc-all svg{width:16px;height:16px}
 .pc-all:hover{text-decoration:underline}
-@media (max-width:1100px){.pc-lanes,.pc-stats{grid-template-columns:1fr 1fr}}
+@media (max-width:1100px){.pc-lanes,.pc-stats,.pc-probs{grid-template-columns:1fr 1fr}}
 @media (max-width:900px){
-  .pc-picker,.pc-why-grid,.pc-cta-grid{grid-template-columns:1fr}
+  .pc-why-grid,.pc-cta-grid{grid-template-columns:1fr}
   .pc-why-head{position:static}
-  .pc-tabs{display:flex;overflow-x:auto;gap:8px;margin:0 calc(var(--gut) * -1);padding:2px var(--gut) 8px;scrollbar-width:none;scroll-snap-type:x proximity}
-  .pc-tabs::-webkit-scrollbar{display:none}
-  .pc-tab{flex:none;scroll-snap-align:start;white-space:nowrap}
-  .pc-tab[aria-selected="true"]{transform:none}
 }
 @media (max-width:760px){.pc-grid{grid-template-columns:1fr}.pc-stamp{display:none}}
-@media (max-width:600px){.pc-lanes,.pc-stats,.pc-about-lists{grid-template-columns:1fr}.pc-panel>img{aspect-ratio:16/9}}
+@media (max-width:600px){.pc-lanes,.pc-stats,.pc-about-lists,.pc-probs{grid-template-columns:1fr}.pc-in{min-height:0}.pc-q{margin-bottom:0}.pc-front h3{margin-top:14px}}
 @media (prefers-reduced-motion:reduce){
   .pc-spin,.pc-pin{animation:none}
   .pc-lane.in .pc-mower{animation:none;left:calc(100% - 52px)}
   .pc-lane.in .pc-track{animation:none;background-size:100% 100%}
-  .pc-panel:not([hidden]){animation:none}
+  .pc-in{transition:none}
 }
 </style>
 </head>
@@ -1287,129 +1286,136 @@ html.js .fa .cal-day.visit{animation:none}
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:#C9DEB4;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Services in this city -->
+<!-- Common problems (flip cards) -->
 <section class="section dark pc-svcs" aria-labelledby="svc-title">
   <div class="wrap">
     <div class="sv-head reveal">
-      <p class="eyebrow">Services in Kenner</p>
-      <h2 class="h2" id="svc-title">Grass Cutting Services Offered by <em class="acc" style="color:var(--brass-lite)">Big Easy Grass Cutting</em></h2>
-      <p class="lede">Pick a service to see what it covers for your Kenner property.</p>
+      <p class="eyebrow">Lawn Problems in Kenner</p>
+      <h2 class="h2" id="svc-title">Common Lawn Problems We Fix in <em class="acc" style="color:var(--brass-lite)">Kenner</em></h2>
+      <p class="lede">Spot your lawn's problem, then flip the card to see how we fix it.</p>
     </div>
-    <div class="pc-picker reveal">
-      <div class="pc-tabs" role="tablist" aria-label="Lawn Care Services" aria-orientation="vertical"><button type="button" role="tab" class="pc-tab" id="pt-commercial-lawn-maintenance" aria-controls="pp-commercial-lawn-maintenance" aria-selected="true" tabindex="0"><img src="assets/svc-commercial-lawn-maintenance.png" alt="" width="32" height="32" loading="lazy"><span>Commercial Lawn Maintenance</span></button><button type="button" role="tab" class="pc-tab" id="pt-irrigation-system-maintenance" aria-controls="pp-irrigation-system-maintenance" aria-selected="false" tabindex="-1"><img src="assets/svc-irrigation-system-maintenance.png" alt="" width="32" height="32" loading="lazy"><span>Irrigation System Maintenance</span></button><button type="button" role="tab" class="pc-tab" id="pt-lawn-aeration" aria-controls="pp-lawn-aeration" aria-selected="false" tabindex="-1"><img src="assets/svc-lawn-aeration.png" alt="" width="32" height="32" loading="lazy"><span>Lawn Aeration</span></button><button type="button" role="tab" class="pc-tab" id="pt-lawn-cleanup" aria-controls="pp-lawn-cleanup" aria-selected="false" tabindex="-1"><img src="assets/svc-lawn-cleanup.png" alt="" width="32" height="32" loading="lazy"><span>Lawn Cleanup</span></button><button type="button" role="tab" class="pc-tab" id="pt-lawn-edging" aria-controls="pp-lawn-edging" aria-selected="false" tabindex="-1"><img src="assets/svc-lawn-edging.png" alt="" width="32" height="32" loading="lazy"><span>Lawn Edging</span></button><button type="button" role="tab" class="pc-tab" id="pt-lawn-fertilization" aria-controls="pp-lawn-fertilization" aria-selected="false" tabindex="-1"><img src="assets/svc-lawn-fertilization.png" alt="" width="32" height="32" loading="lazy"><span>Lawn Fertilization</span></button><button type="button" role="tab" class="pc-tab" id="pt-overseeding" aria-controls="pp-overseeding" aria-selected="false" tabindex="-1"><img src="assets/svc-overseeding.png" alt="" width="32" height="32" loading="lazy"><span>Overseeding</span></button><button type="button" role="tab" class="pc-tab" id="pt-weed-control" aria-controls="pp-weed-control" aria-selected="false" tabindex="-1"><img src="assets/svc-weed-control.png" alt="" width="32" height="32" loading="lazy"><span>Weed Control</span></button><button type="button" role="tab" class="pc-tab" id="pt-sod-installation" aria-controls="pp-sod-installation" aria-selected="false" tabindex="-1"><img src="assets/svc-sod-installation.png" alt="" width="32" height="32" loading="lazy"><span>Sod Installation</span></button><button type="button" role="tab" class="pc-tab" id="pt-residential-lawn-mowing" aria-controls="pp-residential-lawn-mowing" aria-selected="false" tabindex="-1"><img src="assets/svc-residential-lawn-mowing.png" alt="" width="32" height="32" loading="lazy"><span>Residential Lawn Mowing</span></button></div>
-      <div class="pc-panels">
-        <div class="pc-panel" role="tabpanel" id="pp-commercial-lawn-maintenance" aria-labelledby="pt-commercial-lawn-maintenance">
-          <img src="assets/sp-commercial-lawn-maintenance.jpg" alt="" width="950" height="450" loading="lazy">
-          <div class="pc-panel-body">
-            <h3>Commercial Lawn Maintenance<span class="h3-geo"> in Kenner</span></h3>
-            <p>We keep business exteriors immaculate and presentable. Regular lawn mowing, edging, fertilization and weed control are some of the services included, for a professional and inviting look.</p>
-            <div class="sfeat-actions">
-              <a class="btn btn-brass" href="commercial-lawn-maintenance.html">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <button class="btn ph-call" type="button" data-open-estimate>Free Estimate</button>
-            </div>
+    <ul class="pc-probs">
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-q" aria-hidden="true">?</span>
+            <h3>Thin, Patchy Grass</h3>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-1">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
-        </div>
-        <div class="pc-panel" role="tabpanel" id="pp-irrigation-system-maintenance" aria-labelledby="pt-irrigation-system-maintenance" hidden>
-          <img src="assets/sp-irrigation-system-maintenance.jpg" alt="" width="950" height="450" loading="lazy">
-          <div class="pc-panel-body">
-            <h3>Irrigation System Maintenance<span class="h3-geo"> in Kenner</span></h3>
-            <p>An efficient irrigation system is essential for a lush, healthy landscape. We inspect, repair and adjust your system so water reaches your lawn and plants where it should.</p>
-            <div class="sfeat-actions">
-              <a class="btn btn-brass" href="irrigation-system-maintenance.html">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <button class="btn ph-call" type="button" data-open-estimate>Free Estimate</button>
-            </div>
-          </div>
-        </div>
-        <div class="pc-panel" role="tabpanel" id="pp-lawn-aeration" aria-labelledby="pt-lawn-aeration" hidden>
-          <img src="assets/sp-lawn-aeration.jpg" alt="" width="950" height="450" loading="lazy">
-          <div class="pc-panel-body">
-            <h3>Lawn Aeration<span class="h3-geo"> in Kenner</span></h3>
-            <p>Aeration improves soil and root health, so the lawn absorbs nutrients and water better. It also relieves soil compaction for better airflow and root development.</p>
-            <div class="sfeat-actions">
-              <a class="btn btn-brass" href="lawn-aeration.html">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <button class="btn ph-call" type="button" data-open-estimate>Free Estimate</button>
-            </div>
-          </div>
-        </div>
-        <div class="pc-panel" role="tabpanel" id="pp-lawn-cleanup" aria-labelledby="pt-lawn-cleanup" hidden>
-          <img src="assets/sp-lawn-cleanup.jpg" alt="" width="950" height="450" loading="lazy">
-          <div class="pc-panel-body">
-            <h3>Lawn Cleanup<span class="h3-geo"> in Kenner</span></h3>
-            <p>Seasonal changes leave leaves, branches and other debris behind and make a lawn look untidy. Our cleanup leaves your lawn clean and free of clutter.</p>
-            <div class="sfeat-actions">
-              <a class="btn btn-brass" href="lawn-cleanup.html">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <button class="btn ph-call" type="button" data-open-estimate>Free Estimate</button>
-            </div>
-          </div>
-        </div>
-        <div class="pc-panel" role="tabpanel" id="pp-lawn-edging" aria-labelledby="pt-lawn-edging" hidden>
-          <img src="assets/work-7.jpg" alt="" width="950" height="450" loading="lazy">
-          <div class="pc-panel-body">
-            <h3>Lawn Edging<span class="h3-geo"> in Kenner</span></h3>
-            <p>Neatly defined edges make any lawn look better. We cut crisp boundaries between lawns, flowerbeds and walkways for a polished, well-kept look.</p>
-            <div class="sfeat-actions">
-              <a class="btn btn-brass" href="lawn-edging.html">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <button class="btn ph-call" type="button" data-open-estimate>Free Estimate</button>
-            </div>
-          </div>
-        </div>
-        <div class="pc-panel" role="tabpanel" id="pp-lawn-fertilization" aria-labelledby="pt-lawn-fertilization" hidden>
-          <img src="assets/sp-lawn-fertilization.jpg" alt="" width="950" height="450" loading="lazy">
-          <div class="pc-panel-body">
-            <h3>Lawn Fertilization<span class="h3-geo"> in Kenner</span></h3>
-            <p>Lawns need the right balance of nutrients to grow vibrant and healthy. We use high-quality fertilizers matched to your lawn for lush, green results.</p>
-            <div class="sfeat-actions">
-              <a class="btn btn-brass" href="lawn-fertilization.html">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <button class="btn ph-call" type="button" data-open-estimate>Free Estimate</button>
-            </div>
-          </div>
-        </div>
-        <div class="pc-panel" role="tabpanel" id="pp-overseeding" aria-labelledby="pt-overseeding" hidden>
-          <img src="assets/sp-overseeding.jpg" alt="" width="950" height="450" loading="lazy">
-          <div class="pc-panel-body">
-            <h3>Overseeding<span class="h3-geo"> in Kenner</span></h3>
+          <div class="pc-face pc-back" id="pf-1">
+            <img src="assets/svc-overseeding.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Overseeding</p>
             <p>Thin, patchy lawns can be revived with overseeding. It improves lawn density and fills in bare spots for thicker, more resilient turf.</p>
-            <div class="sfeat-actions">
-              <a class="btn btn-brass" href="overseeding.html">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <button class="btn ph-call" type="button" data-open-estimate>Free Estimate</button>
-            </div>
+            <button type="button" class="pc-unflip">Back</button>
           </div>
         </div>
-        <div class="pc-panel" role="tabpanel" id="pp-weed-control" aria-labelledby="pt-weed-control" hidden>
-          <img src="assets/sp-weed-control.jpg" alt="" width="950" height="450" loading="lazy">
-          <div class="pc-panel-body">
-            <h3>Weed Control<span class="h3-geo"> in Kenner</span></h3>
-            <p>Weeds can take over a lawn fast if left alone. Our weed control removes them and helps keep new ones from growing, protecting your lawn&#x27;s beauty and health.</p>
-            <div class="sfeat-actions">
-              <a class="btn btn-brass" href="weed-control.html">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <button class="btn ph-call" type="button" data-open-estimate>Free Estimate</button>
-            </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-q" aria-hidden="true">?</span>
+            <h3>Hard, Compacted Soil</h3>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-2">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-2">
+            <img src="assets/svc-lawn-aeration.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Lawn Aeration</p>
+            <p>Aeration relieves soil compaction and improves soil and root health, so the lawn absorbs nutrients and water better, with better airflow and root development.</p>
+            <button type="button" class="pc-unflip">Back</button>
           </div>
         </div>
-        <div class="pc-panel" role="tabpanel" id="pp-sod-installation" aria-labelledby="pt-sod-installation" hidden>
-          <img src="assets/sp-sod-installation.jpg" alt="" width="950" height="450" loading="lazy">
-          <div class="pc-panel-body">
-            <h3>Sod Installation<span class="h3-geo"> in Kenner</span></h3>
-            <p>Want an instant, lush lawn? We carefully prepare the soil and lay fresh, healthy sod for a picture-perfect lawn in no time.</p>
-            <div class="sfeat-actions">
-              <a class="btn btn-brass" href="sod-installation.html">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <button class="btn ph-call" type="button" data-open-estimate>Free Estimate</button>
-            </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-q" aria-hidden="true">?</span>
+            <h3>Leaves and Branches Everywhere</h3>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-3">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-3">
+            <img src="assets/svc-lawn-cleanup.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Lawn Cleanup</p>
+            <p>Seasonal changes leave leaves, branches and other debris behind. Our cleanup leaves your lawn clean and free of clutter.</p>
+            <button type="button" class="pc-unflip">Back</button>
           </div>
         </div>
-        <div class="pc-panel" role="tabpanel" id="pp-residential-lawn-mowing" aria-labelledby="pt-residential-lawn-mowing" hidden>
-          <img src="assets/sp-residential-lawn-mowing.jpg" alt="" width="950" height="450" loading="lazy">
-          <div class="pc-panel-body">
-            <h3>Residential Lawn Mowing<span class="h3-geo"> in Kenner</span></h3>
-            <p>Our skilled team mows your lawn at the right height and in a precise pattern, for a well-groomed, uniform look.</p>
-            <div class="sfeat-actions">
-              <a class="btn btn-brass" href="residential-lawn-mowing.html">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <button class="btn ph-call" type="button" data-open-estimate>Free Estimate</button>
-            </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-q" aria-hidden="true">?</span>
+            <h3>Weeds Taking Over</h3>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-4">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-4">
+            <img src="assets/svc-weed-control.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Weed Control</p>
+            <p>Weeds can take over a lawn fast if left alone. We remove them and help keep new ones from growing, protecting your lawn&#x27;s beauty and health.</p>
+            <button type="button" class="pc-unflip">Back</button>
           </div>
         </div>
-      </div>
-    </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-q" aria-hidden="true">?</span>
+            <h3>Messy, Overgrown Edges</h3>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-5">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-5">
+            <img src="assets/svc-lawn-edging.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Lawn Edging</p>
+            <p>We cut crisp boundaries between lawns, flowerbeds and walkways for a polished, well-kept look.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-q" aria-hidden="true">?</span>
+            <h3>Uneven Watering</h3>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-6">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-6">
+            <img src="assets/svc-irrigation-system-maintenance.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Irrigation System Maintenance</p>
+            <p>We inspect, repair and adjust your irrigation system so water reaches your lawn and plants where it should.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-q" aria-hidden="true">?</span>
+            <h3>Dull, Tired-Looking Grass</h3>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-7">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-7">
+            <img src="assets/svc-lawn-fertilization.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Lawn Fertilization</p>
+            <p>Lawns need the right balance of nutrients to grow vibrant and healthy. We use high-quality fertilizers matched to your lawn for lush, green results.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-q" aria-hidden="true">?</span>
+            <h3>A Bare Yard You Want Green Fast</h3>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-8">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-8">
+            <img src="assets/svc-sod-installation.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Sod Installation</p>
+            <p>We carefully prepare the soil and lay fresh, healthy sod for a picture-perfect lawn in no time.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:var(--oak);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
@@ -2421,23 +2427,16 @@ html.js .fa .cal-day.visit{animation:none}
 })();
 </script>
 <script>
-/* City page: service picker tabs (vertical on desktop, swipe row on phones) */
+/* City page: problem flip cards */
 (function(){
-  var tabs = [].slice.call(document.querySelectorAll('.pc-tab'));
-  function pick(t, focus){
-    tabs.forEach(function(x){
-      var on = x === t; x.setAttribute('aria-selected', on ? 'true' : 'false'); x.tabIndex = on ? 0 : -1;
-      document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
-    });
-    if (focus) t.focus();
-    if (t.scrollIntoView && window.matchMedia('(max-width:900px)').matches) t.scrollIntoView({block:'nearest', inline:'center'});
-  }
-  tabs.forEach(function(t, i){
-    t.addEventListener('click', function(){ pick(t); });
-    t.addEventListener('keydown', function(e){
-      var k = e.key, n = (k === 'ArrowDown' || k === 'ArrowRight') ? (i + 1) % tabs.length : (k === 'ArrowUp' || k === 'ArrowLeft') ? (i - 1 + tabs.length) % tabs.length : k === 'Home' ? 0 : k === 'End' ? tabs.length - 1 : -1;
-      if (n > -1) { e.preventDefault(); pick(tabs[n], true); }
-    });
+  [].slice.call(document.querySelectorAll('.pc-prob')).forEach(function(card){
+    var go = card.querySelector('.pc-flip'), back = card.querySelector('.pc-unflip');
+    function set(on){
+      card.classList.toggle('flip', on); go.setAttribute('aria-expanded', on ? 'true' : 'false');
+      setTimeout(function(){ (on ? back : go).focus({preventScroll:true}); }, 330);
+    }
+    go.addEventListener('click', function(){ set(true); });
+    back.addEventListener('click', function(){ set(false); });
   });
 })();
 </script>
