@@ -1017,8 +1017,30 @@ html.js .fa .cal-day.visit{animation:none}
 .pc-back{background:var(--cream);color:var(--ink);transform:rotateY(180deg);visibility:hidden;transition:visibility 0s .3s}
 .pc-prob.flip .pc-front{visibility:hidden}
 .pc-prob.flip .pc-back{visibility:visible}
-.pc-q{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;margin-bottom:auto;background:rgba(217,181,108,.16);color:var(--brass-lite);font-family:var(--serif);font-size:1.6rem}
-.pc-front h3{font-size:clamp(1.35rem,1.8vw,1.6rem);color:var(--cream);margin:18px 0 14px;line-height:1.15}
+.pc-art{display:block;height:92px;padding:12px 14px;margin-bottom:auto;border-radius:14px;background:rgba(15,42,23,.45);color:var(--brass-lite)}
+.pc-art svg{width:100%;height:100%;overflow:visible}
+.pc-sign{margin:0 0 16px;color:#D6DCCB;font-size:.93rem;line-height:1.5}
+.pc-sign span{display:block;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brass-lite);margin-bottom:2px}
+.pc-art .a-sway{transform-origin:bottom;transform-box:fill-box;animation:paSway 3.4s ease-in-out infinite}
+.pc-art .a-seed{fill:currentColor;animation:pcSeed 2.6s ease-in infinite}
+.pc-art .a-press{animation:pcPress 1.8s ease-in-out infinite}
+.pc-art .a-fall{transform-box:fill-box;transform-origin:center;animation:pcFall 3.2s ease-in infinite}
+.pc-art .a-spray{animation:pcDash 1.2s linear infinite}
+.pc-art .a-drip{animation:paDrop 1.4s ease-in infinite}
+.pc-art .a-droop{transform-origin:bottom;transform-box:fill-box;animation:pcDroop 4s ease-in-out infinite}
+.pc-art .a-roll{transform-box:fill-box;transform-origin:center;animation:pcRoll 6s linear infinite}
+.pc-art .a-creep{stroke-dasharray:30;animation:pcCreep 3s ease-in-out infinite alternate}
+.pc-art .a-d2{animation-delay:.6s}.pc-art .a-d3{animation-delay:1.2s}
+@keyframes paSway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(4deg)}}
+@keyframes paDrop{0%{transform:translateY(-6px);opacity:0}30%{opacity:1}100%{transform:translateY(8px);opacity:0}}
+@keyframes pcSeed{0%{transform:translateY(-8px);opacity:0}30%{opacity:1}100%{transform:translateY(26px);opacity:0}}
+@keyframes pcPress{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+@keyframes pcFall{0%{transform:translate(0,-6px) rotate(0);opacity:0}20%{opacity:1}100%{transform:translate(10px,30px) rotate(40deg);opacity:0}}
+@keyframes pcDash{to{stroke-dashoffset:-18}}
+@keyframes pcDroop{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.92)}}
+@keyframes pcRoll{to{transform:rotate(360deg)}}
+@keyframes pcCreep{from{stroke-dashoffset:30}to{stroke-dashoffset:0}}
+.pc-front h3{font-size:clamp(1.35rem,1.8vw,1.6rem);color:var(--cream);margin:18px 0 8px;line-height:1.15}
 .pc-flip,.pc-unflip{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid var(--brass-lite);background:transparent;color:var(--brass-lite);font:600 .92rem var(--sans);cursor:pointer;transition:background .25s,color .25s}
 .pc-flip svg{width:15px;height:15px}
 .pc-flip:hover{background:var(--brass-lite);color:var(--iron)}
@@ -1063,12 +1085,13 @@ html.js .fa .cal-day.visit{animation:none}
   .pc-why-head{position:static}
 }
 @media (max-width:760px){.pc-grid{grid-template-columns:1fr}.pc-stamp{display:none}}
-@media (max-width:600px){.pc-lanes,.pc-stats,.pc-about-lists,.pc-probs{grid-template-columns:1fr}.pc-in{min-height:0}.pc-q{margin-bottom:0}.pc-front h3{margin-top:14px}}
+@media (max-width:600px){.pc-lanes,.pc-stats,.pc-about-lists,.pc-probs{grid-template-columns:1fr}.pc-in{min-height:0}.pc-art{margin-bottom:0}.pc-front h3{margin-top:14px}}
 @media (prefers-reduced-motion:reduce){
   .pc-spin,.pc-pin{animation:none}
   .pc-lane.in .pc-mower{animation:none;left:calc(100% - 52px)}
   .pc-lane.in .pc-track{animation:none;background-size:100% 100%}
   .pc-in{transition:none}
+  .pc-art *{animation:none!important}
 }
 </style>
 </head>
@@ -1298,8 +1321,9 @@ html.js .fa .cal-day.visit{animation:none}
       <li class="pc-prob reveal">
         <div class="pc-in">
           <div class="pc-face pc-front">
-            <span class="pc-q" aria-hidden="true">?</span>
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 56h108"/><g class="a-sway"><path d="M14 56c0-10 2-18 6-26M22 56c0-12-1-22 3-32M30 56c0-8 2-14 6-20"/></g><path class="a-gap" d="M44 56h28" stroke-dasharray="3 6"/><g class="a-sway a-d2"><path d="M80 56c0-10 2-18 6-26M88 56c0-12-1-22 3-32M96 56c0-8 2-14 6-20M104 56c0-6 1-10 4-14"/></g><circle class="a-seed" cx="52" cy="20" r="2.5"/><circle class="a-seed a-d2" cx="62" cy="14" r="2.5"/><circle class="a-seed a-d3" cx="58" cy="26" r="2.5"/></svg></span>
             <h3>Thin, Patchy Grass</h3>
+            <p class="pc-sign"><span>What you notice:</span> Bare spots and thin turf, with soil showing through the grass.</p>
             <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-1">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
           <div class="pc-face pc-back" id="pf-1">
@@ -1313,8 +1337,9 @@ html.js .fa .cal-day.visit{animation:none}
       <li class="pc-prob reveal">
         <div class="pc-in">
           <div class="pc-face pc-front">
-            <span class="pc-q" aria-hidden="true">?</span>
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24h108"/><path d="M6 36c14-4 22 4 36 0s22-4 36 0 22 4 36 0"/><path d="M6 48c14-4 22 4 36 0s22-4 36 0 22 4 36 0"/><g class="a-press"><path d="M30 2v14M24 10l6 6 6-6M60 2v14M54 10l6 6 6-6M90 2v14M84 10l6 6 6-6"/></g></svg></span>
             <h3>Hard, Compacted Soil</h3>
+            <p class="pc-sign"><span>What you notice:</span> Soil packed so hard that water, air and nutrients struggle to reach the roots.</p>
             <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-2">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
           <div class="pc-face pc-back" id="pf-2">
@@ -1328,8 +1353,9 @@ html.js .fa .cal-day.visit{animation:none}
       <li class="pc-prob reveal">
         <div class="pc-in">
           <div class="pc-face pc-front">
-            <span class="pc-q" aria-hidden="true">?</span>
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 58h108"/><path d="M70 58c6-10 18-12 30-8"/><path d="M76 50l8 8M92 48l-4 10"/><g class="a-fall"><path d="M30 10c8 0 12 6 12 12-8 0-12-6-12-12zM30 10l12 12"/></g><g class="a-fall a-d2"><path d="M60 4c7 1 10 7 9 12-7-1-10-7-9-12zM60 4l9 12"/></g><path d="M14 58c2-6 8-8 14-6M40 58c2-5 7-7 12-5"/></svg></span>
             <h3>Leaves and Branches Everywhere</h3>
+            <p class="pc-sign"><span>What you notice:</span> Leaves, branches and other debris piling up after the seasons change.</p>
             <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-3">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
           <div class="pc-face pc-back" id="pf-3">
@@ -1343,8 +1369,9 @@ html.js .fa .cal-day.visit{animation:none}
       <li class="pc-prob reveal">
         <div class="pc-in">
           <div class="pc-face pc-front">
-            <span class="pc-q" aria-hidden="true">?</span>
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 58h108"/><path d="M20 58c0-6 1-10 3-14M30 58c0-8-1-12 1-18M98 58c0-6 1-10 3-14M106 58c0-8-1-12 1-18"/><g class="a-sway"><path d="M60 58V26"/><path d="M60 46c-8-2-12-8-12-14 8 2 12 8 12 14zM60 40c8-2 12-8 12-14-8 2-12 8-12 14z"/><circle cx="60" cy="18" r="8"/><path d="M60 6v4M50 10l3 3M70 10l-3 3M48 18h4M68 18h4"/></g></svg></span>
             <h3>Weeds Taking Over</h3>
+            <p class="pc-sign"><span>What you notice:</span> Weeds popping up and spreading faster than the grass.</p>
             <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-4">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
           <div class="pc-face pc-back" id="pf-4">
@@ -1358,8 +1385,9 @@ html.js .fa .cal-day.visit{animation:none}
       <li class="pc-prob reveal">
         <div class="pc-in">
           <div class="pc-face pc-front">
-            <span class="pc-q" aria-hidden="true">?</span>
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30h108"/><path d="M6 58h108"/><path d="M40 30v28M80 30v28" stroke-dasharray="2 5"/><g class="a-sway"><path d="M14 30c-2-8 0-14 4-18M26 30c0-10 2-16 6-20M54 30c2-8 6-12 10-14M66 30c0-6 2-10 6-12M96 30c-2-8 0-14 4-18"/><path d="M58 30c4 6 10 8 16 8M20 30c2 6 8 10 14 10" class="a-creep"/></g></svg></span>
             <h3>Messy, Overgrown Edges</h3>
+            <p class="pc-sign"><span>What you notice:</span> Grass creeping over walkways and into flowerbeds, with no clean line between them.</p>
             <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-5">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
           <div class="pc-face pc-back" id="pf-5">
@@ -1373,8 +1401,9 @@ html.js .fa .cal-day.visit{animation:none}
       <li class="pc-prob reveal">
         <div class="pc-in">
           <div class="pc-face pc-front">
-            <span class="pc-q" aria-hidden="true">?</span>
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 58h108"/><path d="M60 58V34M52 34h16"/><path d="M60 34c-14-4-24-12-30-22M60 34c14-4 24-12 30-22" stroke-dasharray="3 6" class="a-spray"/><path d="M20 58c0-4 1-7 3-10M100 58c0-4 1-7 3-10"/><path class="a-drip" d="M86 18v6"/><path class="a-drip a-d2" d="M96 26v6"/></svg></span>
             <h3>Uneven Watering</h3>
+            <p class="pc-sign"><span>What you notice:</span> Some areas stay dry while others get too much water.</p>
             <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-6">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
           <div class="pc-face pc-back" id="pf-6">
@@ -1388,8 +1417,9 @@ html.js .fa .cal-day.visit{animation:none}
       <li class="pc-prob reveal">
         <div class="pc-in">
           <div class="pc-face pc-front">
-            <span class="pc-q" aria-hidden="true">?</span>
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 58h108"/><g class="a-droop"><path d="M24 58c0-12 4-20 12-22M40 58c0-14 6-22 16-22M58 58c0-10 6-16 14-16M76 58c0-14 6-22 16-20M94 58c0-10 4-16 10-16"/></g><circle class="a-seed" cx="44" cy="12" r="2.5"/><circle class="a-seed a-d2" cx="62" cy="8" r="2.5"/><circle class="a-seed a-d3" cx="80" cy="14" r="2.5"/></svg></span>
             <h3>Dull, Tired-Looking Grass</h3>
+            <p class="pc-sign"><span>What you notice:</span> Grass that looks pale and thin when it should be lush and green.</p>
             <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-7">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
           <div class="pc-face pc-back" id="pf-7">
@@ -1403,8 +1433,9 @@ html.js .fa .cal-day.visit{animation:none}
       <li class="pc-prob reveal">
         <div class="pc-in">
           <div class="pc-face pc-front">
-            <span class="pc-q" aria-hidden="true">?</span>
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 58h108"/><g class="a-roll"><circle cx="34" cy="44" r="14"/><circle cx="34" cy="44" r="7"/></g><path d="M48 58h60M48 30h60v28"/><path d="M56 30c0-6 1-10 3-12M68 30c0-7 2-11 4-13M80 30c0-6 1-10 3-12M92 30c0-7 2-11 4-13M104 30c0-5 1-8 3-10"/></svg></span>
             <h3>A Bare Yard You Want Green Fast</h3>
+            <p class="pc-sign"><span>What you notice:</span> A yard that needs a full lawn, without the wait that comes with seeding.</p>
             <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-8">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
           <div class="pc-face pc-back" id="pf-8">
