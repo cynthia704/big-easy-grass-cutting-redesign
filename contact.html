@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Lawn Fertilization New Orleans | Big Easy Grass Cutting</title>
-<meta name="description" content="Big Easy Grass Cutting feeds New Orleans lawns on a schedule built for Gulf Coast heat and heavy clay soil. Call 504-910-7829 for a quote.">
+<title>Contact Our New Orleans Lawn Crew | Big Easy Grass Cutting</title>
+<meta name="description" content="At Big Easy Grass Cutting, we handle all your lawn care needs in New Orleans. Contact us today to schedule service or get a free quote.">
 <link rel="icon" href="assets/favicon.png">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -980,6 +980,59 @@ html.js .fa .cal-day.visit{animation:none}
 }
 @media (max-width:600px){.inc-grid,.pair-grid,.ben-list{grid-template-columns:1fr}.ph-facts{gap:6px 16px}}
 @media (max-width:900px){.ben-grid{grid-template-columns:1fr}.ben-media{max-width:460px}}
+
+/* ===== Contact page ===== */
+.ct-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,4vw,56px);align-items:center}
+.ct-status{display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:center;min-width:260px;padding:18px 22px;border-radius:18px;background:rgba(15,42,23,.7);border:1px solid rgba(217,181,108,.45);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);color:var(--cream)}
+.ct-dot{grid-row:span 2;width:14px;height:14px;border-radius:50%;background:var(--brass-lite);box-shadow:0 0 0 0 rgba(217,181,108,.6)}
+.ct-status.is-open .ct-dot{background:#7BD389;animation:ctPulse 2s infinite}
+.ct-status.is-closed .ct-dot{background:#E08A6D}
+@keyframes ctPulse{0%{box-shadow:0 0 0 0 rgba(123,211,137,.6)}70%{box-shadow:0 0 0 12px rgba(123,211,137,0)}100%{box-shadow:0 0 0 0 rgba(123,211,137,0)}}
+.ct-state{font-family:var(--serif);font-size:1.2rem;line-height:1.2}
+.ct-when{font-size:.82rem;color:#CBD3C0}
+.ct-main{background:#F4EFE3}
+.ct-main-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(24px,4vw,56px);align-items:start}
+.ct-cards{display:grid;gap:12px}
+.ct-card{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;padding:20px 22px;border-radius:20px;background:var(--paper);border:1px solid var(--line);color:var(--ink);text-decoration:none}
+a.ct-card{transition:transform .3s var(--ease),border-color .3s,box-shadow .3s}
+a.ct-card:hover{transform:translateY(-3px);border-color:var(--oak);box-shadow:0 22px 36px -28px rgba(22,41,27,.6)}
+.ct-ic{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;background:var(--oak);color:var(--brass-lite)}
+.ct-ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.ct-k{display:block;font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);margin:0 0 2px}
+.ct-v{display:block;font-family:var(--serif);font-size:1.45rem;line-height:1.2;color:var(--oak)}
+.ct-s{display:block;font-size:.92rem;color:var(--muted);margin-top:2px}
+.ct-call .ct-v{font-size:1.7rem}
+.ct-follow{padding:18px 22px;border-radius:20px;border:1px dashed var(--brass)}
+.ct-follow ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.ct-follow a{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--oak);font-weight:600;font-size:.94rem;text-decoration:none}
+.ct-follow a:hover{background:var(--oak);color:var(--cream);border-color:var(--oak)}
+.ct-lc{height:min(640px,78vh)}
+.ct-week{background:var(--oak)}
+.ct-week-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.ct-week .lede{color:#D6DCCB;max-width:none;margin-bottom:1.4rem}
+.ct-week-card{padding:clamp(18px,3vw,28px);border-radius:24px;background:rgba(244,239,227,.06);border:1px solid rgba(217,181,108,.3)}
+.ct-scale{display:flex;justify-content:space-between;margin:0 0 8px calc(120px + 16px);margin-right:calc(96px + 16px);font-size:.74rem;color:#CBD3C0}
+.ct-days{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ct-day{display:grid;grid-template-columns:120px 1fr 96px;gap:16px;align-items:center;padding:8px 10px;border-radius:12px;color:var(--cream)}
+.ct-day.today{background:rgba(217,181,108,.16);outline:1px solid rgba(217,181,108,.5)}
+.ct-dn{font-family:var(--serif);font-size:1.1rem}
+.ct-today{display:inline-block;margin-left:6px;padding:1px 8px;border-radius:99px;background:var(--brass-lite);color:var(--iron);font:600 .7rem var(--sans);letter-spacing:.06em;text-transform:uppercase;vertical-align:middle}
+.ct-track{position:relative;height:12px;border-radius:99px;background:rgba(244,239,227,.12)}
+.ct-open{position:absolute;top:0;bottom:0;left:16.667%;width:0;border-radius:99px;background:repeating-linear-gradient(90deg,#B9D39F 0 10px,#9FC283 10px 20px);transition:width 1.1s var(--ease)}
+.ct-week-card.in .ct-open{width:58.333%}
+.ct-dh{font-size:.92rem;text-align:right;color:#D6DCCB}
+.ct-day.off .ct-dn,.ct-day.off .ct-dh{color:#9DA897}
+.ct-note{margin:12px 0 0;font-size:.82rem;color:#CBD3C0}
+.ct-areas{background:#F4EFE3}
+.ct-chips a,.ct-chips button{color:var(--oak);background:var(--paper);border-color:var(--line)}
+.ct-chips a:hover{background:var(--oak);color:var(--cream)}
+.ct-chips button{background:var(--oak);color:var(--cream);border-color:var(--oak)}
+@media (max-width:900px){.ct-main-grid,.ct-week-grid{grid-template-columns:minmax(0,1fr)}}
+.ct-week-card,.ct-form,.ct-cards{min-width:0}
+@media (max-width:380px){.ct-scale{display:none}.ct-day{grid-template-columns:78px minmax(0,1fr) 64px;gap:8px;padding:8px 6px}.ct-today{display:block;margin:2px 0 0;width:max-content}}
+@media (max-width:760px){.ct-grid{grid-template-columns:1fr}.ct-status{min-width:0;justify-self:start}}
+@media (max-width:520px){.ct-day{grid-template-columns:92px 1fr 74px;gap:10px}.ct-scale{margin-left:102px;margin-right:84px}.ct-dn{font-size:1rem}.ct-dh{font-size:.84rem}}
+@media (prefers-reduced-motion:reduce){.ct-status.is-open .ct-dot{animation:none}.ct-open{transition:none;width:58.333%!important}}
 </style>
 </head>
 <body>
@@ -1043,13 +1096,13 @@ html.js .fa .cal-day.visit{animation:none}
           </ul>
         </li>
         <li class="nav-item has-sub">
-          <span class="split"><a href="services.html" aria-current="page">Services</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services"><span class="sr-only">Show all services</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
+          <span class="split"><a href="services.html">Services</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services"><span class="sr-only">Show all services</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
           <ul class="submenu cols" id="sub-services">
             <li><a href="residential-lawn-mowing.html">Residential Lawn Mowing</a></li>
             <li><a href="commercial-lawn-maintenance.html">Commercial Lawn Maintenance</a></li>
             <li><a href="lawn-edging.html">Lawn Edging</a></li>
             <li><a href="weed-control.html">Weed Control</a></li>
-            <li><a href="lawn-fertilization.html" aria-current="page">Lawn Fertilization</a></li>
+            <li><a href="lawn-fertilization.html">Lawn Fertilization</a></li>
             <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
             <li><a href="overseeding.html">Overseeding</a></li>
             <li><a href="sod-installation.html">Sod Installation</a></li>
@@ -1075,7 +1128,7 @@ html.js .fa .cal-day.visit{animation:none}
           </ul>
         </li>
         <li class="nav-item"><a href="https://www.bigeasygrasscutting.com/blog/">Blog</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>
+        <li class="nav-item"><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </nav>
     <a class="hdr-phone" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
@@ -1102,7 +1155,7 @@ html.js .fa .cal-day.visit{animation:none}
         <li><a href="commercial-lawn-maintenance.html">Commercial Lawn Maintenance</a></li>
         <li><a href="lawn-edging.html">Lawn Edging</a></li>
         <li><a href="weed-control.html">Weed Control</a></li>
-        <li><a href="lawn-fertilization.html" aria-current="page">Lawn Fertilization</a></li>
+        <li><a href="lawn-fertilization.html">Lawn Fertilization</a></li>
         <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
         <li><a href="overseeding.html">Overseeding</a></li>
         <li><a href="sod-installation.html">Sod Installation</a></li>
@@ -1134,220 +1187,116 @@ html.js .fa .cal-day.visit{animation:none}
 
 <main id="main">
 
-<!-- Service hero -->
-<section class="ph ph-svc" aria-labelledby="hero-title">
-  <img class="ph-bg" src="assets/work-2.jpg" alt="" width="1920" height="1417" fetchpriority="high">
+<!-- Contact hero (compact banner) -->
+<section class="ph ph-svc ph-contact" aria-labelledby="hero-title">
+  <img class="ph-bg" src="assets/work-14.jpg" alt="" width="2000" height="798" fetchpriority="high">
   <div class="wrap ph-in">
-    <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="./">Home</a></li><li><a href="services.html">Services</a></li><li aria-current="page">Lawn Fertilization</li></ol></nav>
-    <div class="ph-svc-grid">
+    <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="./">Home</a></li><li aria-current="page">Contact</li></ol></nav>
+    <div class="ct-grid">
       <div class="ph-copy">
-        <h1 class="ph-kicker" id="hero-title">Lawn Fertilization in New Orleans</h1>
-        <h2 class="ph-display">Nourish Your Lawn, Enrich Your Life: Discover <em>Lawn Fertilization</em> Excellence</h2>
-        <p class="ph-sub">A feeding plan customized to your soil, grass species and growing conditions, so your lawn stays green through the seasons.</p>
+        <h1 class="ph-kicker" id="hero-title">Contact Our New Orleans Lawn Care Team</h1>
+        <h2 class="ph-display">Call, Message or Book a <em>Free Lawn Care Quote</em></h2>
+        <p class="ph-sub">We handle all your lawn care needs in New Orleans. Reach us to schedule service or get a free quote.</p>
         <div class="hero-ctas">
-          <button class="btn btn-brass" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-          <a class="btn ph-call" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
+          <a class="btn btn-brass" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call 504-910-7829</a>
+          <a class="btn ph-call" href="#contact-form">Send a Message <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
-        <ul class="ph-facts"><li><svg aria-hidden="true"><use href="#i-check"/></svg>Custom Feeding Schedule</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Licensed &amp; Insured</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Free Estimates</li></ul>
+      </div>
+      <div class="ct-status" id="ct-status" aria-live="polite">
+        <span class="ct-dot" aria-hidden="true"></span>
+        <span class="ct-state">Mon to Fri, 8am to 3pm</span>
+        <span class="ct-when">Central Time</span>
       </div>
     </div>
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:var(--oak-deep);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Service intro -->
-<section class="section sv-intro" aria-labelledby="intro-title">
-  <div class="wrap sv-intro-grid">
-    <div class="sv-intro-copy reveal">
-      <p class="eyebrow">Lawn Fertilization</p>
-      <h2 class="h2" id="intro-title" style="color:var(--oak)">Lawn Fertilization Built Around <em class="acc">Your Soil</em></h2>
-      <p>Proper nutrition is the key to a lush, healthy lawn. Our Lawn Fertilization service in New Orleans gives your grass the nutrients it needs to stay healthy, resilient and green through the seasons.</p><p>Every lawn has its own needs, so we customize the approach to your soil type, grass species and growing conditions. Our technicians analyze your lawn first, then set the blend of nutrients that will get the best results.</p>
-      <div class="sfeat-actions">
-        <button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate</button>
-        <a class="btn btn-ghost" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
+<!-- Contact methods + live form -->
+<section class="section ct-main" id="contact-form" aria-labelledby="ct-title">
+  <div class="wrap">
+    <div class="sv-head reveal">
+      <p class="eyebrow">Get in Touch</p>
+      <h2 class="h2" id="ct-title" style="color:var(--oak)">Reach Our New Orleans <em class="acc">Lawn Care Team</em></h2>
+      <p class="lede">Call during business hours, or send the form any time and tell us about your lawn.</p>
+    </div>
+    <div class="ct-main-grid">
+      <div class="ct-cards">
+        <a class="ct-card ct-call reveal" href="tel:+15049107829"><span class="ct-ic"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><span><span class="ct-k">Phone Number</span><span class="ct-v">504-910-7829</span><span class="ct-s">Tap to call our crew</span></span></a>
+        <div class="ct-card reveal"><span class="ct-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span><span><span class="ct-k">Location</span><span class="ct-v">New Orleans</span><span class="ct-s">Serving Greater New Orleans, LA. We come to you.</span></span></div>
+        <div class="ct-card reveal"><span class="ct-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><span class="ct-k">Opening Hours</span><span class="ct-v">Mon to Fri: 8am to 3pm</span><span class="ct-s">Sat and Sun: Closed</span></span></div>
+        <div class="ct-follow reveal"><p class="ct-k">Follow Us</p><ul><li><a href="https://www.youtube.com/@BigEasyGrassCutting" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://www.facebook.com/BigEasyGrassCutting" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://twitter.com/BEGrassCutting" target="_blank" rel="noopener">X (Twitter)</a></li><li><a href="https://www.linkedin.com/company/be-grass-cutting/" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+      </div>
+      <div class="ct-form reveal">
+        <div class="lc-form ct-lc" tabindex="0" role="region" aria-label="Contact form, scroll inside to see every field">
+          <iframe src="https://api.leadconnectorhq.com/widget/form/NJbJV1veXCKKYctvjIhd" id="inline-NJbJV1veXCKKYctvjIhd" title="Contact Us" style="width:100%;height:884px;border:none;border-radius:3px" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Contact Us" data-height="884" data-layout-iframe-id="inline-NJbJV1veXCKKYctvjIhd" data-form-id="NJbJV1veXCKKYctvjIhd"></iframe>
+        </div>
+        <p class="lc-form-hint">Scroll inside the form to see every field.</p>
       </div>
     </div>
-    <div class="sfeat-media sv-intro-media reveal">
-      <img src="assets/sp-lawn-fertilization.jpg" alt="Fertilizer spreader filled with granules on a green lawn" width="950" height="450" loading="lazy">
-    </div>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#C9DEB4" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Benefits -->
-<section class="section sv-ben" aria-labelledby="ben-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">Why It Pays Off</p>
-      <h2 class="h2" id="ben-title" style="color:var(--oak)">Benefits of Lawn Fertilization in <em class="acc">New Orleans</em></h2>
-      <p class="lede">The right nutrients at the right time change how a lawn looks and how it holds up. Here is what a good feeding plan does.</p>
-    </div>
-    <div class="ben-grid">
-      <div class="sfeat-media ben-media reveal"><img src="assets/work-15.jpg" alt="Flat green lawn bordered by red shrubs" width="2000" height="1286" loading="lazy"></div>
-      <ol class="ben-list">
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">01</span><div><h3>Deeper, Healthier Roots</h3><p>The right balance of nutrients promotes healthy root growth, which gives the whole lawn a stronger foundation.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">02</span><div><h3>Green Through the Seasons</h3><p>Proper nutrition keeps your grass healthy and green throughout the year, instead of fading out between feedings.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">03</span><div><h3>Better Stress Tolerance</h3><p>A well-fed lawn is better able to stand up to environmental stress like heat, drought and foot traffic.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">04</span><div><h3>Sturdy Stems, Lush Growth</h3><p>Nutrients work together to build sturdy stems and thick, green foliage you can see from the street.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">05</span><div><h3>Fewer Weed and Disease Problems</h3><p>Feeding at the right time keeps nitrogen from going to weeds and lowers the risk of large patch disease.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">06</span><div><h3>A Lawn Ready for Winter</h3><p>Stopping nitrogen after August lets grass slow down toward dormancy, so it heads into winter more cold hardy.</p></div></li>
-      </ol>
-    </div>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#C9DEB4;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- What comes with every visit -->
-<section class="section dark sv-inc" aria-labelledby="inc-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">The Details</p>
-      <h2 class="h2" id="inc-title">What Our Lawn Fertilization <em class="acc" style="color:var(--brass-lite)">Service Includes</em></h2>
-      <p class="lede">Here is what goes into every feeding plan we set up.</p>
-    </div>
-    <ul class="inc-grid">
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">01</span><h3>A Thorough Lawn Analysis</h3><p>Our technicians look at your soil type, grass species and growing conditions before setting a plan.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">02</span><h3>The Right Blend of Nutrients</h3><p>We set the mix of nitrogen, phosphorus and potassium your lawn actually needs for the results you want.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">03</span><h3>High-Quality Fertilizers</h3><p>We use high-quality fertilizers that promote healthy roots, sturdy stems and lush green foliage.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">04</span><h3>A Schedule for the Growing Season</h3><p>Feedings are timed to deliver nutrients during the growing season, for steady, consistent growth.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">05</span><h3>Rates Calibrated to Your Grass</h3><p>Application rates are set for your grass type and Louisiana seasons, which helps prevent fertilizer burn.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">06</span><h3>Timing That Follows the Calendar</h3><p>Every plan is built around the April to August feeding window, when warm-season grass can actually use the nitrogen.</p></li>
-    </ul>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:var(--oak);--to:#ECE6D2" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- When to schedule -->
-<section class="section sv-time" aria-labelledby="time-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">When to Schedule</p>
-      <h2 class="h2" id="time-title" style="color:var(--oak)">When to Fertilize Your Lawn in <em class="acc">New Orleans</em></h2>
-      <p class="lede">In south Louisiana, when you feed matters as much as what you spread. Here is how the year breaks down.</p>
-    </div>
-    <ol class="time-list">
-      <li class="time-card reveal"><span class="time-k">Jan to Feb</span><h3>Soil Test and Plan Ahead</h3><p>Winter is for planning. A soil test shows pH and nutrient levels, and any lime the report calls for goes down now.</p></li>
-      <li class="time-card reveal"><span class="time-k">March</span><h3>Wait Out Early Green-Up</h3><p>Hold the fertilizer. Grass is regrowing its roots, and early nitrogen feeds winter weeds and invites spring brown patch.</p></li>
-      <li class="time-card reveal"><span class="time-k">Mid-April to August</span><h3>The Feeding Window</h3><p>The first feeding lands in mid-April, and August is usually the last nitrogen of the year. Your grass type sets how many feedings fall in between.</p></li>
-      <li class="time-card reveal"><span class="time-k">Fall</span><h3>Switch to Fall Care</h3><p>Skip high-nitrogen products after August. Fall nitrogen keeps grass growing when it should slow down and invites large patch.</p></li>
-    </ol>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#ECE6D2;--to:#0F2A17" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<div class="fa">
-<!-- 7. PROCESS -->
-<section class="process on-deep" id="process" aria-labelledby="proc-title">
-  <div class="wrap">
-    <div class="process-head reveal">
-      <p class="eyebrow">How It Works</p>
-      <h2 id="proc-title">How Our Lawn Fertilization Service Works</h2>
-      <p class="lede">Scroll along and watch the mower work the path.</p>
-    </div>
-    <svg class="proc-svg" id="proc-svg" viewBox="0 0 1000 230" aria-hidden="true">
-      <path class="proc-base" id="proc-path" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <path class="proc-cut" id="proc-cut" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <path class="proc-cut-2" id="proc-cut-2" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <g class="proc-node" data-at="0.2"><circle cx="167" cy="90" r="26"/><text x="167" y="90">1</text></g>
-      <g class="proc-node" data-at="0.5"><circle cx="500" cy="165" r="26"/><text x="500" y="165">2</text></g>
-      <g class="proc-node" data-at="0.8"><circle cx="833" cy="90" r="26"/><text x="833" y="90">3</text></g>
-      <g id="proc-mower"><use href="#mower" x="-33" y="-22" width="66" height="45"/></g>
-    </svg>
-    <div class="proc-body" id="proc-body">
-      <div class="proc-rail" aria-hidden="true"><div class="proc-rail-fill"></div><svg class="proc-rail-mower" viewBox="0 0 130 88"><use href="#mower"/></svg></div>
-      <ol class="proc-steps">
-        <li class="proc-step" data-at="0.2">
-          <span class="step-k" aria-hidden="true">Step 1</span>
-          <h3>Schedule a Consultation</h3>
-          <p>Contact us to talk through your lawn care needs. Our team visits your property to assess its size, condition and specific requirements.</p>
-        </li>
-        <li class="proc-step" data-at="0.5">
-          <span class="step-k" aria-hidden="true">Step 2</span>
-          <h3>Tailored Lawn Care Plan</h3>
-          <p>Based on that assessment, we build a customized plan that suits what your lawn needs.</p>
-        </li>
-        <li class="proc-step" data-at="0.8">
-          <span class="step-k" aria-hidden="true">Step 3</span>
-          <h3>Professional Maintenance</h3>
-          <p>Sit back and relax while our experienced team carries out the plan with attention to detail and professional-grade equipment.</p>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
-</div>
-<div class="fa"><div class="edge" style="--from:#0F2A17;--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Pair it with -->
-<section class="section sv-pair" aria-labelledby="pair-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">Pair It With</p>
-      <h2 class="h2" id="pair-title" style="color:var(--oak)">Services That Pair With <em class="acc">Lawn Fertilization</em></h2>
-      <p class="lede">Every lawn is unique. Add any of these and we build them into one tailored plan.</p>
-    </div>
-    <ul class="pair-grid">
-      <li class="pair-card reveal"><a href="weed-control.html"><img src="assets/svc-weed-control.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Weed Control</span><span class="pair-d">Banish weeds before they take over a beautiful lawn.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="lawn-aeration.html"><img src="assets/svc-lawn-aeration.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Aeration</span><span class="pair-d">Breathing life into compacted soil.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="overseeding.html"><img src="assets/svc-overseeding.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Overseeding</span><span class="pair-d">Fill in patchy, sparse turf for a lush, resilient lawn.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="irrigation-system-maintenance.html"><img src="assets/svc-irrigation-system-maintenance.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Irrigation System Maintenance</span><span class="pair-d">Keep the flow for a thriving landscape.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-    </ul>
-    <p class="pair-all"><a class="btn btn-ghost" href="services.html">See All 10 Services <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:#F4EFE3;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Areas strip -->
-<section class="section dark sv-areas" aria-labelledby="areas-title">
-  <div class="wrap sv-areas-grid">
+<!-- When to reach us -->
+<section class="section dark ct-week" aria-labelledby="week-title">
+  <div class="wrap ct-week-grid">
     <div class="reveal">
-      <p class="eyebrow">Where We Work</p>
-      <h2 class="h2" id="areas-title">Lawn Fertilization Across <em class="acc">Greater New Orleans</em></h2>
-      <p class="lede">Home base is New Orleans, with crews serving the Southshore, West Bank, River Parishes and Northshore.</p>
+      <p class="eyebrow">When to Reach Us</p>
+      <h2 class="h2" id="week-title">Our Business Hours, <em class="acc" style="color:var(--brass-lite)">Day by Day</em></h2>
+      <p class="lede">We answer calls Monday through Friday, 8am to 3pm Central Time. The form takes messages any day of the week.</p>
+      <div class="hero-ctas"><a class="btn btn-brass" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a><button class="btn ph-call" type="button" data-open-estimate>Get a Free Estimate</button></div>
     </div>
-    <ul class="town-chips reveal" aria-label="Service Areas"><li><button type="button" data-open-estimate>New Orleans</button></li><li><a href="metairie.html">Metairie</a></li><li><a href="kenner.html">Kenner</a></li><li><a href="harahan.html">Harahan</a></li><li><a href="river-ridge.html">River Ridge</a></li><li><a href="gretna.html">Gretna</a></li><li><a href="laplace.html">LaPlace</a></li><li><a href="covington.html">Covington</a></li><li><a href="mandeville.html">Mandeville</a></li><li><a href="madisonville.html">Madisonville</a></li><li><a href="slidell.html">Slidell</a></li><li><a href="hammond.html">Hammond</a></li><li><a href="baton-rouge.html">Baton Rouge</a></li></ul>
+    <div class="ct-week-card reveal">
+      <div class="ct-scale" aria-hidden="true"><span>6am</span><span>9am</span><span>Noon</span><span>3pm</span><span>6pm</span></div>
+      <ol class="ct-days">
+      <li class="ct-day" data-day="Mon"><span class="ct-dn">Monday</span><span class="ct-track" aria-hidden="true"><span class="ct-open"></span></span><span class="ct-dh">8am to 3pm</span></li>
+      <li class="ct-day" data-day="Tue"><span class="ct-dn">Tuesday</span><span class="ct-track" aria-hidden="true"><span class="ct-open"></span></span><span class="ct-dh">8am to 3pm</span></li>
+      <li class="ct-day" data-day="Wed"><span class="ct-dn">Wednesday</span><span class="ct-track" aria-hidden="true"><span class="ct-open"></span></span><span class="ct-dh">8am to 3pm</span></li>
+      <li class="ct-day" data-day="Thu"><span class="ct-dn">Thursday</span><span class="ct-track" aria-hidden="true"><span class="ct-open"></span></span><span class="ct-dh">8am to 3pm</span></li>
+      <li class="ct-day" data-day="Fri"><span class="ct-dn">Friday</span><span class="ct-track" aria-hidden="true"><span class="ct-open"></span></span><span class="ct-dh">8am to 3pm</span></li>
+      <li class="ct-day off" data-day="Sat"><span class="ct-dn">Saturday</span><span class="ct-track" aria-hidden="true"></span><span class="ct-dh">Closed</span></li>
+      <li class="ct-day off" data-day="Sun"><span class="ct-dn">Sunday</span><span class="ct-track" aria-hidden="true"></span><span class="ct-dh">Closed</span></li>
+      </ol>
+      <p class="ct-note">Today is highlighted, based on Central Time.</p>
+    </div>
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:var(--oak);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- Where we work -->
+<section class="section ct-areas" style="padding-bottom:clamp(40px,5vw,64px)" aria-labelledby="areas-title">
+  <div class="wrap">
+    <div class="sv-head reveal">
+      <p class="eyebrow">Where We Work</p>
+      <h2 class="h2" id="areas-title" style="color:var(--oak)">Serving Greater New Orleans <em class="acc">and Nearby Towns</em></h2>
+      <p class="lede">Home base is New Orleans. Pick your town to see what we do there.</p>
+    </div>
+    <ul class="town-chips ct-chips reveal"><li><button type="button" data-open-estimate>New Orleans</button></li><li><a href="metairie.html">Metairie</a></li><li><a href="kenner.html">Kenner</a></li><li><a href="harahan.html">Harahan</a></li><li><a href="river-ridge.html">River Ridge</a></li><li><a href="gretna.html">Gretna</a></li><li><a href="laplace.html">LaPlace</a></li><li><a href="covington.html">Covington</a></li><li><a href="mandeville.html">Mandeville</a></li><li><a href="madisonville.html">Madisonville</a></li><li><a href="slidell.html">Slidell</a></li><li><a href="hammond.html">Hammond</a></li><li><a href="baton-rouge.html">Baton Rouge</a></li></ul>
+  </div>
+</section>
+<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#ECE6D2" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
 <!-- Page FAQ -->
-<section class="section faq-light" aria-labelledby="faq-title" id="faq">
+<section class="section faq-light" style="background:#ECE6D2" aria-labelledby="faq-title" id="faq">
   <div class="wrap">
     <div class="reveal">
       <p class="eyebrow">Common Questions</p>
-      <h2 class="h2" id="faq-title" style="color:var(--oak)">Lawn Fertilization <em class="acc">FAQs</em></h2>
+      <h2 class="h2" id="faq-title" style="color:var(--oak)">Contact and Scheduling <em class="acc">FAQs</em></h2>
     </div>
     <div class="faq-grid">
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b1"><span class="n" aria-hidden="true">01</span><span class="q">When Should You Fertilize a Lawn in New Orleans?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-b1"><p>From mid-April through August. The first feeding belongs in mid-April, once soil 2 inches down stays in the upper 60s, and August is usually the last nitrogen of the year. Your grass type sets how many feedings fall in between.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-b2"><span class="n" aria-hidden="true">02</span><span class="q">Why Shouldn’t I Fertilize in March?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-b2"><p>In early to mid-March, warm-season grasses are shedding old roots and growing new ones, so they can’t use fertilizer well yet. Early nitrogen also feeds winter weeds and can make the lawn more prone to spring brown patch.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b3"><span class="n" aria-hidden="true">03</span><span class="q">Can Over-Fertilizing Damage My Grass?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-b3"><p>Yes. Too much fertilizer causes fertilizer burn, which pulls moisture out of the roots and can turn grass yellow or brown within days. Most lawns recover in two to four weeks if you catch it early and flush the soil with water.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b4"><span class="n" aria-hidden="true">04</span><span class="q">Should I Fertilize My Lawn in the Fall?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-b4"><p>Not with nitrogen, for warm-season lawns in Louisiana. Fall nitrogen pushes growth when the grass should be slowing toward dormancy, which raises the risk of cold injury and disease. Fall is a better time for potassium and a soil test.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b5"><span class="n" aria-hidden="true">05</span><span class="q">How Do You Decide What My Lawn Needs?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-b5"><p>Our technicians analyze your lawn first. The plan is customized to your soil type, grass species and growing conditions, and that analysis sets the blend of nutrients your lawn gets.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b6"><span class="n" aria-hidden="true">06</span><span class="q">Can I Fertilize and Treat Weeds at the Same Time?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-b6"><p>It is better to keep them apart. LSU AgCenter guidance recommends separate fertilizer and herbicide applications and avoiding weed and feed products. If weeds are the problem, treat them on their own schedule.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b1"><span class="n" aria-hidden="true">01</span><span class="q">What Is the Fastest Way to Reach Your Crew?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-b1"><p>Call 504-910-7829 during business hours, Monday through Friday, 8am to 3pm. You can also send the form on this page any time.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-b2"><span class="n" aria-hidden="true">02</span><span class="q">Can I Contact You on the Weekend?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-b2"><p>Our office is closed Saturday and Sunday, but the contact form takes messages any day. We will see it when we are back on Monday.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b3"><span class="n" aria-hidden="true">03</span><span class="q">What Should I Include in My Message?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-b3"><p>The form asks for your name, phone, email, the service you need and your address. A short note about your lawn helps us plan the visit.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b4"><span class="n" aria-hidden="true">04</span><span class="q">Will You Text Me About My Service?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-b4"><p>Only if you choose to. The form has an optional box to receive SMS notifications and alerts.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b5"><span class="n" aria-hidden="true">05</span><span class="q">Do You Have an Office I Can Visit?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-b5"><p>We are based in New Orleans and come to you. Our team visits your property to look at your lawn and talk through what it needs.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b6"><span class="n" aria-hidden="true">06</span><span class="q">Where Can I Follow Big Easy Grass Cutting Online?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-b6"><p>You can find us on YouTube, Facebook, X (Twitter) and LinkedIn. The links are in the contact section above.</p></div></div>
     </div>
   </div>
 </section>
-<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- 14. Estimate stepper -->
-<section class="section dark estimate" aria-labelledby="est-title" id="estimate">
-  <div class="wrap est-grid">
-    <div class="est-info reveal">
-      <p class="eyebrow">Free Estimate</p>
-      <h2 class="h2" id="est-title">Get a Free Lawn Fertilization <em class="acc" style="color:var(--brass-lite)">Estimate</em></h2>
-      <p class="lede" style="margin-top:1rem">Trusted by homeowners and businesses across New Orleans. Get a free, no-obligation quote today.</p>
-      <ul>
-        <li><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Rather talk? Call <a href="tel:+15049107829">504-910-7829</a></span></li>
-        <li><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Monday to Friday, 8am to 3pm Central Time. Closed Saturday and Sunday.</span></li>
-        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Serving Greater New Orleans, LA</span></li>
-      </ul>
-    </div>
-    <div class="form-card">
-      <div class="lc-form" tabindex="0" role="region" aria-label="Free estimate form, scroll inside to see every field">
-        <iframe src="https://api.leadconnectorhq.com/widget/form/m7YFSkpX7GTkpdHBMaTO" id="inline-m7YFSkpX7GTkpdHBMaTO" title="Free Estimate Request" style="width:100%;height:788px;border:none;border-radius:3px" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Banner Form" data-height="788" data-layout-iframe-id="inline-m7YFSkpX7GTkpdHBMaTO" data-form-id="m7YFSkpX7GTkpdHBMaTO"></iframe>
-      </div>
-      <p class="lc-form-hint">Scroll inside the form to see every field.</p>
-      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
-    </div>
-  </div>
-</section>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
 </main>
 
@@ -2248,6 +2197,32 @@ html.js .fa .cal-day.visit{animation:none}
   }
   window.addEventListener('scroll', function(){ if (!tick) { tick = true; setTimeout(check, 160); } }, { passive: true });
   window.addEventListener('load', check);
+})();
+</script>
+<script>
+/* Contact page: open/closed badge + today's row, from the current time in Central Time (America/Chicago) */
+(function(){
+  var OPEN = 8, CLOSE = 15, DAYS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], NAMES = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var now;
+  try {
+    var p = new Intl.DateTimeFormat('en-US', {timeZone:'America/Chicago', weekday:'short', hour:'numeric', minute:'numeric', hour12:false}).formatToParts(new Date());
+    var get = function(t){ for (var i = 0; i < p.length; i++) if (p[i].type === t) return p[i].value; };
+    now = {d: DAYS.indexOf(get('weekday')), h: (+get('hour')) % 24, m: +get('minute')};
+  } catch (e) { return; }
+  if (now.d < 0) return;
+  var weekday = now.d >= 1 && now.d <= 5, mins = now.h * 60 + now.m, open = weekday && mins >= OPEN * 60 && mins < CLOSE * 60;
+  var box = document.getElementById('ct-status');
+  if (box) {
+    var next;
+    if (open) next = 'Open now, until 3pm';
+    else if (weekday && mins < OPEN * 60) next = 'Closed now, opens today at 8am';
+    else { var d = now.d; do { d = (d + 1) % 7; } while (d === 0 || d === 6); next = 'Closed now, opens ' + (d === (now.d + 1) % 7 ? 'tomorrow' : NAMES[d]) + ' at 8am'; }
+    box.classList.add(open ? 'is-open' : 'is-closed');
+    box.querySelector('.ct-state').textContent = next;
+    box.querySelector('.ct-when').textContent = 'Central Time · Mon to Fri, 8am to 3pm';
+  }
+  var row = document.querySelector('.ct-day[data-day="' + DAYS[now.d] + '"]');
+  if (row) { row.classList.add('today'); var dn = row.querySelector('.ct-dn'); if (dn) dn.insertAdjacentHTML('beforeend', ' <span class="ct-today">Today</span>'); }
 })();
 </script>
 </body>
