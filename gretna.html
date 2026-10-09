@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Lawn Edging Service in New Orleans | Big Easy Grass Cutting</title>
-<meta name="description" content="Big Easy Grass Cutting cuts clean edges along New Orleans walks, drives and beds so the whole yard looks finished. Call 504-910-7829.">
+<title>Grass Cutting Services in Gretna | Big Easy Grass Cutting</title>
+<meta name="description" content="At Big Easy Grass Cutting, we provide expert lawn care and landscaping in Gretna. Contact us today to transform your outdoor space.">
 <link rel="icon" href="assets/favicon.png">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -980,6 +980,137 @@ html.js .fa .cal-day.visit{animation:none}
 }
 @media (max-width:600px){.inc-grid,.pair-grid,.ben-list{grid-template-columns:1fr}.ph-facts{gap:6px 16px}}
 @media (max-width:900px){.ben-grid{grid-template-columns:1fr}.ben-media{max-width:460px}}
+
+/* ===== City page ===== */
+.pc-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,4vw,56px);align-items:center}
+.pc-stamp{width:clamp(150px,15vw,200px)}
+.pc-stamp svg{width:100%;height:auto;display:block;overflow:visible}
+.pc-stamp text{font:600 11px var(--sans);letter-spacing:.12em;fill:var(--brass-lite)}
+.pc-spin{transform-origin:100px 100px;animation:pcSpin 26s linear infinite}
+.pc-core{fill:rgba(244,239,227,.1);stroke:var(--brass-lite);stroke-width:1.5}
+.pc-pin{fill:var(--brass-lite);transform-origin:100px 132px;animation:pcBob 2.6s ease-in-out infinite}
+@keyframes pcSpin{to{transform:rotate(360deg)}}
+@keyframes pcBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.pc-matter{background:#C9DEB4}
+.pc-lanes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.6vw,18px)}
+.pc-lane{position:relative;overflow:hidden;padding:52px 22px 24px;border-radius:20px;background:repeating-linear-gradient(90deg,#F4EFE3 0 34px,#EDE7D6 34px 68px);border:1px solid rgba(22,41,27,.12)}
+.pc-track{position:absolute;left:0;right:0;top:0;height:36px;border-bottom:1px dashed rgba(22,41,27,.18)}
+.pc-mower{position:absolute;top:4px;left:-56px;width:46px;height:30px;fill:var(--paper);stroke:var(--oak);stroke-width:2.4;stroke-linejoin:round}
+.pc-lane.in .pc-mower{animation:pcMow 2.2s var(--ease) forwards}
+.pc-lane.in .pc-track{animation:pcMown 2.2s var(--ease) forwards}
+.pc-lane:nth-child(2).in .pc-mower,.pc-lane:nth-child(2).in .pc-track{animation-delay:.15s}
+.pc-lane:nth-child(3).in .pc-mower,.pc-lane:nth-child(3).in .pc-track{animation-delay:.3s}
+.pc-lane:nth-child(4).in .pc-mower,.pc-lane:nth-child(4).in .pc-track{animation-delay:.45s}
+@keyframes pcMow{from{left:-56px}to{left:calc(100% - 52px)}}
+@keyframes pcMown{from{background-size:0 100%}to{background-size:100% 100%}}
+.pc-track{background:linear-gradient(#B9D39F,#B9D39F) no-repeat 0 0/0 100%}
+.pc-lane-n{display:block;font-family:var(--serif);font-size:2.2rem;line-height:1;color:transparent;-webkit-text-stroke:1.2px var(--moss);margin-bottom:10px}
+.pc-lane h3{font-size:1.35rem;color:var(--oak);margin-bottom:.4rem}
+.pc-lane p{margin:0;color:#3F4B3E;font-size:.96rem}
+.pc-svcs .lede{color:#D6DCCB}
+.pc-probs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.6vw,18px)}
+.pc-prob{perspective:1200px}
+.pc-in{position:relative;display:grid;height:100%;min-height:250px;transform-style:preserve-3d;transition:transform .6s var(--ease)}
+.pc-prob.flip .pc-in{transform:rotateY(180deg)}
+.pc-face{grid-area:1/1;display:flex;flex-direction:column;padding:24px 22px 22px;border-radius:20px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.pc-front{background:#2B4B33;border:1px solid rgba(217,181,108,.28);visibility:visible;transition:visibility 0s .3s}
+.pc-back{background:var(--cream);color:var(--ink);transform:rotateY(180deg);visibility:hidden;transition:visibility 0s .3s}
+.pc-prob.flip .pc-front{visibility:hidden}
+.pc-prob.flip .pc-back{visibility:visible}
+.pc-art{display:block;height:92px;padding:12px 14px;margin-bottom:auto;border-radius:14px;background:rgba(15,42,23,.45);color:var(--brass-lite)}
+.pc-art svg{width:100%;height:100%;overflow:visible}
+.pc-sign{margin:0 0 16px;color:#D6DCCB;font-size:.93rem;line-height:1.5}
+.pc-sign span{display:block;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brass-lite);margin-bottom:2px}
+.pc-art .a-sway{transform-origin:bottom;transform-box:fill-box;animation:paSway 3.4s ease-in-out infinite}
+.pc-art .a-seed{fill:currentColor;animation:pcSeed 2.6s ease-in infinite}
+.pc-art .a-press{animation:pcPress 1.8s ease-in-out infinite}
+.pc-art .a-fall{transform-box:fill-box;transform-origin:center;animation:pcFall 3.2s ease-in infinite}
+.pc-art .a-spray{animation:pcDash 1.2s linear infinite}
+.pc-art .a-drip{animation:paDrop 1.4s ease-in infinite}
+.pc-art .a-droop{transform-origin:bottom;transform-box:fill-box;animation:pcDroop 4s ease-in-out infinite}
+.pc-art .a-roll{transform-box:fill-box;transform-origin:center;animation:pcRoll 6s linear infinite}
+.pc-art .a-creep{stroke-dasharray:30;animation:pcCreep 3s ease-in-out infinite alternate}
+.pc-art .a-d2{animation-delay:.6s}.pc-art .a-d3{animation-delay:1.2s}
+@keyframes paSway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(4deg)}}
+@keyframes paDrop{0%{transform:translateY(-6px);opacity:0}30%{opacity:1}100%{transform:translateY(8px);opacity:0}}
+@keyframes pcSeed{0%{transform:translateY(-8px);opacity:0}30%{opacity:1}100%{transform:translateY(26px);opacity:0}}
+@keyframes pcPress{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+@keyframes pcFall{0%{transform:translate(0,-6px) rotate(0);opacity:0}20%{opacity:1}100%{transform:translate(10px,30px) rotate(40deg);opacity:0}}
+@keyframes pcDash{to{stroke-dashoffset:-18}}
+@keyframes pcDroop{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.92)}}
+@keyframes pcRoll{to{transform:rotate(360deg)}}
+@keyframes pcCreep{from{stroke-dashoffset:30}to{stroke-dashoffset:0}}
+.pc-front h3{font-size:clamp(1.35rem,1.8vw,1.6rem);color:var(--cream);margin:18px 0 8px;line-height:1.15}
+.pc-flip,.pc-unflip{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid var(--brass-lite);background:transparent;color:var(--brass-lite);font:600 .92rem var(--sans);cursor:pointer;transition:background .25s,color .25s}
+.pc-flip svg{width:15px;height:15px}
+.pc-flip:hover{background:var(--brass-lite);color:var(--iron)}
+.pc-back img{width:44px;height:44px}
+.pc-fix-l{margin:10px 0 6px;font-family:var(--serif);font-size:1.25rem;line-height:1.2;color:var(--oak)}
+.pc-back p:not(.pc-fix-l){margin:0;font-size:.95rem;color:#3F4B3E}
+.pc-unflip{margin-top:auto;border-color:var(--oak);color:var(--oak)}
+.pc-unflip:hover{background:var(--oak);color:var(--cream)}
+.pc-why{background:#F4EFE3}
+.pc-why-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:start}
+.pc-why-head{position:sticky;top:110px}
+.pc-why-head .lede{max-width:none;margin-bottom:1.4rem}
+.pc-why-head .h2{font-size:clamp(1.9rem,2.9vw,2.7rem);line-height:1.12;margin-bottom:.8rem}
+.pc-why-list{list-style:none;margin:0;padding:0;position:relative}
+.pc-why-list::before{content:"";position:absolute;left:27px;top:28px;bottom:28px;width:2px;background:repeating-linear-gradient(var(--sage) 0 8px,transparent 8px 16px)}
+.pc-why-item{position:relative;display:grid;grid-template-columns:auto 1fr;gap:20px;padding:0 0 clamp(20px,2.6vw,30px)}
+.pc-why-n{position:relative;z-index:1;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--oak);color:var(--brass-lite);font-family:var(--serif);font-size:1.5rem;box-shadow:0 0 0 6px #F4EFE3}
+.pc-why-item h3{font-size:1.4rem;color:var(--oak);margin:10px 0 .3rem}
+.pc-why-item p{margin:0;color:var(--muted)}
+.pc-ab1{background:#ECE6D2}
+.pc-ab2{background:#F4EFE3}
+.pc-ab-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,72px);align-items:start}
+.pc-ab-img{margin:0;border-radius:9999px 9999px 20px 20px;overflow:hidden;box-shadow:0 34px 60px -38px rgba(22,41,27,.65);position:sticky;top:120px}
+.pc-ab-img img{display:block;width:100%;height:auto;aspect-ratio:4/4.2;object-fit:cover}
+.pc-ab .lede{margin-top:14px;max-width:none}
+.pc-ab .h2{font-size:clamp(2rem,2.9vw,2.7rem);line-height:1.12}
+.pc-kv{margin:14px 0 0;color:var(--muted)}
+.pc-kv b{color:var(--moss);font-weight:600}
+.pc-maplink{display:inline-flex;align-items:center;gap:8px;margin-top:18px;min-height:44px;font:700 .8rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--moss);text-decoration:none}
+.pc-maplink svg{width:14px;height:14px}
+.pc-maplink:hover{text-decoration:underline}
+.pc-ab h3.pc-ab-h3{margin:32px 0 0;font-size:1.6rem;color:var(--oak)}
+.pc-chk{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px}
+.pc-chk li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:12px;align-items:start;color:var(--muted)}
+.pc-chk li>svg{width:22px;height:22px;padding:4px;border-radius:50%;background:var(--sage-pale);color:var(--oak);margin-top:1px}
+.pc-chk b{color:var(--ink);font-weight:600}
+.pc-chk a{color:var(--oak);font-weight:600}
+.pc-chk2{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px}
+.pc-ab-cta{margin-top:30px}
+.pc-ab3 .h2{color:var(--cream)}
+.pc-ab3 .pc-chk li{color:#D6DCCB}
+.pc-ab3 .pc-chk li>svg{background:rgba(217,181,108,.2);color:var(--brass-lite)}
+.pc-ab3 .pc-chk b,.pc-ab3 .pc-chk a{color:var(--cream)}
+.pc-ab3 h3.pc-ab-h3{color:var(--cream)}
+.pc-ab3 .pc-kv{color:#D6DCCB;margin-top:22px}
+.pc-ab3 .pc-kv b{color:var(--brass-lite)}
+.pc-ab-map{position:sticky;top:120px;border-radius:20px;overflow:hidden;border:1px solid rgba(217,181,108,.3);background:#1F3D27}
+.pc-ab-map iframe{display:block;width:100%;aspect-ratio:4/3.4;border:0}
+.pc-cta{background:#C9DEB4;padding:clamp(56px,7vw,88px) 0}
+.pc-cta-in{display:flex;flex-wrap:wrap;gap:22px 40px;align-items:center;justify-content:space-between}
+.pc-cta-in>div:first-child{flex:1 1 560px}
+.pc-cta .lede{color:#3F4B3E;max-width:none;margin:0}
+.pc-cta .h2{font-size:clamp(1.9rem,2.9vw,2.6rem);line-height:1.12;margin-bottom:.6rem}
+.pc-all:hover{text-decoration:underline}
+@media (max-width:1100px){.pc-lanes,.pc-probs{grid-template-columns:1fr 1fr}}
+@media (max-width:1000px){.pc-ab-grid{grid-template-columns:minmax(0,1fr)}.pc-ab-img,.pc-ab-map{position:static}.pc-ab2 .pc-ab-img{order:-1}.pc-ab-img img{aspect-ratio:16/10}.pc-ab-map iframe{aspect-ratio:16/10}.pc-ab-img{border-radius:20px}}
+@media (max-width:520px){.pc-chk2{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:900px){
+  .pc-why-grid{grid-template-columns:1fr}
+  .pc-why-head{position:static}
+}
+@media (max-width:760px){.pc-grid{grid-template-columns:1fr}.pc-stamp{display:none}}
+@media (max-width:600px){.pc-lanes,.pc-probs{grid-template-columns:1fr}.pc-in{min-height:0}.pc-art{margin-bottom:0}.pc-front h3{margin-top:14px}}
+@media (prefers-reduced-motion:reduce){
+  .pc-spin,.pc-pin{animation:none}
+  .pc-lane.in .pc-mower{animation:none;left:calc(100% - 52px)}
+  .pc-lane.in .pc-track{animation:none;background-size:100% 100%}
+  .pc-in{transition:none}
+  .pc-art *{animation:none!important}
+}
 </style>
 </head>
 <body>
@@ -1043,11 +1174,11 @@ html.js .fa .cal-day.visit{animation:none}
           </ul>
         </li>
         <li class="nav-item has-sub">
-          <span class="split"><a href="services.html" aria-current="page">Services</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services"><span class="sr-only">Show all services</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
+          <span class="split"><a href="services.html">Services</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services"><span class="sr-only">Show all services</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
           <ul class="submenu cols" id="sub-services">
             <li><a href="residential-lawn-mowing.html">Residential Lawn Mowing</a></li>
             <li><a href="commercial-lawn-maintenance.html">Commercial Lawn Maintenance</a></li>
-            <li><a href="lawn-edging.html" aria-current="page">Lawn Edging</a></li>
+            <li><a href="lawn-edging.html">Lawn Edging</a></li>
             <li><a href="weed-control.html">Weed Control</a></li>
             <li><a href="lawn-fertilization.html">Lawn Fertilization</a></li>
             <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
@@ -1058,7 +1189,7 @@ html.js .fa .cal-day.visit{animation:none}
           </ul>
         </li>
         <li class="nav-item has-sub">
-          <span class="split"><a href="service-areas.html">Service Areas</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-areas"><span class="sr-only">Show all service areas</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
+          <span class="split"><a href="service-areas.html" aria-current="page">Service Areas</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-areas"><span class="sr-only">Show all service areas</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
           <ul class="submenu cols" id="sub-areas">
             <li><a href="baton-rouge.html">Baton Rouge</a></li>
             <li><a href="covington.html">Covington</a></li>
@@ -1100,7 +1231,7 @@ html.js .fa .cal-day.visit{animation:none}
         <li><a href="services.html">All Services</a></li>
         <li><a href="residential-lawn-mowing.html">Residential Lawn Mowing</a></li>
         <li><a href="commercial-lawn-maintenance.html">Commercial Lawn Maintenance</a></li>
-        <li><a href="lawn-edging.html" aria-current="page">Lawn Edging</a></li>
+        <li><a href="lawn-edging.html">Lawn Edging</a></li>
         <li><a href="weed-control.html">Weed Control</a></li>
         <li><a href="lawn-fertilization.html">Lawn Fertilization</a></li>
         <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
@@ -1134,193 +1265,308 @@ html.js .fa .cal-day.visit{animation:none}
 
 <main id="main">
 
-<!-- Service hero -->
-<section class="ph ph-svc" aria-labelledby="hero-title">
-  <img class="ph-bg" src="assets/work-14.jpg" alt="" width="1920" height="1417" fetchpriority="high">
+<!-- City hero -->
+<section class="ph ph-svc ph-city" aria-labelledby="hero-title">
+  <img class="ph-bg" src="assets/work-9.jpg" alt="" width="2000" height="1334" fetchpriority="high">
   <div class="wrap ph-in">
-    <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="./">Home</a></li><li><a href="services.html">Services</a></li><li aria-current="page">Lawn Edging</li></ol></nav>
-    <div class="ph-svc-grid">
+    <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="./">Home</a></li><li><a href="service-areas.html">Service Areas</a></li><li aria-current="page">Gretna</li></ol></nav>
+    <div class="pc-grid">
       <div class="ph-copy">
-        <h1 class="ph-kicker" id="hero-title">Lawn Edging in New Orleans</h1>
-        <h2 class="ph-display">Picture-Perfect Precision: Elevate Your Landscape With <em>Lawn Edging</em></h2>
-        <p class="ph-sub">Well-defined borders and clean edges give your lawn a polished, professional look that sets your property apart.</p>
+        <h1 class="ph-kicker" id="hero-title">Grass Cutting Services in Gretna, LA</h1>
+        <h2 class="ph-display">From Ordinary to Extraordinary: Elevate Your <em>Outdoor Space in Gretna</em></h2>
+        <p class="ph-sub">Lawn care for Gretna homes and businesses, from mowing and edging to overseeding, fertilization and cleanup.</p>
         <div class="hero-ctas">
           <button class="btn btn-brass" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           <a class="btn ph-call" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
         </div>
-        <ul class="ph-facts"><li><svg aria-hidden="true"><use href="#i-check"/></svg>Sharp Lines Along Walks &amp; Beds</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Licensed &amp; Insured</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Free Estimates</li></ul>
+        <ul class="ph-facts"><li><svg aria-hidden="true"><use href="#i-check"/></svg>Jefferson Parish</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Homes and Businesses</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Free Estimates</li></ul>
+      </div>
+      <div class="pc-stamp" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="pc-circle" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1-156 0"/></defs>
+          <g class="pc-spin"><text><textPath href="#pc-circle" textLength="488">GRETNA, LA · JEFFERSON PARISH · GRETNA, LA · JEFFERSON PARISH · </textPath></text></g>
+          <circle cx="100" cy="100" r="52" class="pc-core"/>
+          <path class="pc-pin" d="M100 70c-13 0-23 10-23 23 0 17 23 39 23 39s23-22 23-39c0-13-10-23-23-23zm0 31a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/>
+        </svg>
       </div>
     </div>
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:var(--oak-deep);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Service intro -->
+<!-- City intro -->
 <section class="section sv-intro" aria-labelledby="intro-title">
   <div class="wrap sv-intro-grid">
     <div class="sv-intro-copy reveal">
-      <p class="eyebrow">Lawn Edging</p>
-      <h2 class="h2" id="intro-title" style="color:var(--oak)">Lawn Edging That Gives Your Yard a <em class="acc">Finished Look</em></h2>
-      <p>A picture-perfect landscape comes down to detail. Our Lawn Edging service in New Orleans adds the finishing touch that sets your property apart, with well-defined borders and clean edges that make the whole yard look polished.</p><p>Our skilled team uses specialized equipment and techniques to cut sharp lines where your lawn meets flowerbeds, walkways, driveways and other landscaping features. Each section stays distinct, and the whole yard reads as one clean design.</p>
+      <p class="eyebrow">Lawn Care in Gretna</p>
+      <h2 class="h2" id="intro-title" style="color:var(--oak)">Lawn Care That Keeps Gretna Properties <em class="acc">Green All Year</em></h2>
+      <p>Create an inviting outdoor retreat in Gretna with lawn care from Big Easy Grass Cutting. From expert overseeding to lawn fertilization, our team works to keep your lawn green and healthy year-round.</p><p>We offer residential lawn mowing and commercial lawn maintenance, weed control, precise lawn edging and lawn cleanup, so your Gretna property stands out. Reach out to us to get started.</p>
       <div class="sfeat-actions">
         <button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate</button>
         <a class="btn btn-ghost" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
       </div>
     </div>
     <div class="sfeat-media sv-intro-media reveal">
-      <img src="assets/work-7.jpg" alt="Mower running beside a curved stone bed edge" width="950" height="450" loading="lazy">
+      <img src="assets/work-6.jpg" alt="String trimmer cutting grass, with clippings flying around the trimmer head" width="1920" height="1282" loading="lazy">
     </div>
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#C9DEB4" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Benefits -->
-<section class="section sv-ben" aria-labelledby="ben-title">
+<!-- Why it matters -->
+<section class="section pc-matter" aria-labelledby="matter-title">
   <div class="wrap">
     <div class="sv-head reveal">
-      <p class="eyebrow">Why It Pays Off</p>
-      <h2 class="h2" id="ben-title" style="color:var(--oak)">Benefits of Lawn Edging in <em class="acc">New Orleans</em></h2>
-      <p class="lede">Edging does real work for your yard. Here is what clean borders do for your lawn and your beds.</p>
+      <p class="eyebrow">Why It Matters</p>
+      <h2 class="h2" id="matter-title" style="color:var(--oak)">What a Well-Kept Lawn Does for a Gretna Home</h2>
+      <p class="lede">A great-looking Gretna lawn comes down to four things a professional crew brings to every visit.</p>
     </div>
-    <div class="ben-grid">
-      <div class="sfeat-media ben-media reveal"><img src="assets/work-6.jpg" alt="String trimmer head throwing grass clippings along a lawn edge" width="2000" height="1286" loading="lazy"></div>
-      <ol class="ben-list">
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">01</span><div><h3>A Polished, Professional Look</h3><p>Well-defined borders and clean edges give your lawn a finished appearance that lifts the beauty of the whole outdoor space.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">02</span><div><h3>Less Constant Trimming</h3><p>A clean edge keeps grass from creeping into flowerbeds and other planted areas, so there is less trimming to keep up with.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">03</span><div><h3>Mulch and Soil Stay Put</h3><p>Edging helps hold mulch and soil in place, which cuts down on erosion and keeps beds looking clean and organized.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">04</span><div><h3>Clear, Distinct Sections</h3><p>Sharp lines separate the lawn from beds, walks and drives, so each part of the landscape complements the rest.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">05</span><div><h3>Stronger Curb Appeal</h3><p>Crisp lines along sidewalks, driveways and beds are what signal a well-maintained yard to neighbors and visitors.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">06</span><div><h3>Right for Any Property</h3><p>Whether you have a sprawling commercial property or a cozy residential garden, the service is tailored to what your yard needs.</p></div></li>
-      </ol>
-    </div>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#C9DEB4;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- What comes with every visit -->
-<section class="section dark sv-inc" aria-labelledby="inc-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">The Details</p>
-      <h2 class="h2" id="inc-title">What Our Lawn Edging <em class="acc" style="color:var(--brass-lite)">Service Includes</em></h2>
-      <p class="lede">Here is what goes into every edging job, so you know exactly what you are getting.</p>
-    </div>
-    <ul class="inc-grid">
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">01</span><h3>Sharp Lines Along Walks and Drives</h3><p>We cut clean, sharp lines where the lawn meets your walkways and driveways, so the grass stops spilling onto the hardscape.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">02</span><h3>Clean Borders Around Beds</h3><p>Flowerbeds and other landscaping features get a defined edge that keeps them separate from the lawn.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">03</span><h3>Specialized Equipment and Technique</h3><p>Our skilled team uses specialized edging equipment and proven techniques to get precise, even lines.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">04</span><h3>Tailored to Your Property</h3><p>Large commercial grounds or a small home garden, the work is planned around your property and what it needs.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">05</span><h3>Part of Your Regular Schedule</h3><p>Edging can ride along with your regular maintenance plan, so the borders stay sharp between visits.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">06</span><h3>Efficient, Precise Work</h3><p>We pride ourselves on efficient, precise work that leaves every edge of your lawn clean and finished.</p></li>
-    </ul>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:var(--oak);--to:#ECE6D2" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- When to schedule -->
-<section class="section sv-time" aria-labelledby="time-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">When to Schedule</p>
-      <h2 class="h2" id="time-title" style="color:var(--oak)">How Often to Schedule <em class="acc">Lawn Edging</em></h2>
-      <p class="lede">Grass along hard surfaces never stops growing. A little regular attention keeps the lines crisp.</p>
-    </div>
-    <ol class="time-list">
-      <li class="time-card reveal"><span class="time-k">With Every Mow</span><h3>Built Into Your Mowing Plan</h3><p>Add edging to a weekly or bi-weekly mowing plan and your borders get attention on the same visit as the lawn.</p></li>
-      <li class="time-card reveal"><span class="time-k">Weekly</span><h3>A Weekly Pass Keeps Lines Crisp</h3><p>Grass along sidewalks, driveways and flower beds keeps growing all the time. A weekly pass with a trimmer or edger holds those clean lines.</p></li>
-      <li class="time-card reveal"><span class="time-k">Between Cuts</span><h3>Fence Lines and Tree Bases</h3><p>These spots are easy to miss during a full mow, and they are often the first thing visitors notice.</p></li>
+    <ol class="pc-lanes">
+      <li class="pc-lane reveal"><span class="pc-track" aria-hidden="true"><svg class="pc-mower" viewBox="0 0 60 40" aria-hidden="true"><path d="M8 22h34l6-10h6" /><rect x="10" y="14" width="28" height="12" rx="3"/><circle cx="16" cy="31" r="5"/><circle cx="36" cy="31" r="5"/></svg></span><span class="pc-lane-n" aria-hidden="true">01</span><h3>Rain That Soaks In</h3><p>Heavy rain can run off or pool on packed soil. Aerated ground takes the water down to the roots where the grass needs it.</p></li>
+      <li class="pc-lane reveal"><span class="pc-track" aria-hidden="true"><svg class="pc-mower" viewBox="0 0 60 40" aria-hidden="true"><path d="M8 22h34l6-10h6" /><rect x="10" y="14" width="28" height="12" rx="3"/><circle cx="16" cy="31" r="5"/><circle cx="36" cy="31" r="5"/></svg></span><span class="pc-lane-n" aria-hidden="true">02</span><h3>Fewer Pests Around the House</h3><p>Overgrown grass and foliage give mosquitoes, ants and other pests places to breed. Regular cleanup and mowing take those spots away.</p></li>
+      <li class="pc-lane reveal"><span class="pc-track" aria-hidden="true"><svg class="pc-mower" viewBox="0 0 60 40" aria-hidden="true"><path d="M8 22h34l6-10h6" /><rect x="10" y="14" width="28" height="12" rx="3"/><circle cx="16" cy="31" r="5"/><circle cx="36" cy="31" r="5"/></svg></span><span class="pc-lane-n" aria-hidden="true">03</span><h3>Clear Drains in a Downpour</h3><p>Fallen leaves and yard debris can wash into drains and clog them. Clearing them out regularly helps water drain during heavy storms.</p></li>
+      <li class="pc-lane reveal"><span class="pc-track" aria-hidden="true"><svg class="pc-mower" viewBox="0 0 60 40" aria-hidden="true"><path d="M8 22h34l6-10h6" /><rect x="10" y="14" width="28" height="12" rx="3"/><circle cx="16" cy="31" r="5"/><circle cx="36" cy="31" r="5"/></svg></span><span class="pc-lane-n" aria-hidden="true">04</span><h3>Grass That Handles the Heat</h3><p>Balanced nutrients build healthy roots and sturdy stems, so the lawn holds up better to heat, drought and foot traffic.</p></li>
     </ol>
   </div>
 </section>
-<div class="fa"><div class="edge" style="--from:#ECE6D2;--to:#0F2A17" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<div class="fa">
-<!-- 7. PROCESS -->
-<section class="process on-deep" id="process" aria-labelledby="proc-title">
-  <div class="wrap">
-    <div class="process-head reveal">
-      <p class="eyebrow">How It Works</p>
-      <h2 id="proc-title">How Our Lawn Edging Service Works</h2>
-      <p class="lede">Scroll along and watch the mower work the path.</p>
-    </div>
-    <svg class="proc-svg" id="proc-svg" viewBox="0 0 1000 230" aria-hidden="true">
-      <path class="proc-base" id="proc-path" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <path class="proc-cut" id="proc-cut" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <path class="proc-cut-2" id="proc-cut-2" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <g class="proc-node" data-at="0.2"><circle cx="167" cy="90" r="26"/><text x="167" y="90">1</text></g>
-      <g class="proc-node" data-at="0.5"><circle cx="500" cy="165" r="26"/><text x="500" y="165">2</text></g>
-      <g class="proc-node" data-at="0.8"><circle cx="833" cy="90" r="26"/><text x="833" y="90">3</text></g>
-      <g id="proc-mower"><use href="#mower" x="-33" y="-22" width="66" height="45"/></g>
-    </svg>
-    <div class="proc-body" id="proc-body">
-      <div class="proc-rail" aria-hidden="true"><div class="proc-rail-fill"></div><svg class="proc-rail-mower" viewBox="0 0 130 88"><use href="#mower"/></svg></div>
-      <ol class="proc-steps">
-        <li class="proc-step" data-at="0.2">
-          <span class="step-k" aria-hidden="true">Step 1</span>
-          <h3>Schedule a Consultation</h3>
-          <p>Contact us to talk through your lawn care needs. Our team visits your property to assess its size, condition and specific requirements.</p>
-        </li>
-        <li class="proc-step" data-at="0.5">
-          <span class="step-k" aria-hidden="true">Step 2</span>
-          <h3>Tailored Lawn Care Plan</h3>
-          <p>Based on that assessment, we build a customized plan that suits what your lawn needs.</p>
-        </li>
-        <li class="proc-step" data-at="0.8">
-          <span class="step-k" aria-hidden="true">Step 3</span>
-          <h3>Professional Maintenance</h3>
-          <p>Sit back and relax while our experienced team carries out the plan with attention to detail and professional-grade equipment.</p>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
-</div>
-<div class="fa"><div class="edge" style="--from:#0F2A17;--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Pair it with -->
-<section class="section sv-pair" aria-labelledby="pair-title">
+<div class="fa"><div class="edge" style="--from:#C9DEB4;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- Common problems (flip cards) -->
+<section class="section dark pc-svcs" aria-labelledby="svc-title">
   <div class="wrap">
     <div class="sv-head reveal">
-      <p class="eyebrow">Pair It With</p>
-      <h2 class="h2" id="pair-title" style="color:var(--oak)">Services That Pair With <em class="acc">Lawn Edging</em></h2>
-      <p class="lede">Every lawn is unique. Add any of these and we build them into one tailored plan.</p>
+      <p class="eyebrow">Lawn Problems in Gretna</p>
+      <h2 class="h2" id="svc-title">Everyday Lawn Problems We Fix Across <em class="acc" style="color:var(--brass-lite)">Gretna</em></h2>
+      <p class="lede">Spot your lawn's problem, then flip the card to see how we fix it.</p>
     </div>
-    <ul class="pair-grid">
-      <li class="pair-card reveal"><a href="residential-lawn-mowing.html"><img src="assets/svc-residential-lawn-mowing.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Residential Lawn Mowing</span><span class="pair-d">Lawn perfection at your doorstep.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="commercial-lawn-maintenance.html"><img src="assets/svc-commercial-lawn-maintenance.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Commercial Lawn Maintenance</span><span class="pair-d">Greening your business with professional upkeep.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="weed-control.html"><img src="assets/svc-weed-control.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Weed Control</span><span class="pair-d">Banish weeds before they take over a beautiful lawn.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="lawn-cleanup.html"><img src="assets/svc-lawn-cleanup.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Cleanup</span><span class="pair-d">Transforming chaos to beauty.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+    <ul class="pc-probs">
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 56h108"/><g class="a-sway"><path d="M14 56c0-10 2-18 6-26M22 56c0-12-1-22 3-32M30 56c0-8 2-14 6-20"/></g><path class="a-gap" d="M44 56h28" stroke-dasharray="3 6"/><g class="a-sway a-d2"><path d="M80 56c0-10 2-18 6-26M88 56c0-12-1-22 3-32M96 56c0-8 2-14 6-20M104 56c0-6 1-10 4-14"/></g><circle class="a-seed" cx="52" cy="20" r="2.5"/><circle class="a-seed a-d2" cx="62" cy="14" r="2.5"/><circle class="a-seed a-d3" cx="58" cy="26" r="2.5"/></svg></span>
+            <h3>Turf Worn Thin by Foot Traffic</h3>
+            <p class="pc-sign"><span>What you notice:</span> Bare spots and thin turf, with soil showing through the grass.</p>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-1">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-1">
+            <img src="assets/svc-overseeding.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Overseeding</p>
+            <p>Overseeding adds new grass to the lawn you already have. We choose the seed for your conditions, so the turf fills in denser with better color.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24h108"/><path d="M6 36c14-4 22 4 36 0s22-4 36 0 22 4 36 0"/><path d="M6 48c14-4 22 4 36 0s22-4 36 0 22 4 36 0"/><g class="a-press"><path d="M30 2v14M24 10l6 6 6-6M60 2v14M54 10l6 6 6-6M90 2v14M84 10l6 6 6-6"/></g></svg></span>
+            <h3>Soil Packed Too Tight for Roots</h3>
+            <p class="pc-sign"><span>What you notice:</span> Soil packed so hard that water, air and nutrients struggle to reach the roots.</p>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-2">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-2">
+            <img src="assets/svc-lawn-aeration.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Lawn Aeration</p>
+            <p>Small holes punched across the yard let air, water and nutrients get down to the roots, and they help break up thatch too.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 58h108"/><path d="M70 58c6-10 18-12 30-8"/><path d="M76 50l8 8M92 48l-4 10"/><g class="a-fall"><path d="M30 10c8 0 12 6 12 12-8 0-12-6-12-12zM30 10l12 12"/></g><g class="a-fall a-d2"><path d="M60 4c7 1 10 7 9 12-7-1-10-7-9-12zM60 4l9 12"/></g><path d="M14 58c2-6 8-8 14-6M40 58c2-5 7-7 12-5"/></svg></span>
+            <h3>Storm Leftovers Across the Lawn</h3>
+            <p class="pc-sign"><span>What you notice:</span> Leaves, branches and other debris piling up after the seasons change.</p>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-3">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-3">
+            <img src="assets/svc-lawn-cleanup.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Lawn Cleanup</p>
+            <p>Storms leave branches and leaves everywhere. Our crew hauls the mess off and gets the yard tidy again, as a single visit or as ongoing upkeep.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 58h108"/><path d="M20 58c0-6 1-10 3-14M30 58c0-8-1-12 1-18M98 58c0-6 1-10 3-14M106 58c0-8-1-12 1-18"/><g class="a-sway"><path d="M60 58V26"/><path d="M60 46c-8-2-12-8-12-14 8 2 12 8 12 14zM60 40c8-2 12-8 12-14-8 2-12 8-12 14z"/><circle cx="60" cy="18" r="8"/><path d="M60 6v4M50 10l3 3M70 10l-3 3M48 18h4M68 18h4"/></g></svg></span>
+            <h3>Weeds That Keep Spreading</h3>
+            <p class="pc-sign"><span>What you notice:</span> Weeds popping up and spreading faster than the grass.</p>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-4">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-4">
+            <img src="assets/svc-weed-control.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Weed Control</p>
+            <p>We go after weeds at the roots, with methods chosen for the types in your yard. With less competition, your grass grows in thicker.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30h108"/><path d="M6 58h108"/><path d="M40 30v28M80 30v28" stroke-dasharray="2 5"/><g class="a-sway"><path d="M14 30c-2-8 0-14 4-18M26 30c0-10 2-16 6-20M54 30c2-8 6-12 10-14M66 30c0-6 2-10 6-12M96 30c-2-8 0-14 4-18"/><path d="M58 30c4 6 10 8 16 8M20 30c2 6 8 10 14 10" class="a-creep"/></g></svg></span>
+            <h3>Ragged Lines Along the Driveway</h3>
+            <p class="pc-sign"><span>What you notice:</span> Grass creeping over walkways and into flowerbeds, with no clean line between them.</p>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-5">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-5">
+            <img src="assets/svc-lawn-edging.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Lawn Edging</p>
+            <p>Our crew uses specialized equipment to cut clean borders where the lawn meets driveways, walkways and beds.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 58h108"/><path d="M60 58V34M52 34h16"/><path d="M60 34c-14-4-24-12-30-22M60 34c14-4 24-12 30-22" stroke-dasharray="3 6" class="a-spray"/><path d="M20 58c0-4 1-7 3-10M100 58c0-4 1-7 3-10"/><path class="a-drip" d="M86 18v6"/><path class="a-drip a-d2" d="M96 26v6"/></svg></span>
+            <h3>Sprinklers Wasting Water</h3>
+            <p class="pc-sign"><span>What you notice:</span> Some areas stay dry while others get too much water.</p>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-6">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-6">
+            <img src="assets/svc-irrigation-system-maintenance.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Irrigation System Maintenance</p>
+            <p>A properly maintained system cuts down on wasted water. Our technicians fine-tune coverage and reprogram the timer to match the season and weather.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 58h108"/><g class="a-droop"><path d="M24 58c0-12 4-20 12-22M40 58c0-14 6-22 16-22M58 58c0-10 6-16 14-16M76 58c0-14 6-22 16-20M94 58c0-10 4-16 10-16"/></g><circle class="a-seed" cx="44" cy="12" r="2.5"/><circle class="a-seed a-d2" cx="62" cy="8" r="2.5"/><circle class="a-seed a-d3" cx="80" cy="14" r="2.5"/></svg></span>
+            <h3>Grass That Struggles in Summer</h3>
+            <p class="pc-sign"><span>What you notice:</span> Grass that looks pale and thin when it should be lush and green.</p>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-7">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-7">
+            <img src="assets/svc-lawn-fertilization.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Lawn Fertilization</p>
+            <p>Our fertilizers balance nitrogen, phosphorus and potassium for your soil and grass type, which helps the lawn stand up to heat and foot traffic.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
+      <li class="pc-prob reveal">
+        <div class="pc-in">
+          <div class="pc-face pc-front">
+            <span class="pc-art" aria-hidden="true"><svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 58h108"/><g class="a-roll"><circle cx="34" cy="44" r="14"/><circle cx="34" cy="44" r="7"/></g><path d="M48 58h60M48 30h60v28"/><path d="M56 30c0-6 1-10 3-12M68 30c0-7 2-11 4-13M80 30c0-6 1-10 3-12M92 30c0-7 2-11 4-13M104 30c0-5 1-8 3-10"/></svg></span>
+            <h3>No Time to Wait on Seed</h3>
+            <p class="pc-sign"><span>What you notice:</span> A yard that needs a full lawn, without the wait that comes with seeding.</p>
+            <button type="button" class="pc-flip" aria-expanded="false" aria-controls="pf-8">See the Fix <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="pc-face pc-back" id="pf-8">
+            <img src="assets/svc-sod-installation.png" alt="" width="44" height="44" loading="lazy">
+            <p class="pc-fix-l">The Fix: Sod Installation</p>
+            <p>Sod gives you a mature lawn right away, with no wait for seed to sprout. We prepare the soil first so the roots bond with the ground.</p>
+            <button type="button" class="pc-unflip">Back</button>
+          </div>
+        </div>
+      </li>
     </ul>
-    <p class="pair-all"><a class="btn btn-ghost" href="services.html">See All 10 Services <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Areas strip -->
-<section class="section dark sv-areas" aria-labelledby="areas-title">
-  <div class="wrap sv-areas-grid">
-    <div class="reveal">
-      <p class="eyebrow">Where We Work</p>
-      <h2 class="h2" id="areas-title">Lawn Edging Across <em class="acc">Greater New Orleans</em></h2>
-      <p class="lede">Home base is New Orleans, with crews serving the Southshore, West Bank, River Parishes and Northshore.</p>
-    </div>
-    <ul class="town-chips reveal" aria-label="Service Areas"><li><button type="button" data-open-estimate>New Orleans</button></li><li><a href="metairie.html">Metairie</a></li><li><a href="kenner.html">Kenner</a></li><li><a href="harahan.html">Harahan</a></li><li><a href="river-ridge.html">River Ridge</a></li><li><a href="gretna.html">Gretna</a></li><li><a href="laplace.html">LaPlace</a></li><li><a href="covington.html">Covington</a></li><li><a href="mandeville.html">Mandeville</a></li><li><a href="madisonville.html">Madisonville</a></li><li><a href="slidell.html">Slidell</a></li><li><a href="hammond.html">Hammond</a></li><li><a href="baton-rouge.html">Baton Rouge</a></li></ul>
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:var(--oak);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- Why choose us -->
+<section class="section pc-why" aria-labelledby="why-title">
+  <div class="wrap pc-why-grid">
+    <div class="pc-why-head reveal">
+      <p class="eyebrow">Why Big Easy</p>
+      <h2 class="h2" id="why-title" style="color:var(--oak)">Why Gretna Property Owners Choose Our Lawn Crew</h2>
+      <p class="lede">With years of experience and a team of skilled professionals, here is what sets us apart in Gretna.</p>
+      <button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate</button>
+    </div>
+    <ol class="pc-why-list">
+      <li class="pc-why-item reveal"><span class="pc-why-n" aria-hidden="true">1</span><div><h3>A Simple Three-Step Process</h3><p>We start with a consultation and a look at your property. Then we build a tailored plan and get to work.</p></div></li>
+      <li class="pc-why-item reveal"><span class="pc-why-n" aria-hidden="true">2</span><div><h3>Homes and Businesses</h3><p>Small residential lawn or large commercial property, we have the skills and equipment to handle the job.</p></div></li>
+      <li class="pc-why-item reveal"><span class="pc-why-n" aria-hidden="true">3</span><div><h3>Crews That Keep the Schedule</h3><p>Our team arrives on schedule and finishes efficiently, visit after visit.</p></div></li>
+      <li class="pc-why-item reveal"><span class="pc-why-n" aria-hidden="true">4</span><div><h3>Locally Owned and Insured</h3><p>Our team is local, licensed and fully insured, and Gretna yards get the same care we would give our own.</p></div></li>
+      <li class="pc-why-item reveal"><span class="pc-why-n" aria-hidden="true">5</span><div><h3>Ten Services, One Team</h3><p>Mowing, edging, weed control, fertilization, aeration, overseeding, sod, cleanup, irrigation upkeep and commercial maintenance all come from one crew.</p></div></li>
+    </ol>
+  </div>
+</section>
+<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#ECE6D2" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- All About the city: 1. About -->
+<section class="section pc-ab pc-ab1" aria-labelledby="about-title">
+  <div class="wrap pc-ab-grid">
+    <figure class="pc-ab-img reveal"><img src="assets/work-4.jpg" alt="Push mower cutting a strip through tall grass and clover, with a freshly mowed lawn beside it" width="2000" height="1302" loading="lazy"></figure>
+    <div class="reveal">
+      <p class="eyebrow">All About Gretna</p>
+      <h2 class="h2" id="about-title" style="color:var(--oak)">All About <em class="acc">Gretna, LA</em></h2>
+      <p class="lede">Gretna is a city and the parish seat of Jefferson Parish. It sits on the west bank of the Mississippi River, across from uptown New Orleans, and had 17,814 residents at the 2020 census.</p>
+      <p class="pc-kv"><b>Parish:</b> Jefferson Parish (parish seat)</p><p class="pc-kv"><b>Population:</b> 17,814 (2020 census)</p><p class="pc-kv"><b>Landmarks:</b> Gretna City Hall, German-American Cultural Center, Gretna Historical Society museums, Gretna Farmers Market</p>
+      <a class="pc-maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Gretna%2C+LA" target="_blank" rel="noopener">View Gretna on Google Maps <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <div class="hero-ctas pc-ab-cta"><button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button><a class="btn btn-ghost" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a></div>
+    </div>
+  </div>
+</section>
+<div class="fa"><div class="edge" style="--from:#ECE6D2;--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- All About the city: 2. Things to do + notable residents -->
+<section class="section pc-ab pc-ab2" aria-labelledby="todo-title">
+  <div class="wrap pc-ab-grid">
+    <div class="reveal">
+      <h2 class="h2" id="todo-title" style="color:var(--oak)">Things to Do <em class="acc">in Gretna</em></h2>
+      <ul class="pc-chk"><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Gretna Heritage Festival:</b> A multi-day fall music and culture festival on the riverfront, with a German beer garden, an Italian village, rides and arts and crafts.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>German-American Cultural Center:</b> Exhibits, lectures and programs on the German immigrants who helped shape Louisiana, on Huey P. Long Avenue.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Gretna Historical Society Museums:</b> A cluster of 19th-century Creole cottages, a blacksmith shop and the Louisiana Fire Museum, run by the Gretna Historical Society.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Gretna Farmers Market:</b> Fresh produce, prepared foods and homemade goods every Saturday morning under the market pavilion on Huey P. Long Avenue.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Gretna City Hall:</b> The 1907 building that served as the Jefferson Parish courthouse, now home to city government and listed on the National Register of Historic Places.</span></li></ul>
+      <h3 class="pc-ab-h3">Notable Residents</h3>
+      <ul class="pc-chk"><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Mel Ott:</b> Baseball Hall of Famer, born in Gretna in 1909, who hit 511 home runs for the New York Giants.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Frankie Ford:</b> Singer born in Gretna in 1939, best known for the 1959 hit &quot;Sea Cruise.&quot;</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Ike Taylor:</b> Cornerback born in Gretna who spent his whole NFL career with the Pittsburgh Steelers.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Eddie Lacy:</b> Running back born and raised in Gretna who went on to play for the Green Bay Packers.</span></li></ul>
+      <div class="hero-ctas pc-ab-cta"><button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button><a class="btn btn-ghost" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a></div>
+    </div>
+    <figure class="pc-ab-img reveal"><img src="assets/about-1.jpg" alt="Worker using a string trimmer along a hedge and wire fence" width="1920" height="1281" loading="lazy"></figure>
+  </div>
+</section>
+<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- All About the city: 3. Map, fun facts, nearby, directions, transit -->
+<section class="section dark pc-ab pc-ab3" aria-labelledby="facts-title">
+  <div class="wrap pc-ab-grid">
+    <div class="pc-ab-map reveal"><iframe title="Map of Gretna, Louisiana" src="https://maps.google.com/maps?q=Gretna%2C+LA&amp;z=12&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="reveal">
+      <h2 class="h2" id="facts-title">Fun Facts <em class="acc" style="color:var(--brass-lite)">About Gretna</em></h2>
+      <ul class="pc-chk"><li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Gretna City Hall was built in 1907 as the Jefferson Parish courthouse and opened as city hall in 1964.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span>McDonoghville, founded in 1815 by John McDonogh and part of Gretna since 1913, is considered the oldest neighborhood in Jefferson Parish.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Zatarain&#x27;s, the New Orleans food company founded in 1889, has operated in Gretna since 1963.</span></li></ul>
+      <h3 class="pc-ab-h3">Nearby Communities</h3>
+      <ul class="pc-chk pc-chk2"><li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Terrytown</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Harvey</span></li></ul>
+      <h3 class="pc-ab-h3">Driving Directions</h3>
+      <ul class="pc-chk"><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>From New Orleans:</b> Take U.S. 90 Business over the Crescent City Connection, then follow the Westbank Expressway into Gretna.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>From Metairie:</b> Take I-10 East to the Pontchartrain Expressway (U.S. 90 Business), cross the Crescent City Connection and stay on the Westbank Expressway.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>From Baton Rouge:</b> Take I-10 East into New Orleans, then U.S. 90 Business across the Crescent City Connection to the Westbank Expressway and Gretna.</span></li></ul>
+      <p class="pc-kv"><b>Public transit:</b> Jefferson Parish Transit&#x27;s W6 Gretna Local runs weekdays between historic downtown Gretna and the Algiers Ferry Terminal, with transfers to other West Bank routes at Wilty Terminal.</p>
+      <div class="hero-ctas pc-ab-cta"><button class="btn btn-brass" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button><a class="btn ph-call" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a></div>
+    </div>
+  </div>
+</section>
+<div class="fa"><div class="edge" style="--from:var(--oak);--to:#C9DEB4" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- City CTA -->
+<section class="section pc-cta" aria-labelledby="cta-title">
+  <div class="wrap pc-cta-in reveal">
+    <div>
+      <h2 class="h2" id="cta-title" style="color:var(--oak)">Start Your Gretna Lawn Care Plan Today</h2>
+      <p class="lede">Reach out for lawn care and landscaping in Gretna. Call 504-910-7829 for a free estimate, Monday through Friday from 8am to 3pm.</p>
+    </div>
+    <div class="hero-ctas">
+      <button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <a class="btn btn-ghost" href="service-areas.html">See All 12 Service Areas</a>
+    </div>
+  </div>
+</section>
+<div class="fa"><div class="edge" style="--from:#C9DEB4;--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
 <!-- Page FAQ -->
 <section class="section faq-light" aria-labelledby="faq-title" id="faq">
   <div class="wrap">
     <div class="reveal">
       <p class="eyebrow">Common Questions</p>
-      <h2 class="h2" id="faq-title" style="color:var(--oak)">Lawn Edging <em class="acc">FAQs</em></h2>
+      <h2 class="h2" id="faq-title" style="color:var(--oak)">Gretna Lawn Care <em class="acc">FAQs</em></h2>
     </div>
     <div class="faq-grid">
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b1"><span class="n" aria-hidden="true">01</span><span class="q">What Does Lawn Edging Do for My Yard?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-b1"><p>Edging cuts sharp lines between your lawn and the flowerbeds, walkways, driveways and other features around it. It gives the yard a polished look, and it also keeps grass, mulch and soil where they belong.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-b2"><span class="n" aria-hidden="true">02</span><span class="q">Does Edging Keep Grass Out of My Flowerbeds?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-b2"><p>Yes. A clean edge stops grass from creeping into flowerbeds and other landscaped areas, which means less constant trimming. It also helps keep mulch and soil in place and reduces erosion.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b3"><span class="n" aria-hidden="true">03</span><span class="q">How Often Should Lawn Edges Be Trimmed?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-b3"><p>Grass along hard surfaces like sidewalks and driveways keeps growing all the time. A weekly pass with a string trimmer or lawn edger is what keeps those crisp lines looking sharp.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b4"><span class="n" aria-hidden="true">04</span><span class="q">Can Edging Be Part of My Regular Lawn Service?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-b4"><p>Yes. Every lawn is different, so we build a customized plan around what yours needs, and edging can be part of it. Our edging service keeps borders sharp and clean as part of a regular maintenance schedule.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b5"><span class="n" aria-hidden="true">05</span><span class="q">Do You Edge Commercial Properties?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-b5"><p>Yes. Whether you have a sprawling commercial property or a cozy residential garden, our Lawn Edging service is tailored to meet your specific needs.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b6"><span class="n" aria-hidden="true">06</span><span class="q">Why Does My Lawn Look Messy Right After Mowing?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-b6"><p>A freshly mowed lawn can still look unkempt if the edges along sidewalks, driveways and beds are ragged. Fence lines and tree bases are easy to miss during a mow, and they are often the first thing visitors notice.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b1"><span class="n" aria-hidden="true">01</span><span class="q">Do You Send a Crew to Gretna?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-b1"><p>Yes. Gretna is one of the 12 communities on our service area list.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-b2"><span class="n" aria-hidden="true">02</span><span class="q">Can You Bring a Thin Gretna Lawn Back?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-b2"><p>Yes. Overseeding spreads new seed over your existing turf. We pick the blend based on climate, soil type and sun exposure, and the lawn fills in thicker as it grows.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b3"><span class="n" aria-hidden="true">03</span><span class="q">How Do You Pick a Fertilizer for a Gretna Yard?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-b3"><p>We look at your soil type, grass species and growing conditions, then choose a balanced blend of nitrogen, phosphorus and potassium for your lawn.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b4"><span class="n" aria-hidden="true">04</span><span class="q">What Does Sod Installation Look Like at a Gretna Home?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-b4"><p>We clear debris and level the ground, then lay the sod rolls tight together. When the job is done, you get watering instructions, mowing guidelines and care tips to follow.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b5"><span class="n" aria-hidden="true">05</span><span class="q">What Should I Do About Leaves and Debris in My Gretna Yard?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-b5"><p>Book a lawn cleanup. We remove fallen leaves, branches and other debris, either one time or on a regular schedule.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b6"><span class="n" aria-hidden="true">06</span><span class="q">Do You Edge Along Gretna Driveways and Sidewalks?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-b6"><p>Yes. We cut sharp lines where the lawn meets driveways, walkways and flowerbeds, which keeps grass from creeping into those areas.</p></div></div>
     </div>
   </div>
 </section>
@@ -1330,7 +1576,7 @@ html.js .fa .cal-day.visit{animation:none}
   <div class="wrap est-grid">
     <div class="est-info reveal">
       <p class="eyebrow">Free Estimate</p>
-      <h2 class="h2" id="est-title">Get a Free Lawn Edging <em class="acc" style="color:var(--brass-lite)">Estimate</em></h2>
+      <h2 class="h2" id="est-title">Get a Free Lawn Care Estimate in <em class="acc" style="color:var(--brass-lite)">Gretna</em></h2>
       <p class="lede" style="margin-top:1rem">Trusted by homeowners and businesses across New Orleans. Get a free, no-obligation quote today.</p>
       <ul>
         <li><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Rather talk? Call <a href="tel:+15049107829">504-910-7829</a></span></li>
@@ -2247,6 +2493,20 @@ html.js .fa .cal-day.visit{animation:none}
   }
   window.addEventListener('scroll', function(){ if (!tick) { tick = true; setTimeout(check, 160); } }, { passive: true });
   window.addEventListener('load', check);
+})();
+</script>
+<script>
+/* City page: problem flip cards */
+(function(){
+  [].slice.call(document.querySelectorAll('.pc-prob')).forEach(function(card){
+    var go = card.querySelector('.pc-flip'), back = card.querySelector('.pc-unflip');
+    function set(on){
+      card.classList.toggle('flip', on); go.setAttribute('aria-expanded', on ? 'true' : 'false');
+      setTimeout(function(){ (on ? back : go).focus({preventScroll:true}); }, 330);
+    }
+    go.addEventListener('click', function(){ set(true); });
+    back.addEventListener('click', function(){ set(false); });
+  });
 })();
 </script>
 </body>
