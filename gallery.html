@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Lawn Aeration in New Orleans | Big Easy Grass Cutting</title>
-<meta name="description" content="Big Easy Grass Cutting aerates New Orleans lawns to relieve compacted soil and help roots breathe again. Call 504-910-7829 for a quote.">
+<title>New Orleans Lawn Care Gallery | Big Easy Grass Cutting</title>
+<meta name="description" content="At Big Easy Grass Cutting, browse our gallery of expert lawn care results across New Orleans. Transform your lawn with us today.">
 <link rel="icon" href="assets/favicon.png">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -980,6 +980,62 @@ html.js .fa .cal-day.visit{animation:none}
 }
 @media (max-width:600px){.inc-grid,.pair-grid,.ben-list{grid-template-columns:1fr}.ph-facts{gap:6px 16px}}
 @media (max-width:900px){.ben-grid{grid-template-columns:1fr}.ben-media{max-width:460px}}
+
+/* ===== Gallery page ===== */
+.pa-tabs{display:flex;flex-wrap:wrap;gap:8px}
+.pa-tab{min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--oak);font:600 .95rem var(--sans);cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.pa-tab span{display:inline-grid;place-items:center;min-width:24px;height:24px;margin-left:6px;border-radius:999px;background:var(--sage-pale);font-size:.8rem}
+.pa-tab:hover{border-color:var(--oak)}
+.pa-tab[aria-pressed="true"]{background:var(--oak);color:var(--cream);border-color:var(--oak)}
+.pa-tab[aria-pressed="true"] span{background:var(--brass-lite);color:var(--iron)}
+
+.pa-count-line{margin:14px 0 0;font-size:.88rem;color:var(--muted)}
+@media (max-width:600px){.pa-tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 calc(var(--gut) * -1);padding:2px var(--gut) 6px;scrollbar-width:none}.pa-tabs::-webkit-scrollbar{display:none}.pa-tab{flex:none}}
+.gl-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,4vw,56px);align-items:center}
+.gl-mosaic{position:relative;display:grid;grid-template-columns:repeat(3,62px);grid-auto-rows:62px;gap:6px;padding:10px;border-radius:20px;background:rgba(15,42,23,.6);border:1px solid rgba(217,181,108,.4);text-decoration:none}
+.gl-mosaic span{border-radius:10px;background-size:cover;background-position:center;transition:transform .4s var(--ease)}
+.gl-mosaic:hover span:nth-child(odd){transform:scale(.92)}
+.gl-mosaic b{position:absolute;left:50%;bottom:-14px;transform:translateX(-50%);white-space:nowrap;padding:5px 14px;border-radius:999px;background:var(--brass-lite);color:var(--iron);font:600 .8rem var(--sans);letter-spacing:.06em}
+.gl-sec{background:#F4EFE3}
+.gl-tabs{margin-bottom:22px}
+.gl-masonry{list-style:none;margin:0;padding:0;column-count:3;column-gap:clamp(12px,1.6vw,18px)}
+.gl-item{break-inside:avoid;margin:0 0 clamp(12px,1.6vw,18px);opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.gl-item.on{opacity:1;transform:none}
+.gl-item[hidden]{display:none}
+.gl-btn{position:relative;display:block;width:100%;padding:0;border:0;border-radius:20px;overflow:hidden;background:#DCD6C4;cursor:zoom-in}
+.gl-btn img{display:block;width:100%;height:auto;transition:transform .7s var(--ease)}
+.gl-btn:hover img,.gl-btn:focus-visible img{transform:scale(1.05)}
+.gl-btn:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.gl-cap{position:absolute;left:0;right:0;bottom:0;display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(15,42,23,.85));color:var(--cream);font-size:.9rem;line-height:1.35;text-align:left;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s}
+.gl-btn:hover .gl-cap,.gl-btn:focus-visible .gl-cap{opacity:1;transform:none}
+.gl-tag{display:inline-block;padding:3px 10px;border-radius:999px;background:var(--brass-lite);color:var(--iron);font:600 .7rem var(--sans);letter-spacing:.06em;text-transform:uppercase}
+.gl-zoom{position:absolute;top:12px;right:12px;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:rgba(244,239,227,.9);color:var(--oak);opacity:0;transition:opacity .3s}
+.gl-zoom svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.gl-btn:hover .gl-zoom,.gl-btn:focus-visible .gl-zoom{opacity:1}
+@media (hover:none){.gl-cap{opacity:1;transform:none;padding-top:26px}.gl-cap .gl-tag{display:none}}
+.gl-box{width:min(1180px,96vw);max-width:none;max-height:94vh;padding:0;border:0;border-radius:22px;background:#0F2A17;color:var(--cream);overflow:hidden}
+.gl-box::backdrop{background:rgba(8,20,12,.85)}
+.gl-box-in{position:relative;display:grid;grid-template-columns:56px minmax(0,1fr) 56px;align-items:center;padding:14px 10px}
+.gl-box figure{margin:0;text-align:center}
+.gl-box img{display:block;max-width:100%;max-height:78vh;margin:0 auto;border-radius:14px;object-fit:contain}
+.gl-box figcaption{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 14px;padding:14px 8px 4px;font-size:1rem}
+.gl-num{color:#CBD3C0;font-size:.88rem}
+.gl-nav,.gl-x{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1px solid rgba(217,181,108,.5);background:rgba(244,239,227,.08);color:var(--cream);cursor:pointer}
+.gl-nav svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.gl-nav:hover,.gl-x:hover{background:var(--brass-lite);color:var(--iron)}
+.gl-x{position:absolute;top:12px;right:12px;z-index:2;font-size:1.6rem;line-height:1}
+.gl-prev{justify-self:start}.gl-next{justify-self:end}
+.gl-work .lede{color:#D6DCCB}
+.gl-work-grid .pair-card a{background:rgba(244,239,227,.06);border-color:rgba(217,181,108,.3);color:var(--cream)}
+.gl-work-grid .pair-t{color:var(--cream)}
+.gl-work-grid .pair-d{color:#D6DCCB}
+.gl-work-grid .pair-go{color:var(--brass-lite)}
+.gl-work-grid img{background:var(--cream);border-radius:14px;padding:6px}
+.gl-wk{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-lite)}
+@media (max-width:1000px){.gl-masonry{column-count:2}}
+@media (max-width:760px){.gl-grid{grid-template-columns:1fr}.gl-mosaic{display:none}}
+@media (max-width:520px){.gl-masonry{column-count:1}.gl-box-in{grid-template-columns:40px minmax(0,1fr) 40px;padding:10px 4px}.gl-nav{width:38px;height:38px}}
+@media (prefers-reduced-motion:reduce){.gl-item{opacity:1;transform:none;transition:none}.gl-btn img{transition:none}}
 </style>
 </head>
 <body>
@@ -1043,14 +1099,14 @@ html.js .fa .cal-day.visit{animation:none}
           </ul>
         </li>
         <li class="nav-item has-sub">
-          <span class="split"><a href="services.html" aria-current="page">Services</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services"><span class="sr-only">Show all services</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
+          <span class="split"><a href="services.html">Services</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services"><span class="sr-only">Show all services</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
           <ul class="submenu cols" id="sub-services">
             <li><a href="residential-lawn-mowing.html">Residential Lawn Mowing</a></li>
             <li><a href="commercial-lawn-maintenance.html">Commercial Lawn Maintenance</a></li>
             <li><a href="lawn-edging.html">Lawn Edging</a></li>
             <li><a href="weed-control.html">Weed Control</a></li>
             <li><a href="lawn-fertilization.html">Lawn Fertilization</a></li>
-            <li><a href="lawn-aeration.html" aria-current="page">Lawn Aeration</a></li>
+            <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
             <li><a href="overseeding.html">Overseeding</a></li>
             <li><a href="sod-installation.html">Sod Installation</a></li>
             <li><a href="lawn-cleanup.html">Lawn Cleanup</a></li>
@@ -1103,7 +1159,7 @@ html.js .fa .cal-day.visit{animation:none}
         <li><a href="lawn-edging.html">Lawn Edging</a></li>
         <li><a href="weed-control.html">Weed Control</a></li>
         <li><a href="lawn-fertilization.html">Lawn Fertilization</a></li>
-        <li><a href="lawn-aeration.html" aria-current="page">Lawn Aeration</a></li>
+        <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
         <li><a href="overseeding.html">Overseeding</a></li>
         <li><a href="sod-installation.html">Sod Installation</a></li>
         <li><a href="lawn-cleanup.html">Lawn Cleanup</a></li>
@@ -1134,171 +1190,139 @@ html.js .fa .cal-day.visit{animation:none}
 
 <main id="main">
 
-<!-- Service hero -->
-<section class="ph ph-svc" aria-labelledby="hero-title">
-  <img class="ph-bg" src="assets/work-9.jpg" alt="" width="1920" height="1417" fetchpriority="high">
+<!-- Gallery hero (compact banner) -->
+<section class="ph ph-svc ph-gallery" aria-labelledby="hero-title">
+  <img class="ph-bg" src="assets/work-2.jpg" alt="" width="2000" height="1329" fetchpriority="high">
   <div class="wrap ph-in">
-    <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="./">Home</a></li><li><a href="services.html">Services</a></li><li aria-current="page">Lawn Aeration</li></ol></nav>
-    <div class="ph-svc-grid">
+    <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="./">Home</a></li><li><a href="about.html">About Us</a></li><li aria-current="page">Gallery</li></ol></nav>
+    <div class="gl-grid">
       <div class="ph-copy">
-        <h1 class="ph-kicker" id="hero-title">Lawn Aeration in New Orleans</h1>
-        <h2 class="ph-display">Professional <em>Lawn Aeration</em> Service in New Orleans: Breathing Life Into Your Lawn</h2>
-        <p class="ph-sub">Aeration opens up compacted soil so air, water and nutrients reach deep into the roots of your grass.</p>
+        <h1 class="ph-kicker" id="hero-title">New Orleans Lawn Care Gallery</h1>
+        <h2 class="ph-display">The Big Easy Grass Cutting <em>Gallery</em></h2>
+        <p class="ph-sub">Mowing, trimming, big jobs and finished lawns. Browse the photos and picture what your yard could look like.</p>
         <div class="hero-ctas">
-          <button class="btn btn-brass" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-          <a class="btn ph-call" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
+          <a class="btn btn-brass" href="#photos">View the Photos <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <button class="btn ph-call" type="button" data-open-estimate>Get a Free Estimate</button>
         </div>
-        <ul class="ph-facts"><li><svg aria-hidden="true"><use href="#i-check"/></svg>Spring or Fall Scheduling</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Licensed &amp; Insured</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Free Estimates</li></ul>
       </div>
+      <a class="gl-mosaic" href="#photos" aria-label="Jump to the 15 photos"><span style="background-image:url(assets/gallery/g-1.jpg)"></span><span style="background-image:url(assets/gallery/g-15.jpg)"></span><span style="background-image:url(assets/gallery/g-6.jpg)"></span><span style="background-image:url(assets/gallery/g-9.jpg)"></span><span style="background-image:url(assets/gallery/g-7.jpg)"></span><span style="background-image:url(assets/gallery/g-2.jpg)"></span><b>15 Photos</b></a>
     </div>
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:var(--oak-deep);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Service intro -->
-<section class="section sv-intro" aria-labelledby="intro-title">
-  <div class="wrap sv-intro-grid">
-    <div class="sv-intro-copy reveal">
-      <p class="eyebrow">Lawn Aeration</p>
-      <h2 class="h2" id="intro-title" style="color:var(--oak)">What Is <em class="acc">Lawn Aeration</em>?</h2>
-      <p>Lawn aeration perforates the soil with small holes so air, water and nutrients can reach deep into the roots of your grass. It relieves soil compaction, which builds up from heavy foot traffic, mowing and the weather.</p><p>Aeration helps roots develop, so the grass can get what it needs to thrive. It also cuts down thatch buildup and makes fertilizers and other treatments work better. The result is a healthier, more vibrant lawn.</p>
-      <div class="sfeat-actions">
-        <button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate</button>
-        <a class="btn btn-ghost" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
-      </div>
-    </div>
-    <div class="sfeat-media sv-intro-media reveal">
-      <img src="assets/sp-lawn-aeration.jpg" alt="Close-up of aerator tines above a green lawn" width="950" height="450" loading="lazy">
-    </div>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#C9DEB4" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Benefits -->
-<section class="section sv-ben" aria-labelledby="ben-title">
+<!-- Photo gallery -->
+<section class="section gl-sec" id="photos" aria-labelledby="gal-title">
   <div class="wrap">
     <div class="sv-head reveal">
-      <p class="eyebrow">Why It Pays Off</p>
-      <h2 class="h2" id="ben-title" style="color:var(--oak)">Benefits of Lawn Aeration in <em class="acc">New Orleans’ Climate</em></h2>
-      <p class="lede">Our humid subtropical weather brings high heat and heavy rain, and both lead to compacted soil and thatch. Aeration helps in four big ways, and a couple more.</p>
+      <p class="eyebrow">Photo Gallery</p>
+      <h2 class="h2" id="gal-title" style="color:var(--oak)">Lawn Care Photos From <em class="acc">Mowing to Finished Lawn</em></h2>
+      <p class="lede">Pick a category, then tap any photo to see it full size. Use the arrows or swipe to move between photos.</p>
     </div>
-    <div class="ben-grid">
-      <div class="sfeat-media ben-media reveal"><img src="assets/work-11.jpg" alt="Green lawn next to a drainage grate" width="2000" height="1286" loading="lazy"></div>
-      <ol class="ben-list">
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">01</span><div><h3>Alleviate Soil Compaction</h3><p>Heavy rain and foot traffic pack the soil down. Aeration loosens it so roots can breathe and take in nutrients.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">02</span><div><h3>Improved Water Absorption</h3><p>Aeration opens channels for rain to soak in, so less of it runs off or puddles on top of the lawn.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">03</span><div><h3>Help in Thatch Control</h3><p>Thatch builds up fast in warm climates like ours. Aeration breaks it up so it decomposes, which lowers the risk of disease and pests.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">04</span><div><h3>Enhance the Effectiveness of Fertilizers</h3><p>Treatments reach the roots directly through the aeration channels, so your lawn gets the full benefit of every feeding.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">05</span><div><h3>Deeper Root Development</h3><p>With room to grow, roots spread out and reach the air, water and nutrients the grass needs to thrive.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">06</span><div><h3>Fewer Weeds and Pests</h3><p>Aeration improves the overall health of the lawn, which makes it less open to weed infestations and pest damage.</p></div></li>
-      </ol>
-    </div>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#C9DEB4;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- What comes with every visit -->
-<section class="section dark sv-inc" aria-labelledby="inc-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">The Details</p>
-      <h2 class="h2" id="inc-title">Our Expert <em class="acc" style="color:var(--brass-lite)">Lawn Aeration Service</em></h2>
-      <p class="lede">Here is what goes into aerating your lawn the right way.</p>
-    </div>
-    <ul class="inc-grid">
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">01</span><h3>Perforating Compacted Soil</h3><p>We perforate the soil with small holes so air, water and nutrients can get deep into the root zone.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">02</span><h3>Built for South Louisiana Soil</h3><p>The service is designed around the compaction problems common in our heavy clay and silt soils.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">03</span><h3>Timing Matched to Your Grass</h3><p>We schedule around your grass type, so the lawn is actively growing and can recover quickly afterward.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">04</span><h3>A Soil Moisture Check</h3><p>Aeration works best when the soil is slightly moist, so we avoid ground that is too dry or soggy.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">05</span><h3>A Lawn Health Check First</h3><p>If your lawn is already stressed from drought or disease, we hold off until it has had a chance to recover.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">06</span><h3>Experienced Professionals</h3><p>Our team of experienced professionals channels oxygen, water and nutrients back to your grass for a lush, vibrant lawn.</p></li>
+    <div class="pa-tabs gl-tabs reveal" role="group" aria-label="Filter Photos"><button type="button" class="pa-tab" data-filter="all" aria-pressed="true">All Photos <span>15</span></button><button type="button" class="pa-tab" data-filter="mow" aria-pressed="false">Mowing <span>6</span></button><button type="button" class="pa-tab" data-filter="trim" aria-pressed="false">Trimming and Edging <span>3</span></button><button type="button" class="pa-tab" data-filter="large" aria-pressed="false">Large Properties <span>2</span></button><button type="button" class="pa-tab" data-filter="lawns" aria-pressed="false">Finished Lawns <span>4</span></button></div>
+    <ul class="gl-masonry" id="gl-list">
+      <li class="gl-item" data-group="mow"><button type="button" class="gl-btn" data-full="assets/work-1.jpg" data-cap="Riding mower cutting straight stripes across a lawn" data-tag="Mowing" aria-label="Open photo: Riding mower cutting straight stripes across a lawn">
+        <img src="assets/gallery/g-1.jpg" alt="Riding mower cutting straight stripes across a lawn" width="900" height="579" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Mowing</span>Riding mower cutting straight stripes across a lawn</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="lawns"><button type="button" class="gl-btn" data-full="assets/work-15.jpg" data-cap="Smooth green lawn bordered by red and green shrubs" data-tag="Finished Lawns" aria-label="Open photo: Smooth green lawn bordered by red and green shrubs">
+        <img src="assets/gallery/g-15.jpg" alt="Smooth green lawn bordered by red and green shrubs" width="900" height="586" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Finished Lawns</span>Smooth green lawn bordered by red and green shrubs</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="trim"><button type="button" class="gl-btn" data-full="assets/work-6.jpg" data-cap="String trimmer head cutting grass, with clippings flying" data-tag="Trimming and Edging" aria-label="Open photo: String trimmer head cutting grass, with clippings flying">
+        <img src="assets/gallery/g-6.jpg" alt="String trimmer head cutting grass, with clippings flying" width="900" height="600" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Trimming and Edging</span>String trimmer head cutting grass, with clippings flying</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="large"><button type="button" class="gl-btn" data-full="assets/work-9.jpg" data-cap="Tractor mower cutting a large field" data-tag="Large Properties" aria-label="Open photo: Tractor mower cutting a large field">
+        <img src="assets/gallery/g-9.jpg" alt="Tractor mower cutting a large field" width="900" height="599" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Large Properties</span>Tractor mower cutting a large field</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="mow"><button type="button" class="gl-btn" data-full="assets/work-7.jpg" data-cap="Push mower beside a curved gravel bed and paved patio" data-tag="Mowing" aria-label="Open photo: Push mower beside a curved gravel bed and paved patio">
+        <img src="assets/gallery/g-7.jpg" alt="Push mower beside a curved gravel bed and paved patio" width="900" height="600" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Mowing</span>Push mower beside a curved gravel bed and paved patio</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="lawns"><button type="button" class="gl-btn" data-full="assets/work-2.jpg" data-cap="Green lawn and a curved garden path beside flower beds" data-tag="Finished Lawns" aria-label="Open photo: Green lawn and a curved garden path beside flower beds">
+        <img src="assets/gallery/g-2.jpg" alt="Green lawn and a curved garden path beside flower beds" width="900" height="598" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Finished Lawns</span>Green lawn and a curved garden path beside flower beds</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="trim"><button type="button" class="gl-btn" data-full="assets/work-12.jpg" data-cap="Crew member trimming grass along a park path" data-tag="Trimming and Edging" aria-label="Open photo: Crew member trimming grass along a park path">
+        <img src="assets/gallery/g-12.jpg" alt="Crew member trimming grass along a park path" width="900" height="600" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Trimming and Edging</span>Crew member trimming grass along a park path</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="mow"><button type="button" class="gl-btn" data-full="assets/work-4.jpg" data-cap="Push mower cutting through tall green grass" data-tag="Mowing" aria-label="Open photo: Push mower cutting through tall green grass">
+        <img src="assets/gallery/g-4.jpg" alt="Push mower cutting through tall green grass" width="900" height="598" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Mowing</span>Push mower cutting through tall green grass</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="mow"><button type="button" class="gl-btn" data-full="assets/work-8.jpg" data-cap="Grass clippings being emptied from a mower bag" data-tag="Mowing" aria-label="Open photo: Grass clippings being emptied from a mower bag">
+        <img src="assets/gallery/g-8.jpg" alt="Grass clippings being emptied from a mower bag" width="900" height="1350" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Mowing</span>Grass clippings being emptied from a mower bag</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="large"><button type="button" class="gl-btn" data-full="assets/work-13.jpg" data-cap="Tractor-mounted mower cutting a roadside strip" data-tag="Large Properties" aria-label="Open photo: Tractor-mounted mower cutting a roadside strip">
+        <img src="assets/gallery/g-13.jpg" alt="Tractor-mounted mower cutting a roadside strip" width="900" height="600" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Large Properties</span>Tractor-mounted mower cutting a roadside strip</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="mow"><button type="button" class="gl-btn" data-full="assets/work-5.jpg" data-cap="Mower wheels on a freshly cut stripe of grass" data-tag="Mowing" aria-label="Open photo: Mower wheels on a freshly cut stripe of grass">
+        <img src="assets/gallery/g-5.jpg" alt="Mower wheels on a freshly cut stripe of grass" width="900" height="600" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Mowing</span>Mower wheels on a freshly cut stripe of grass</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="lawns"><button type="button" class="gl-btn" data-full="assets/work-3.jpg" data-cap="Putting green with a cup, edged with white gravel" data-tag="Finished Lawns" aria-label="Open photo: Putting green with a cup, edged with white gravel">
+        <img src="assets/gallery/g-3.jpg" alt="Putting green with a cup, edged with white gravel" width="900" height="598" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Finished Lawns</span>Putting green with a cup, edged with white gravel</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="trim"><button type="button" class="gl-btn" data-full="assets/work-14.jpg" data-cap="String trimmer resting on freshly cut grass" data-tag="Trimming and Edging" aria-label="Open photo: String trimmer resting on freshly cut grass">
+        <img src="assets/gallery/g-14.jpg" alt="String trimmer resting on freshly cut grass" width="900" height="359" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Trimming and Edging</span>String trimmer resting on freshly cut grass</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="mow"><button type="button" class="gl-btn" data-full="assets/work-10.jpg" data-cap="Mower about to cut tall grass at the edge of a lawn" data-tag="Mowing" aria-label="Open photo: Mower about to cut tall grass at the edge of a lawn">
+        <img src="assets/gallery/g-10.jpg" alt="Mower about to cut tall grass at the edge of a lawn" width="900" height="601" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Mowing</span>Mower about to cut tall grass at the edge of a lawn</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
+      <li class="gl-item" data-group="lawns"><button type="button" class="gl-btn" data-full="assets/work-11.jpg" data-cap="Lawn edge next to a drainage channel" data-tag="Finished Lawns" aria-label="Open photo: Lawn edge next to a drainage channel">
+        <img src="assets/gallery/g-11.jpg" alt="Lawn edge next to a drainage channel" width="900" height="600" loading="lazy">
+        <span class="gl-cap"><span class="gl-tag">Finished Lawns</span>Lawn edge next to a drainage channel</span>
+        <span class="gl-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+      </button></li>
     </ul>
+    <p class="pa-count-line" id="gl-status" aria-live="polite">Showing all 15 photos</p>
   </div>
 </section>
-<div class="fa"><div class="edge" style="--from:var(--oak);--to:#ECE6D2" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- When to schedule -->
-<section class="section sv-time" aria-labelledby="time-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">When to Schedule</p>
-      <h2 class="h2 h2-long" id="time-title" style="color:var(--oak)">When Is the Best Time to Hire a Lawn Aeration Service in New Orleans?</h2>
-      <p class="lede">The right timing lets your grass recover fast and get the most out of every aeration.</p>
-    </div>
-    <ol class="time-list">
-      <li class="time-card reveal"><span class="time-k">Spring or Fall</span><h3>The Best Seasons in New Orleans</h3><p>Spring and fall are typically the best times to aerate here, when the grass can recover quickly and get the most benefit.</p></li>
-      <li class="time-card reveal"><span class="time-k">Late Spring</span><h3>Warm-Season Grass Timing</h3><p>Warm-season grasses like Bermuda and Zoysia do best with aeration in late spring or early summer, as they come out of dormancy.</p></li>
-      <li class="time-card reveal"><span class="time-k">Once a Year</span><h3>How Often to Aerate</h3><p>Most New Orleans lawns benefit from aeration once a year, depending on your lawn’s specific conditions.</p></li>
-      <li class="time-card reveal"><span class="time-k">Slightly Moist Soil</span><h3>Aerate When the Soil Is Ready</h3><p>Soil that is too dry resists the tines, and soil that is too wet can compact again. Slightly moist is the target.</p></li>
-    </ol>
+<dialog class="gl-box" id="gl-box" aria-label="Photo viewer">
+  <div class="gl-box-in">
+    <button type="button" class="gl-x" data-gl="close" aria-label="Close viewer">&times;</button>
+    <button type="button" class="gl-nav gl-prev" data-gl="prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <figure><img id="gl-img" alt=""><figcaption><span class="gl-tag" id="gl-tag"></span><span id="gl-cap"></span><span class="gl-num" id="gl-num"></span></figcaption></figure>
+    <button type="button" class="gl-nav gl-next" data-gl="next" aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
   </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#ECE6D2;--to:#0F2A17" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<div class="fa">
-<!-- 7. PROCESS -->
-<section class="process on-deep" id="process" aria-labelledby="proc-title">
-  <div class="wrap">
-    <div class="process-head reveal">
-      <p class="eyebrow">How It Works</p>
-      <h2 id="proc-title">How Our Lawn Aeration Service Works</h2>
-      <p class="lede">Scroll along and watch the mower work the path.</p>
-    </div>
-    <svg class="proc-svg" id="proc-svg" viewBox="0 0 1000 230" aria-hidden="true">
-      <path class="proc-base" id="proc-path" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <path class="proc-cut" id="proc-cut" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <path class="proc-cut-2" id="proc-cut-2" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <g class="proc-node" data-at="0.2"><circle cx="167" cy="90" r="26"/><text x="167" y="90">1</text></g>
-      <g class="proc-node" data-at="0.5"><circle cx="500" cy="165" r="26"/><text x="500" y="165">2</text></g>
-      <g class="proc-node" data-at="0.8"><circle cx="833" cy="90" r="26"/><text x="833" y="90">3</text></g>
-      <g id="proc-mower"><use href="#mower" x="-33" y="-22" width="66" height="45"/></g>
-    </svg>
-    <div class="proc-body" id="proc-body">
-      <div class="proc-rail" aria-hidden="true"><div class="proc-rail-fill"></div><svg class="proc-rail-mower" viewBox="0 0 130 88"><use href="#mower"/></svg></div>
-      <ol class="proc-steps">
-        <li class="proc-step" data-at="0.2">
-          <span class="step-k" aria-hidden="true">Step 1</span>
-          <h3>Schedule a Consultation</h3>
-          <p>Contact us to talk through your lawn care needs. Our team visits your property to assess its size, condition and specific requirements.</p>
-        </li>
-        <li class="proc-step" data-at="0.5">
-          <span class="step-k" aria-hidden="true">Step 2</span>
-          <h3>Tailored Lawn Care Plan</h3>
-          <p>Based on that assessment, we build a customized plan that suits what your lawn needs.</p>
-        </li>
-        <li class="proc-step" data-at="0.8">
-          <span class="step-k" aria-hidden="true">Step 3</span>
-          <h3>Professional Maintenance</h3>
-          <p>Sit back and relax while our experienced team carries out the plan with attention to detail and professional-grade equipment.</p>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
-</div>
-<div class="fa"><div class="edge" style="--from:#0F2A17;--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Pair it with -->
-<section class="section sv-pair" aria-labelledby="pair-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">Pair It With</p>
-      <h2 class="h2" id="pair-title" style="color:var(--oak)">Services That Pair With <em class="acc">Lawn Aeration</em></h2>
-      <p class="lede">Every lawn is unique. Add any of these and we build them into one tailored plan.</p>
-    </div>
-    <ul class="pair-grid">
-      <li class="pair-card reveal"><a href="overseeding.html"><img src="assets/svc-overseeding.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Overseeding</span><span class="pair-d">Fill in patchy, sparse turf for a lush, resilient lawn.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="lawn-fertilization.html"><img src="assets/svc-lawn-fertilization.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Fertilization</span><span class="pair-d">Nourish your lawn for lush, vibrant growth.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="weed-control.html"><img src="assets/svc-weed-control.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Weed Control</span><span class="pair-d">Banish weeds before they take over a beautiful lawn.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="irrigation-system-maintenance.html"><img src="assets/svc-irrigation-system-maintenance.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Irrigation System Maintenance</span><span class="pair-d">Keep the flow for a thriving landscape.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-    </ul>
-    <p class="pair-all"><a class="btn btn-ghost" href="services.html">See All 10 Services <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
-  </div>
-</section>
+</dialog>
 <div class="fa"><div class="edge" style="--from:#F4EFE3;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Areas strip -->
-<section class="section dark sv-areas" aria-labelledby="areas-title">
-  <div class="wrap sv-areas-grid">
-    <div class="reveal">
-      <p class="eyebrow">Where We Work</p>
-      <h2 class="h2" id="areas-title">Lawn Aeration Across <em class="acc">Greater New Orleans</em></h2>
-      <p class="lede">Home base is New Orleans, with crews serving the Southshore, West Bank, River Parishes and Northshore.</p>
+<!-- The work behind the photos -->
+<section class="section dark gl-work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="sv-head reveal">
+      <p class="eyebrow">Behind the Photos</p>
+      <h2 class="h2" id="work-title">The Lawn Care Services <em class="acc" style="color:var(--brass-lite)">Behind These Lawns</em></h2>
+      <p class="lede">Every look in the gallery comes down to one of these services, done on a regular schedule.</p>
     </div>
-    <ul class="town-chips reveal" aria-label="Service Areas"><li><button type="button" data-open-estimate>New Orleans</button></li><li><a href="metairie.html">Metairie</a></li><li><a href="kenner.html">Kenner</a></li><li><a href="harahan.html">Harahan</a></li><li><a href="river-ridge.html">River Ridge</a></li><li><a href="gretna.html">Gretna</a></li><li><a href="laplace.html">LaPlace</a></li><li><a href="covington.html">Covington</a></li><li><a href="mandeville.html">Mandeville</a></li><li><a href="madisonville.html">Madisonville</a></li><li><a href="slidell.html">Slidell</a></li><li><a href="hammond.html">Hammond</a></li><li><a href="baton-rouge.html">Baton Rouge</a></li></ul>
+    <ul class="pair-grid gl-work-grid">
+      <li class="pair-card reveal"><a href="residential-lawn-mowing.html"><img src="assets/svc-residential-lawn-mowing.png" alt="" width="56" height="56" loading="lazy"><span class="gl-wk">Mowing</span><span class="pair-t">Residential Lawn Mowing</span><span class="pair-d">Lawn perfection at your doorstep.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li class="pair-card reveal"><a href="lawn-edging.html"><img src="assets/svc-lawn-edging.png" alt="" width="56" height="56" loading="lazy"><span class="gl-wk">Trimming and Edging</span><span class="pair-t">Lawn Edging</span><span class="pair-d">Picture-perfect precision along every bed, walk and drive.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li class="pair-card reveal"><a href="commercial-lawn-maintenance.html"><img src="assets/svc-commercial-lawn-maintenance.png" alt="" width="56" height="56" loading="lazy"><span class="gl-wk">Large Properties</span><span class="pair-t">Commercial Lawn Maintenance</span><span class="pair-d">Greening your business with professional upkeep.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li class="pair-card reveal"><a href="lawn-cleanup.html"><img src="assets/svc-lawn-cleanup.png" alt="" width="56" height="56" loading="lazy"><span class="gl-wk">Cleanup and Clippings</span><span class="pair-t">Lawn Cleanup</span><span class="pair-d">Transforming chaos to beauty.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+    </ul>
+    <p class="pair-all"><a class="btn ph-call" href="services.html">See All 10 Services <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:var(--oak);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
@@ -1307,21 +1331,21 @@ html.js .fa .cal-day.visit{animation:none}
   <div class="wrap">
     <div class="reveal">
       <p class="eyebrow">Common Questions</p>
-      <h2 class="h2" id="faq-title" style="color:var(--oak)">Frequently Asked Questions About <em class="acc">Lawn Aeration</em></h2>
+      <h2 class="h2" id="faq-title" style="color:var(--oak)">Lawn Care Gallery <em class="acc">FAQs</em></h2>
     </div>
     <div class="faq-grid">
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b1"><span class="n" aria-hidden="true">01</span><span class="q">Can I Aerate My Lawn Myself, or Should I Hire a Professional Service?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-b1"><p>While some homeowners may attempt to aerate their lawns themselves, it’s usually best to hire a professional service with experienced professionals who use the latest equipment and techniques.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-b2"><span class="n" aria-hidden="true">02</span><span class="q">How Does Lawn Aeration Benefit Lawns Specific to New Orleans' Climate?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-b2"><p>New Orleans’ humid subtropical weather can lead to soil compaction and thatch build-up. Lawn aeration can alleviate soil compaction, improve water absorption, help control thatch, and enhance the effectiveness of fertilizers. This is crucial for maintaining a healthy lawn in our specific climate.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b3"><span class="n" aria-hidden="true">03</span><span class="q">When Is the Best Time to Hire a Lawn Aeration Service?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-b3"><p>The optimal time to hire a lawn aeration service in New Orleans is during the spring or fall seasons. These are the times when the grass can recover quickly and benefit the most from the aeration process.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b4"><span class="n" aria-hidden="true">04</span><span class="q">What Are the Signs That My Lawn Needs Aeration?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-b4"><p>Signs that your lawn needs aeration can include compacted soil, water runoff, thin or patchy grass, excessive thatch buildup, and constant weed and pest infestations. If you notice any of these signs, it’s time to consider professional aeration services.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b5"><span class="n" aria-hidden="true">05</span><span class="q">How Often Should I Have My Lawn Aerated in New Orleans?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-b5"><p>The frequency can vary depending on your specific lawn conditions, but generally, lawns in New Orleans benefit from being aerated once a year, typically in the spring or fall.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b6"><span class="n" aria-hidden="true">06</span><span class="q">Is Lawn Aeration Necessary for All Types of Grass?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-b6"><p>While most types of grass will benefit from aeration, the need can vary depending on soil conditions, grass species, and the level of lawn use. A professional service can advise you based on your specific lawn condition.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b1"><span class="n" aria-hidden="true">01</span><span class="q">How Do I Get My Lawn Looking Like These Photos?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-b1"><p>Start with a free estimate. Our team looks at your lawn&#x27;s size, condition and needs, then builds a care plan around them.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-b2"><span class="n" aria-hidden="true">02</span><span class="q">What Kind of Work Does the Gallery Show?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-b2"><p>Mowing, string trimming and edging, large-property mowing, clippings cleanup and finished lawns.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b3"><span class="n" aria-hidden="true">03</span><span class="q">Do You Work on Large Grounds Like Parks and Commercial Lots?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-b3"><p>Yes. Whether you have a small residential lawn or a large commercial property, we have the skills and equipment to handle the job.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b4"><span class="n" aria-hidden="true">04</span><span class="q">How Do You Get Even Cuts and Clean Edges?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-b4"><p>We pay attention to every detail so each blade is evenly trimmed, and our equipment leaves precise, clean-cut edges.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b5"><span class="n" aria-hidden="true">05</span><span class="q">Where Can I See More Lawn Care Photos and Videos?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-b5"><p>Follow Big Easy Grass Cutting on YouTube, Facebook, X (Twitter) and LinkedIn. The links are on our contact page.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b6"><span class="n" aria-hidden="true">06</span><span class="q">What Is the Next Step If I Like What I See?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-b6"><p>Call 504-910-7829, Monday through Friday from 8am to 3pm, or request a free estimate online any time.</p></div></div>
     </div>
   </div>
 </section>
@@ -1331,7 +1355,7 @@ html.js .fa .cal-day.visit{animation:none}
   <div class="wrap est-grid">
     <div class="est-info reveal">
       <p class="eyebrow">Free Estimate</p>
-      <h2 class="h2" id="est-title">Get a Free Lawn Aeration <em class="acc" style="color:var(--brass-lite)">Estimate</em></h2>
+      <h2 class="h2" id="est-title">Want Your Lawn to Look Like This? Get a <em class="acc" style="color:var(--brass-lite)">Free Estimate</em></h2>
       <p class="lede" style="margin-top:1rem">Trusted by homeowners and businesses across New Orleans. Get a free, no-obligation quote today.</p>
       <ul>
         <li><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Rather talk? Call <a href="tel:+15049107829">504-910-7829</a></span></li>
@@ -2248,6 +2272,50 @@ html.js .fa .cal-day.visit{animation:none}
   }
   window.addEventListener('scroll', function(){ if (!tick) { tick = true; setTimeout(check, 160); } }, { passive: true });
   window.addEventListener('load', check);
+})();
+</script>
+<script>
+/* Gallery: category filter, lightbox (arrows, keyboard, swipe), tile reveal */
+(function(){
+  var d = document, items = [].slice.call(d.querySelectorAll('.gl-item')), tabs = [].slice.call(d.querySelectorAll('.gl-tabs .pa-tab'));
+  var status = d.getElementById('gl-status'), box = d.getElementById('gl-box'), img = d.getElementById('gl-img');
+  var cap = d.getElementById('gl-cap'), tag = d.getElementById('gl-tag'), num = d.getElementById('gl-num'), cur = 0, last = null;
+  function visible(){ return items.filter(function(i){ return !i.hidden; }); }
+  tabs.forEach(function(t){ t.addEventListener('click', function(){
+    var f = t.getAttribute('data-filter');
+    tabs.forEach(function(x){ x.setAttribute('aria-pressed', x === t ? 'true' : 'false'); });
+    items.forEach(function(i){ i.hidden = !(f === 'all' || i.getAttribute('data-group') === f); if (!i.hidden) i.classList.add('on'); });
+    var n = visible().length;
+    status.textContent = n === items.length ? 'Showing all ' + n + ' photos' : 'Showing ' + n + ' of ' + items.length + ' photos';
+  }); });
+  function show(k){
+    var v = visible(); if (!v.length) return;
+    cur = (k + v.length) % v.length;
+    var b = v[cur].querySelector('.gl-btn');
+    img.src = b.getAttribute('data-full'); img.alt = b.getAttribute('data-cap');
+    cap.textContent = b.getAttribute('data-cap'); tag.textContent = b.getAttribute('data-tag');
+    num.textContent = (cur + 1) + ' / ' + v.length;
+  }
+  items.forEach(function(i){ i.querySelector('.gl-btn').addEventListener('click', function(){
+    last = this; show(visible().indexOf(i));
+    if (box.showModal) box.showModal(); else box.setAttribute('open', '');
+  }); });
+  box.addEventListener('click', function(e){
+    var a = e.target.closest('[data-gl]');
+    if (a) { var k = a.getAttribute('data-gl'); if (k === 'close') box.close(); else show(cur + (k === 'next' ? 1 : -1)); return; }
+    if (e.target === box) box.close();
+  });
+  box.addEventListener('keydown', function(e){ if (e.key === 'ArrowRight') show(cur + 1); else if (e.key === 'ArrowLeft') show(cur - 1); });
+  box.addEventListener('close', function(){ if (last) last.focus(); });
+  var sx = null;
+  box.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; }, {passive:true});
+  box.addEventListener('touchend', function(e){ if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 40) show(cur + (dx < 0 ? 1 : -1)); sx = null; });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px'});
+    items.forEach(function(i, k){ i.style.transitionDelay = (k % 3) * 70 + 'ms'; io.observe(i); });
+  } else { items.forEach(function(i){ i.classList.add('on'); }); }
+  function sweep(){ var h = window.innerHeight; items.forEach(function(i){ if (!i.classList.contains('on') && i.getBoundingClientRect().top < h) i.classList.add('on'); }); }
+  window.addEventListener('scroll', sweep, {passive:true}); window.addEventListener('resize', sweep); sweep();
 })();
 </script>
 </body>
