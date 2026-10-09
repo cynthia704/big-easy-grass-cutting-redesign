@@ -1053,39 +1053,57 @@ html.js .fa .cal-day.visit{animation:none}
 .pc-why-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:start}
 .pc-why-head{position:sticky;top:110px}
 .pc-why-head .lede{max-width:none;margin-bottom:1.4rem}
-.pc-why-head .h2,.pc-cta .h2{font-size:clamp(1.9rem,2.9vw,2.7rem);line-height:1.12;margin-bottom:.8rem}
+.pc-why-head .h2{font-size:clamp(1.9rem,2.9vw,2.7rem);line-height:1.12;margin-bottom:.8rem}
 .pc-why-list{list-style:none;margin:0;padding:0;position:relative}
 .pc-why-list::before{content:"";position:absolute;left:27px;top:28px;bottom:28px;width:2px;background:repeating-linear-gradient(var(--sage) 0 8px,transparent 8px 16px)}
 .pc-why-item{position:relative;display:grid;grid-template-columns:auto 1fr;gap:20px;padding:0 0 clamp(20px,2.6vw,30px)}
 .pc-why-n{position:relative;z-index:1;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--oak);color:var(--brass-lite);font-family:var(--serif);font-size:1.5rem;box-shadow:0 0 0 6px #F4EFE3}
 .pc-why-item h3{font-size:1.4rem;color:var(--oak);margin:10px 0 .3rem}
 .pc-why-item p{margin:0;color:var(--muted)}
-.pc-about{background:#ECE6D2}
-.pc-stats{list-style:none;margin:0 0 clamp(22px,3vw,34px);padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.6vw,18px)}
-.pc-stat{padding:24px 22px;border-radius:20px;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--brass)}
-.pc-stat-v{display:block;font-family:var(--serif);font-size:clamp(2.2rem,3.4vw,3rem);line-height:1;color:var(--oak);margin-bottom:10px}
-.pc-stat-l{display:block;color:var(--muted);font-size:.96rem}
-.pc-about-lists{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,36px)}
-.pc-list-l{margin:0 0 10px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--moss)}
-.pc-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.pc-chips li{padding:8px 14px;border-radius:999px;background:var(--paper);border:1px solid var(--line);font-size:.95rem;color:var(--oak)}
-.pc-chips-road li{font-family:var(--sans);font-weight:600;background:#23462E;color:var(--cream);border-color:#23462E}
-.pc-cta{background:#0F2A17}
-.pc-cta-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(28px,5vw,72px);align-items:center}
-.pc-cta .h2{color:var(--cream)}
-.pc-cta .lede{color:#D6DCCB;max-width:none;margin-bottom:1.4rem}
-.pc-near{padding:clamp(20px,3vw,30px);border-radius:22px;border:1px solid rgba(217,181,108,.3);background:rgba(244,239,227,.05)}
-.pc-near .pc-list-l{color:var(--brass-lite)}
-.pc-all{display:inline-flex;align-items:center;gap:6px;margin-top:16px;min-height:44px;color:var(--cream);font-weight:600;text-decoration:none}
-.pc-all svg{width:16px;height:16px}
+.pc-ab1{background:#ECE6D2}
+.pc-ab2{background:#F4EFE3}
+.pc-ab-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,72px);align-items:start}
+.pc-ab-img{margin:0;border-radius:9999px 9999px 20px 20px;overflow:hidden;box-shadow:0 34px 60px -38px rgba(22,41,27,.65);position:sticky;top:120px}
+.pc-ab-img img{display:block;width:100%;height:auto;aspect-ratio:4/4.2;object-fit:cover}
+.pc-ab .lede{margin-top:14px;max-width:none}
+.pc-ab .h2{font-size:clamp(2rem,2.9vw,2.7rem);line-height:1.12}
+.pc-kv{margin:14px 0 0;color:var(--muted)}
+.pc-kv b{color:var(--moss);font-weight:600}
+.pc-maplink{display:inline-flex;align-items:center;gap:8px;margin-top:18px;min-height:44px;font:700 .8rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--moss);text-decoration:none}
+.pc-maplink svg{width:14px;height:14px}
+.pc-maplink:hover{text-decoration:underline}
+.pc-ab h3.pc-ab-h3{margin:32px 0 0;font-size:1.6rem;color:var(--oak)}
+.pc-chk{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px}
+.pc-chk li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:12px;align-items:start;color:var(--muted)}
+.pc-chk li>svg{width:22px;height:22px;padding:4px;border-radius:50%;background:var(--sage-pale);color:var(--oak);margin-top:1px}
+.pc-chk b{color:var(--ink);font-weight:600}
+.pc-chk a{color:var(--oak);font-weight:600}
+.pc-chk2{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px}
+.pc-ab-cta{margin-top:30px}
+.pc-ab3 .h2{color:var(--cream)}
+.pc-ab3 .pc-chk li{color:#D6DCCB}
+.pc-ab3 .pc-chk li>svg{background:rgba(217,181,108,.2);color:var(--brass-lite)}
+.pc-ab3 .pc-chk b,.pc-ab3 .pc-chk a{color:var(--cream)}
+.pc-ab3 h3.pc-ab-h3{color:var(--cream)}
+.pc-ab3 .pc-kv{color:#D6DCCB;margin-top:22px}
+.pc-ab3 .pc-kv b{color:var(--brass-lite)}
+.pc-ab-map{position:sticky;top:120px;border-radius:20px;overflow:hidden;border:1px solid rgba(217,181,108,.3);background:#1F3D27}
+.pc-ab-map iframe{display:block;width:100%;aspect-ratio:4/3.4;border:0}
+.pc-cta{background:#C9DEB4;padding:clamp(56px,7vw,88px) 0}
+.pc-cta-in{display:flex;flex-wrap:wrap;gap:22px 40px;align-items:center;justify-content:space-between}
+.pc-cta-in>div:first-child{flex:1 1 560px}
+.pc-cta .lede{color:#3F4B3E;max-width:none;margin:0}
+.pc-cta .h2{font-size:clamp(1.9rem,2.9vw,2.6rem);line-height:1.12;margin-bottom:.6rem}
 .pc-all:hover{text-decoration:underline}
-@media (max-width:1100px){.pc-lanes,.pc-stats,.pc-probs{grid-template-columns:1fr 1fr}}
+@media (max-width:1100px){.pc-lanes,.pc-probs{grid-template-columns:1fr 1fr}}
+@media (max-width:1000px){.pc-ab-grid{grid-template-columns:minmax(0,1fr)}.pc-ab-img,.pc-ab-map{position:static}.pc-ab2 .pc-ab-img{order:-1}.pc-ab-img img{aspect-ratio:16/10}.pc-ab-map iframe{aspect-ratio:16/10}.pc-ab-img{border-radius:20px}}
+@media (max-width:520px){.pc-chk2{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:900px){
-  .pc-why-grid,.pc-cta-grid{grid-template-columns:1fr}
+  .pc-why-grid{grid-template-columns:1fr}
   .pc-why-head{position:static}
 }
 @media (max-width:760px){.pc-grid{grid-template-columns:1fr}.pc-stamp{display:none}}
-@media (max-width:600px){.pc-lanes,.pc-stats,.pc-about-lists,.pc-probs{grid-template-columns:1fr}.pc-in{min-height:0}.pc-art{margin-bottom:0}.pc-front h3{margin-top:14px}}
+@media (max-width:600px){.pc-lanes,.pc-probs{grid-template-columns:1fr}.pc-in{min-height:0}.pc-art{margin-bottom:0}.pc-front h3{margin-top:14px}}
 @media (prefers-reduced-motion:reduce){
   .pc-spin,.pc-pin{animation:none}
   .pc-lane.in .pc-mower{animation:none;left:calc(100% - 52px)}
@@ -1469,46 +1487,66 @@ html.js .fa .cal-day.visit{animation:none}
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#ECE6D2" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- About the city -->
-<section class="section pc-about" aria-labelledby="about-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">Local Know-How</p>
-      <h2 class="h2" id="about-title" style="color:var(--oak)">All About <em class="acc">Kenner, LA</em></h2>
-      <p class="lede">Kenner is the largest city in Jefferson Parish and the largest incorporated suburban city of New Orleans.</p>
-    </div>
-    <ul class="pc-stats">
-      <li class="pc-stat reveal"><span class="pc-stat-v">66,448</span><span class="pc-stat-l">Residents, per the 2020 census</span></li>
-      <li class="pc-stat reveal"><span class="pc-stat-v">No. 1</span><span class="pc-stat-l">Largest city in Jefferson Parish</span></li>
-      <li class="pc-stat reveal"><span class="pc-stat-v">16</span><span class="pc-stat-l">Blocks in the Rivertown historic district on the Mississippi River</span></li>
-      <li class="pc-stat reveal"><span class="pc-stat-v">MSY</span><span class="pc-stat-l">Louis Armstrong New Orleans International Airport is in Kenner</span></li>
-    </ul>
-    <div class="pc-about-lists reveal">
-      <div><p class="pc-list-l">Things to Do</p><ul class="pc-chips"><li>Kenner Planetarium and Space Science Complex</li><li>LaSalle&#x27;s Landing in Rivertown</li><li>Rivertown Historic District</li></ul></div>
-      <div><p class="pc-list-l">Main Roads</p><ul class="pc-chips pc-chips-road"><li>Interstate 10</li><li>Airline Dr. (U.S. 61)</li><li>Williams Blvd. (LA 49)</li><li>Power Blvd.</li><li>Loyola Dr.</li></ul></div>
-    </div>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#ECE6D2;--to:#0F2A17" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- City CTA + nearby areas -->
-<section class="section dark pc-cta" aria-labelledby="cta-title">
-  <div class="wrap pc-cta-grid">
+<!-- All About the city: 1. About -->
+<section class="section pc-ab pc-ab1" aria-labelledby="about-title">
+  <div class="wrap pc-ab-grid">
+    <figure class="pc-ab-img reveal"><img src="assets/work-15.jpg" alt="Wide, freshly cut lawn bordered by trimmed hedges" width="2000" height="1302" loading="lazy"></figure>
     <div class="reveal">
-      <h2 class="h2" id="cta-title">Transform Your Kenner Oasis With Our Grass Cutting Services</h2>
-      <p class="lede">Choosing Big Easy Grass Cutting means a team committed to excellence, attention to detail and customer satisfaction, with the services and equipment to bring your landscaping plans to life in Kenner.</p>
-      <div class="hero-ctas">
-        <button class="btn btn-brass" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-        <a class="btn ph-call" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
-      </div>
-    </div>
-    <div class="pc-near reveal">
-      <p class="pc-list-l">Also Serving Near Kenner</p>
-      <ul class="town-chips"><li><a href="https://www.bigeasygrasscutting.com/service-areas/metairie/">Metairie</a></li><li><a href="https://www.bigeasygrasscutting.com/service-areas/harahan/">Harahan</a></li><li><a href="https://www.bigeasygrasscutting.com/service-areas/river-ridge/">River Ridge</a></li></ul>
-      <a class="pc-all" href="service-areas.html">See All 12 Service Areas <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <p class="eyebrow">All About Kenner</p>
+      <h2 class="h2" id="about-title" style="color:var(--oak)">All About <em class="acc">Kenner, LA</em></h2>
+      <p class="lede">Kenner is a Jefferson Parish city on the west side of Greater New Orleans, with Lake Pontchartrain to the north and the Mississippi River to the south. It is the most populous city in Jefferson Parish and the largest incorporated suburb of New Orleans, with 66,448 residents at the 2020 census.</p>
+      <p class="pc-kv"><b>Parish:</b> Jefferson Parish</p><p class="pc-kv"><b>Population:</b> 66,448 (2020 census)</p><p class="pc-kv"><b>Landmarks:</b> Rivertown Historic District, Laketown, Pontchartrain Center, Louis Armstrong New Orleans International Airport</p>
+      <a class="pc-maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Kenner%2C+LA" target="_blank" rel="noopener">View Kenner on Google Maps <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <div class="hero-ctas pc-ab-cta"><button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button><a class="btn btn-ghost" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a></div>
     </div>
   </div>
 </section>
-<div class="fa"><div class="edge" style="--from:#0F2A17;--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<div class="fa"><div class="edge" style="--from:#ECE6D2;--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- All About the city: 2. Things to do + notable residents -->
+<section class="section pc-ab pc-ab2" aria-labelledby="todo-title">
+  <div class="wrap pc-ab-grid">
+    <div class="reveal">
+      <h2 class="h2" id="todo-title" style="color:var(--oak)">Things to Do <em class="acc">in Kenner</em></h2>
+      <ul class="pc-chk"><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Rivertown Historic District:</b> The historic district near the river, with museums, shops, the Kenner Planetarium and the Rivertown Science Center.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Kenner Heritage Park:</b> A replicated village of days gone by in Rivertown, with landscaped walkways and reproductions of early Kenner buildings.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Laketown:</b> A 20-acre park on the shore of Lake Pontchartrain with a boat launch, fishing piers, a bike path and picnic areas.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Pontchartrain Center:</b> Kenner&#x27;s convention and civic center in Laketown, home to concerts, conventions and events all year.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>The 1870 Boxing Monument:</b> Marks the spot near the river end of Williams Blvd. where Jem Mace beat Tom Allen for the bare-knuckle heavyweight title.</span></li></ul>
+      <h3 class="pc-ab-h3">Notable Residents</h3>
+      <ul class="pc-chk"><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Jon Batiste:</b> Musician and composer who wrote the song &quot;I&#x27;m From Kenner.&quot;</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Chris Kenner:</b> R&amp;B singer and songwriter, born in Kenner in 1929, best known for &quot;I Like It Like That.&quot;</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Chris Howard:</b> Former NFL running back for the Jacksonville Jaguars, born in Kenner.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Arthur Maulet:</b> NFL cornerback who played high school football at Bonnabel High in Kenner.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Aaron Broussard:</b> Jefferson Parish President from 2003 to 2010.</span></li></ul>
+      <div class="hero-ctas pc-ab-cta"><button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button><a class="btn btn-ghost" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a></div>
+    </div>
+    <figure class="pc-ab-img reveal"><img src="assets/about-1.jpg" alt="Crew member trimming a lawn edge" width="1920" height="1281" loading="lazy"></figure>
+  </div>
+</section>
+<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- All About the city: 3. Map, fun facts, nearby, directions, transit -->
+<section class="section dark pc-ab pc-ab3" aria-labelledby="facts-title">
+  <div class="wrap pc-ab-grid">
+    <div class="pc-ab-map reveal"><iframe title="Map of Kenner, Louisiana" src="https://maps.google.com/maps?q=Kenner%2C+LA&amp;z=12&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="reveal">
+      <h2 class="h2" id="facts-title">Fun Facts <em class="acc" style="color:var(--brass-lite)">About Kenner</em></h2>
+      <ul class="pc-chk"><li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Kenner stretches from Lake Pontchartrain in the north to the Mississippi River in the south.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span>On May 10, 1870, &quot;Gypsy&quot; Jem Mace beat Tom Allen in Kenner for the bare-knuckle heavyweight championship.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Louis Armstrong New Orleans International Airport sits inside the city limits, just south of Interstate 10.</span></li></ul>
+      <h3 class="pc-ab-h3">Nearby Communities</h3>
+      <ul class="pc-chk pc-chk2"><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><a href="https://www.bigeasygrasscutting.com/service-areas/metairie/">Metairie</a></span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><a href="https://www.bigeasygrasscutting.com/service-areas/river-ridge/">River Ridge</a></span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><a href="https://www.bigeasygrasscutting.com/service-areas/harahan/">Harahan</a></span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span>St. Charles Parish</span></li></ul>
+      <h3 class="pc-ab-h3">Driving Directions</h3>
+      <ul class="pc-chk"><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>From New Orleans:</b> Take I-10 West into Kenner. Exits include Power Blvd., Williams Blvd. (LA 49) and Loyola Dr.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>From Metairie:</b> Take I-10 West, or Airline Dr. (U.S. 61) west through the southern end of Kenner.</span></li><li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>From Baton Rouge:</b> Take I-10 East to the Loyola Dr. or Williams Blvd. (LA 49) exit.</span></li></ul>
+      <p class="pc-kv"><b>Public transit:</b> Jefferson Transit (JeT) buses serve Kenner. The E1 Veterans-Airport route runs from Louis Armstrong New Orleans International Airport to City Park Avenue in New Orleans.</p>
+      <div class="hero-ctas pc-ab-cta"><button class="btn btn-brass" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button><a class="btn ph-call" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a></div>
+    </div>
+  </div>
+</section>
+<div class="fa"><div class="edge" style="--from:var(--oak);--to:#C9DEB4" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- City CTA -->
+<section class="section pc-cta" aria-labelledby="cta-title">
+  <div class="wrap pc-cta-in reveal">
+    <div>
+      <h2 class="h2" id="cta-title" style="color:var(--oak)">Transform Your Kenner Oasis With Our Grass Cutting Services</h2>
+      <p class="lede">Choosing Big Easy Grass Cutting means a team committed to excellence, attention to detail and customer satisfaction, with the services and equipment to bring your landscaping plans to life in Kenner.</p>
+    </div>
+    <div class="hero-ctas">
+      <button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <a class="btn btn-ghost" href="service-areas.html">See All 12 Service Areas</a>
+    </div>
+  </div>
+</section>
+<div class="fa"><div class="edge" style="--from:#C9DEB4;--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
 <!-- Page FAQ -->
 <section class="section faq-light" aria-labelledby="faq-title" id="faq">
   <div class="wrap">
