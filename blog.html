@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Lawn Cleanup Service in New Orleans | Big Easy Grass Cutting</title>
-<meta name="description" content="Big Easy Grass Cutting clears leaves, clippings and storm debris from New Orleans yards. Call 504-910-7829 for a cleanup quote.">
+<title>New Orleans Lawn Care Blog | Big Easy Grass Cutting</title>
+<meta name="description" content="At Big Easy Grass Cutting, our blog shares lawn care tips and trends to keep your New Orleans lawn beautiful year-round. Read the latest today.">
 <link rel="icon" href="assets/favicon.png">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -980,6 +980,66 @@ html.js .fa .cal-day.visit{animation:none}
 }
 @media (max-width:600px){.inc-grid,.pair-grid,.ben-list{grid-template-columns:1fr}.ph-facts{gap:6px 16px}}
 @media (max-width:900px){.ben-grid{grid-template-columns:1fr}.ben-media{max-width:460px}}
+
+/* ===== Blog page ===== */
+.pa-tools{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-bottom:22px}
+.pa-tabs{display:flex;flex-wrap:wrap;gap:8px}
+.pa-tab{min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--oak);font:600 .95rem var(--sans);cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.pa-tab span{display:inline-grid;place-items:center;min-width:24px;height:24px;margin-left:6px;border-radius:999px;background:var(--sage-pale);font-size:.8rem}
+.pa-tab:hover{border-color:var(--oak)}
+.pa-tab[aria-pressed="true"]{background:var(--oak);color:var(--cream);border-color:var(--oak)}
+.pa-tab[aria-pressed="true"] span{background:var(--brass-lite);color:var(--iron)}
+.pa-search{position:relative;display:block;flex:0 1 300px}
+.pa-search svg{position:absolute;left:14px;top:50%;width:20px;height:20px;transform:translateY(-50%);fill:none;stroke:var(--moss);stroke-width:2;stroke-linecap:round}
+.pa-search input{width:100%;min-height:46px;padding:10px 16px 10px 44px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font:1rem var(--sans);color:var(--ink)}
+.pa-search input:focus{outline:2px solid var(--brass);outline-offset:2px}
+
+.pa-none{margin:18px 0 0;padding:18px 22px;border-radius:16px;background:var(--paper);border:1px dashed var(--brass);font-size:1.02rem}
+.pa-count-line{margin:14px 0 0;font-size:.88rem;color:var(--muted)}
+@media (max-width:760px){.pa-search{flex:1 1 100%}}
+@media (max-width:600px){.pa-tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 calc(var(--gut) * -1);padding:2px var(--gut) 6px;scrollbar-width:none}.pa-tabs::-webkit-scrollbar{display:none}.pa-tab{flex:none}}
+.bl-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,4vw,56px);align-items:center}
+.bl-stats{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.bl-stats li{display:flex;align-items:baseline;gap:12px;padding:12px 20px;border-radius:16px;background:rgba(15,42,23,.6);border:1px solid rgba(217,181,108,.35);color:var(--cream)}
+.bl-num{font-family:var(--serif);font-size:2.2rem;line-height:1;color:var(--brass-lite);min-width:2.2ch}
+.bl-lbl{font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.bl-feat{background:#F4EFE3;padding-bottom:clamp(36px,5vw,60px)}
+.bl-feat-card{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);border-radius:28px;overflow:hidden;background:var(--oak);color:var(--cream);box-shadow:0 40px 70px -48px rgba(22,41,27,.8)}
+.bl-feat-media img{display:block;width:100%;height:100%;min-height:320px;object-fit:cover;transition:transform .8s var(--ease)}
+.bl-feat-card:hover .bl-feat-media img{transform:scale(1.04)}
+.bl-feat-media{overflow:hidden}
+.bl-feat-body{padding:clamp(24px,3.5vw,44px);display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.bl-feat-h{font-size:clamp(1.7rem,2.6vw,2.4rem);line-height:1.15;margin:0}
+.bl-feat-h a{color:var(--cream);text-decoration:none}
+.bl-feat-h a:hover{text-decoration:underline;text-underline-offset:4px}
+.bl-feat-body>p{margin:0;color:#D6DCCB;font-size:1.05rem}
+.bl-feat-body .bl-meta{color:#CBD3C0}
+.bl-feat-body .btn{margin-top:8px}
+.bl-chip{display:inline-block;padding:4px 12px;border-radius:999px;background:var(--sage-pale);color:var(--oak);font-size:.76rem;font-weight:600;letter-spacing:.06em}
+.bl-feat-body .bl-chip{background:var(--brass-lite);color:var(--iron)}
+.bl-meta{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0;font-size:.86rem;color:var(--muted)}
+.bl-meta span{display:inline-flex;align-items:center;gap:6px}
+.bl-meta svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round}
+.bl-all{background:#ECE6D2}
+.bl-grid-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,22px)}
+.bl-card{display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:var(--paper);border:1px solid var(--line);opacity:0;transform:translateY(18px);transition:opacity .6s var(--ease),transform .6s var(--ease),box-shadow .35s,border-color .35s}
+.bl-card.on{opacity:1;transform:none}
+.bl-card[hidden]{display:none}
+.bl-card:hover{border-color:var(--oak);box-shadow:0 26px 40px -30px rgba(22,41,27,.6)}
+.bl-media{display:block;overflow:hidden;aspect-ratio:16/10;background:#DCD6C4}
+.bl-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.bl-card:hover .bl-media img{transform:scale(1.05)}
+.bl-body{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:20px 22px 22px;flex:1}
+.bl-body h3{font-size:1.28rem;line-height:1.25;margin:0}
+.bl-body h3 a{color:var(--oak);text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .5s var(--ease)}
+.bl-body h3 a:hover{background-size:100% 1px}
+.bl-body>p:not(.bl-meta){margin:0;color:var(--muted);font-size:.95rem}
+.bl-body .bl-meta{margin-top:auto;padding-top:6px}
+@media (max-width:1100px){.bl-grid-cards{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.bl-feat-card{grid-template-columns:1fr}.bl-feat-media img{min-height:0;aspect-ratio:16/9}}
+@media (max-width:760px){.bl-grid{grid-template-columns:1fr}.bl-stats{grid-template-columns:repeat(3,1fr)}.bl-stats li{flex-direction:column;align-items:flex-start;gap:4px;padding:10px 14px}.bl-num{font-size:1.6rem}.bl-lbl{font-size:.68rem;letter-spacing:.08em}}
+@media (max-width:600px){.bl-grid-cards{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.bl-card{opacity:1;transform:none;transition:none}.bl-media img,.bl-feat-media img{transition:none}}
 </style>
 </head>
 <body>
@@ -1043,7 +1103,7 @@ html.js .fa .cal-day.visit{animation:none}
           </ul>
         </li>
         <li class="nav-item has-sub">
-          <span class="split"><a href="services.html" aria-current="page">Services</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services"><span class="sr-only">Show all services</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
+          <span class="split"><a href="services.html">Services</a><button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services"><span class="sr-only">Show all services</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button></span>
           <ul class="submenu cols" id="sub-services">
             <li><a href="residential-lawn-mowing.html">Residential Lawn Mowing</a></li>
             <li><a href="commercial-lawn-maintenance.html">Commercial Lawn Maintenance</a></li>
@@ -1053,7 +1113,7 @@ html.js .fa .cal-day.visit{animation:none}
             <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
             <li><a href="overseeding.html">Overseeding</a></li>
             <li><a href="sod-installation.html">Sod Installation</a></li>
-            <li><a href="lawn-cleanup.html" aria-current="page">Lawn Cleanup</a></li>
+            <li><a href="lawn-cleanup.html">Lawn Cleanup</a></li>
             <li><a href="irrigation-system-maintenance.html">Irrigation System Maintenance</a></li>
           </ul>
         </li>
@@ -1074,7 +1134,7 @@ html.js .fa .cal-day.visit{animation:none}
             <li><a href="slidell.html">Slidell</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a href="blog.html">Blog</a></li>
+        <li class="nav-item"><a href="blog.html" aria-current="page">Blog</a></li>
         <li class="nav-item"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -1106,7 +1166,7 @@ html.js .fa .cal-day.visit{animation:none}
         <li><a href="lawn-aeration.html">Lawn Aeration</a></li>
         <li><a href="overseeding.html">Overseeding</a></li>
         <li><a href="sod-installation.html">Sod Installation</a></li>
-        <li><a href="lawn-cleanup.html" aria-current="page">Lawn Cleanup</a></li>
+        <li><a href="lawn-cleanup.html">Lawn Cleanup</a></li>
         <li><a href="irrigation-system-maintenance.html">Irrigation System Maintenance</a></li></ul></details></li>
       <li><details><summary>Service Areas</summary><ul>
         <li><a href="service-areas.html">All Service Areas</a></li>
@@ -1134,194 +1194,194 @@ html.js .fa .cal-day.visit{animation:none}
 
 <main id="main">
 
-<!-- Service hero -->
-<section class="ph ph-svc" aria-labelledby="hero-title">
-  <img class="ph-bg" src="assets/about-1.jpg" alt="" width="1920" height="1417" fetchpriority="high">
+<!-- Blog hero (compact banner) -->
+<section class="ph ph-svc ph-blog" aria-labelledby="hero-title">
+  <img class="ph-bg" src="assets/hero-right.jpg" alt="" width="1920" height="1282" fetchpriority="high">
   <div class="wrap ph-in">
-    <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="./">Home</a></li><li><a href="services.html">Services</a></li><li aria-current="page">Lawn Cleanup</li></ol></nav>
-    <div class="ph-svc-grid">
+    <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="./">Home</a></li><li aria-current="page">Blog</li></ol></nav>
+    <div class="bl-grid">
       <div class="ph-copy">
-        <h1 class="ph-kicker" id="hero-title">Lawn Cleanup in New Orleans</h1>
-        <h2 class="ph-display"><em>Lawn Cleanup</em> Service in New Orleans: Transforming Chaos to Beauty</h2>
-        <p class="ph-sub">Leaves, debris and overgrowth cleared, the lawn mowed and edged, and every bit of waste hauled away. One-time or on a regular schedule.</p>
+        <h1 class="ph-kicker" id="hero-title">New Orleans Lawn Care Blog</h1>
+        <h2 class="ph-display">Lawn Care Tips and Guides for <em>New Orleans Homeowners</em></h2>
+        <p class="ph-sub">Tips and trends to keep your New Orleans lawn beautiful year-round, from fertilizing schedules to storm cleanup.</p>
         <div class="hero-ctas">
-          <button class="btn btn-brass" type="button" data-open-estimate>Get a Free Estimate <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-          <a class="btn ph-call" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
+          <a class="btn btn-brass" href="#articles">Browse Articles <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <button class="btn ph-call" type="button" data-open-estimate>Get a Free Estimate</button>
         </div>
-        <ul class="ph-facts"><li><svg aria-hidden="true"><use href="#i-check"/></svg>One-Time or Regular Cleanups</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Licensed &amp; Insured</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Free Estimates</li></ul>
       </div>
+      <ul class="bl-stats" aria-label="Blog at a Glance">
+        <li><span class="bl-num">13</span><span class="bl-lbl">Articles</span></li>
+        <li><span class="bl-num">5</span><span class="bl-lbl">Topics</span></li>
+        <li><span class="bl-num">115</span><span class="bl-lbl">Minutes of Reading</span></li>
+      </ul>
     </div>
   </div>
 </section>
 <div class="fa"><div class="edge" style="--from:var(--oak-deep);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Service intro -->
-<section class="section sv-intro" aria-labelledby="intro-title">
-  <div class="wrap sv-intro-grid">
-    <div class="sv-intro-copy reveal">
-      <p class="eyebrow">Lawn Cleanup</p>
-      <h2 class="h2" id="intro-title" style="color:var(--oak)">Lawn Cleanup That Gives You <em class="acc">Your Weekends Back</em></h2>
-      <p>Keeping a clean, well-groomed lawn takes time. Between mowing, trimming and raking, there never seems to be enough left over to enjoy your outdoor space.</p><p>Our experienced team has the knowledge and tools to turn your New Orleans yard into a pristine oasis. Whether you need a one-time cleanup or regular maintenance, we have you covered.</p>
-      <div class="sfeat-actions">
-        <button class="btn btn-primary" type="button" data-open-estimate>Get a Free Estimate</button>
-        <a class="btn btn-ghost" href="tel:+15049107829"><svg aria-hidden="true"><use href="#i-phone"/></svg>504-910-7829</a>
+<!-- Featured: latest article -->
+<section class="section bl-feat" aria-labelledby="feat-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Latest Article</p>
+    <article class="bl-feat-card reveal">
+      <a class="bl-feat-media" href="https://www.bigeasygrasscutting.com/when-to-fertilize-lawn-in-new-orleans/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2023/07/BigEasyGrassCutting-post-7-768x512.jpg" alt="" width="768" height="512" loading="lazy"></a>
+      <div class="bl-feat-body">
+        <span class="bl-chip">Fertilizing and Soil</span>
+        <h2 class="bl-feat-h" id="feat-title"><a href="https://www.bigeasygrasscutting.com/when-to-fertilize-lawn-in-new-orleans/">When to Fertilize Your Lawn in New Orleans: A Month-by-Month Schedule</a></h2>
+        <p>Timing matters more than the bag. A month-by-month plan for feeding a New Orleans lawn without fueling weeds and brown patch.</p>
+        <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>September 21, 2026</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>12 min read</span></p>
+        <a class="btn btn-primary" href="https://www.bigeasygrasscutting.com/when-to-fertilize-lawn-in-new-orleans/">Read the Guide <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
-    </div>
-    <div class="sfeat-media sv-intro-media reveal">
-      <img src="assets/sp-lawn-cleanup.jpg" alt="Two workers using leaf blowers to clear fallen leaves from a green lawn" width="950" height="450" loading="lazy">
-    </div>
+    </article>
   </div>
 </section>
-<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#C9DEB4" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Benefits -->
-<section class="section sv-ben" aria-labelledby="ben-title">
+<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:#ECE6D2" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<!-- All articles -->
+<section class="section bl-all" id="articles" aria-labelledby="all-title">
   <div class="wrap">
     <div class="sv-head reveal">
-      <p class="eyebrow">Why It Pays Off</p>
-      <h2 class="h2" id="ben-title" style="color:var(--oak)">Importance of Lawn Cleanup Service in <em class="acc">New Orleans</em></h2>
-      <p class="lede">A clean lawn is about more than looks. It keeps your yard healthy and your block looking its best.</p>
+      <p class="eyebrow">All Articles</p>
+      <h2 class="h2" id="all-title" style="color:var(--oak)">Browse Lawn Care Guides by <em class="acc">Topic</em></h2>
+      <p class="lede">Pick a topic or search by keyword. Every guide is written for Greater New Orleans lawns.</p>
     </div>
-    <div class="ben-grid">
-      <div class="sfeat-media ben-media reveal"><img src="assets/work-8.jpg" alt="Grass clippings being emptied from a mower catcher" width="2000" height="1286" loading="lazy"></div>
-      <ol class="ben-list">
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">01</span><div><h3>Maintains the Aesthetic Appearance of the City</h3><p>A well-kept lawn boosts your curb appeal and adds to the beauty of a neighborhood that takes pride in its looks.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">02</span><div><h3>Prevents the Spread of Pests and Diseases</h3><p>Overgrown grass and foliage give mosquitoes, ants and termites a place to breed. Regular cleanup takes those spots away.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">03</span><div><h3>Maintains the Health and Vitality of Grass and Plants</h3><p>Piled leaves and dead branches block sunlight and airflow, which invites fungus and moss. Clearing them helps grass, plants and trees grow.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">04</span><div><h3>Convenience and Time-Saving for Homeowners</h3><p>Hand off the yard work and spend your free time enjoying everything the city has to offer instead.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">05</span><div><h3>Contributes to the Overall Cleanliness of the City</h3><p>Removing leaves and debris keeps them out of drains, which lowers the flooding risk during heavy downpours.</p></div></li>
-        <li class="ben reveal"><span class="ben-n" aria-hidden="true">06</span><div><h3>Easier to Spot Lawn Problems</h3><p>A clear lawn can be mowed and checked, so problems like brown patch show up before they spread.</p></div></li>
-      </ol>
+    <div class="pa-tools reveal">
+      <div class="pa-tabs" role="group" aria-label="Filter by Topic"><button type="button" class="pa-tab" data-filter="all" aria-pressed="true">All Topics <span>12</span></button><button type="button" class="pa-tab" data-filter="soil" aria-pressed="false">Fertilizing and Soil <span>2</span></button><button type="button" class="pa-tab" data-filter="weeds" aria-pressed="false">Weeds and Pests <span>2</span></button><button type="button" class="pa-tab" data-filter="health" aria-pressed="false">Mowing and Lawn Health <span>3</span></button><button type="button" class="pa-tab" data-filter="season" aria-pressed="false">Seasonal and Cleanup <span>3</span></button><button type="button" class="pa-tab" data-filter="local" aria-pressed="false">Local Guides <span>2</span></button></div>
+      <label class="pa-search"><span class="sr-only">Search articles</span><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input type="search" id="bl-q" placeholder="Search articles" autocomplete="off"></label>
     </div>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#C9DEB4;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- What comes with every visit -->
-<section class="section dark sv-inc" aria-labelledby="inc-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">The Details</p>
-      <h2 class="h2" id="inc-title">Advantages of Our <em class="acc" style="color:var(--brass-lite)">Lawn Cleanup Service</em></h2>
-      <p class="lede">Here is what you get when our crew handles the cleanup for you.</p>
-    </div>
-    <ul class="inc-grid">
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">01</span><h3>Time-Saving</h3><p>Skip the weekends and evenings spent on yard work. We handle the tasks, and you get your free time back.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">02</span><h3>Expertise and Knowledge</h3><p>Our experienced team knows the best techniques for mowing, trimming and keeping your lawn healthy all year.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">03</span><h3>Equipment and Tools</h3><p>We bring the mowers, trimmers, leaf blowers and hedge trimmers, so you never buy, maintain or store your own.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">04</span><h3>Consistent and Reliable Service</h3><p>Regular visits on a set schedule keep your outdoor space well kept and presentable throughout the year.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">05</span><h3>Improved Curb Appeal</h3><p>Selling your home or just want to impress the neighbors? A clean, tidy yard creates a polished, welcoming look.</p></li>
-      <li class="inc-card reveal"><span class="inc-n" aria-hidden="true">06</span><h3>Stress-Free Maintenance</h3><p>Lawn care is physically demanding work. Leave it to professionals who handle everything efficiently.</p></li>
+    <ul class="bl-grid-cards" id="bl-cards">
+      <li class="bl-card" data-topic="local" data-q="lawn care in covington, la: a northshore guide to healthier grass live oak shade, acidic soil and northshore weather call for their own plan. a local guide to healthier grass in covington. local guides">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/lawn-care-covington-la/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2023/07/BigEasyGrassCutting-post-2-768x510.jpg" alt="Summer garden with a lawn and flower beds" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Local Guides</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/lawn-care-covington-la/">Lawn Care in Covington, LA: A Northshore Guide to Healthier Grass</a></h3>
+          <p>Live oak shade, acidic soil and Northshore weather call for their own plan. A local guide to healthier grass in Covington.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>September 14, 2026</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>13 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="season" data-q="what does a yard cleanup include? a new orleans lawn cleanup guide what a cleanup covers, from leaves, limbs and storm debris to cutting back overgrowth, mowing, edging and hauling it all away. seasonal and cleanup">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/what-does-yard-cleanup-include-new-orleans/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2023/10/lawn-cleanup-768x429.jpg" alt="Worker blowing fallen leaves off a lawn" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Seasonal and Cleanup</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/what-does-yard-cleanup-include-new-orleans/">What Does a Yard Cleanup Include? A New Orleans Lawn Cleanup Guide</a></h3>
+          <p>What a cleanup covers, from leaves, limbs and storm debris to cutting back overgrowth, mowing, edging and hauling it all away.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>September 7, 2026</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>15 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="local" data-q="lawn care in kenner, la: a local guide to heat, rain and saint augustine grass low, flat ground and more than 63 inches of rain in a normal year. a local guide to heat, rain and saint augustine grass in kenner. local guides">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/lawn-care-kenner-la/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2023/07/BigEasyGrassCutting-post-15-768x500.jpg" alt="Smooth green lawn bordered by red and green shrubs" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Local Guides</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/lawn-care-kenner-la/">Lawn Care in Kenner, LA: A Local Guide to Heat, Rain and Saint Augustine Grass</a></h3>
+          <p>Low, flat ground and more than 63 inches of rain in a normal year. A local guide to heat, rain and Saint Augustine grass in Kenner.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>August 31, 2026</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>13 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="soil" data-q="how new orleans soil type affects your lawn health and what to do about it heavy clay and alluvial soils drain poorly and compact easily. what that means for your lawn and how to work with it. fertilizing and soil">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/how-soil-type-new-orleans-affects-lawn-health/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2026/04/Soil-Type-for-Healthy-Lawn-768x419.png" alt="Clay soil profile showing dense soil under grass roots" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Fertilizing and Soil</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/how-soil-type-new-orleans-affects-lawn-health/">How New Orleans Soil Type Affects Your Lawn Health and What to Do About It</a></h3>
+          <p>Heavy clay and alluvial soils drain poorly and compact easily. What that means for your lawn and how to work with it.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>April 29, 2026</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>9 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="season" data-q="mulch or remove leaves from your lawn? the right answer for new orleans homeowners for most new orleans lawns, mulching leaves into the grass is the better choice. it returns nutrients to the soil and cuts lawn waste. seasonal and cleanup">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/mulch-or-remove-leaves-from-lawn/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2026/04/Mulching-leaves-from-lawn-768x419.png" alt="Mower mulching autumn leaves into a lawn" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Seasonal and Cleanup</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/mulch-or-remove-leaves-from-lawn/">Mulch or Remove Leaves From Your Lawn? The Right Answer for New Orleans Homeowners</a></h3>
+          <p>For most New Orleans lawns, mulching leaves into the grass is the better choice. It returns nutrients to the soil and cuts lawn waste.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>April 22, 2026</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="health" data-q="7 ways to keep your new orleans lawn healthy between mowing sessions consistent watering, timely feeding, weed management and a few habits that take less than 15 minutes a week. mowing and lawn health">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/keep-lawn-healthy-between-mowing-sessions/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2026/04/Healthy-lawn-768x419.png" alt="Lush, healthy lawn" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Mowing and Lawn Health</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/keep-lawn-healthy-between-mowing-sessions/">7 Ways to Keep Your New Orleans Lawn Healthy Between Mowing Sessions</a></h3>
+          <p>Consistent watering, timely feeding, weed management and a few habits that take less than 15 minutes a week.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>April 15, 2026</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="weeds" data-q="how long does weed control treatment last? what new orleans homeowners should know most treatments last 4 to 12 weeks. what changes that, from pre-emergent and post-emergent products to local conditions. weeds and pests">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/how-long-does-weed-control-treatment-last/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2026/04/weed-control-treatment-768x419.png" alt="Weed control treatment being applied to a lawn" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Weeds and Pests</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/how-long-does-weed-control-treatment-last/">How Long Does Weed Control Treatment Last? What New Orleans Homeowners Should Know</a></h3>
+          <p>Most treatments last 4 to 12 weeks. What changes that, from pre-emergent and post-emergent products to local conditions.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>April 13, 2026</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="soil" data-q="can over-fertilizing damage your new orleans grass? yes, and here is what to do too much fertilizer burns grass, pulling moisture out of the roots and turning the lawn yellow or brown. how to spot it and fix it. fertilizing and soil">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/can-over-fertilizing-damage-your-grass/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2026/04/Damage-Grass-over-fertilizing-768x429.png" alt="Grass browned by fertilizer burn" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Fertilizing and Soil</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/can-over-fertilizing-damage-your-grass/">Can Over-Fertilizing Damage Your New Orleans Grass? Yes, and Here Is What to Do</a></h3>
+          <p>Too much fertilizer burns grass, pulling moisture out of the roots and turning the lawn yellow or brown. How to spot it and fix it.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>April 10, 2026</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>9 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="health" data-q="how long does it take for overseeded grass to grow in new orleans? new seed usually sprouts in 7 to 21 days, depending on the grass type, soil temperature and moisture. here is what affects the timeline. mowing and lawn health">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/how-long-overseeded-grass-grow/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2026/03/Morning-dew-on-new-grass-sprouts-768x1152.png" alt="New grass sprouts with morning dew" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Mowing and Lawn Health</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/how-long-overseeded-grass-grow/">How Long Does It Take for Overseeded Grass to Grow in New Orleans?</a></h3>
+          <p>New seed usually sprouts in 7 to 21 days, depending on the grass type, soil temperature and moisture. Here is what affects the timeline.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>March 31, 2026</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="health" data-q="the benefits of regular grass cutting and maintenance in new orleans why a regular cutting schedule keeps a new orleans lawn thicker, healthier and easier to manage. mowing and lawn health">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/the-benefits-of-regular-grass-cutting-and-maintenance/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2023/07/BigEasyGrassCutting-post-10-768x513.jpg" alt="Lawn mower on a sunlit lawn" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Mowing and Lawn Health</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/the-benefits-of-regular-grass-cutting-and-maintenance/">The Benefits of Regular Grass Cutting and Maintenance in New Orleans</a></h3>
+          <p>Why a regular cutting schedule keeps a New Orleans lawn thicker, healthier and easier to manage.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>September 12, 2023</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="weeds" data-q="preventive measures and early detection: the key to pest-free new orleans lawns lawn pests are easier to stop early than to cure. what to watch for in a new orleans yard. weeds and pests">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/preventive-measures-and-early-detection-the-key-to-pest-free-lawns/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2023/09/Lawn-Pests-768x512.jpg" alt="Lawn with mounds of dug-up soil" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Weeds and Pests</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/preventive-measures-and-early-detection-the-key-to-pest-free-lawns/">Preventive Measures and Early Detection: The Key to Pest-Free New Orleans Lawns</a></h3>
+          <p>Lawn pests are easier to stop early than to cure. What to watch for in a New Orleans yard.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>September 12, 2023</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>4 min read</span></p>
+        </div>
+      </li>
+      <li class="bl-card" data-topic="season" data-q="seasonal lawn care tips: keeping your new orleans grass healthy year-round what a new orleans lawn needs changes with the season. a walk through the lawn care year. seasonal and cleanup">
+        <a class="bl-media" href="https://www.bigeasygrasscutting.com/seasonal-lawn-care-tips/" tabindex="-1" aria-hidden="true"><img src="https://www.bigeasygrasscutting.com/wp-content/uploads/2023/07/lawn-services-grass-cutting-768x512.jpg" alt="String trimmer cutting grass" width="768" height="512" loading="lazy"></a>
+        <div class="bl-body">
+          <span class="bl-chip">Seasonal and Cleanup</span>
+          <h3><a href="https://www.bigeasygrasscutting.com/seasonal-lawn-care-tips/">Seasonal Lawn Care Tips: Keeping Your New Orleans Grass Healthy Year-Round</a></h3>
+          <p>What a New Orleans lawn needs changes with the season. A walk through the lawn care year.</p>
+          <p class="bl-meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>September 12, 2023</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>4 min read</span></p>
+        </div>
+      </li>
     </ul>
+    <p class="pa-none" id="bl-none" hidden>No articles match that yet. Try another word, or <a href="contact.html">ask us your lawn question</a>.</p>
+    <p class="pa-count-line" id="bl-status" aria-live="polite">Showing all 12 more articles</p>
   </div>
 </section>
-<div class="fa"><div class="edge" style="--from:var(--oak);--to:#ECE6D2" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- When to schedule -->
-<section class="section sv-time" aria-labelledby="time-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">When to Schedule</p>
-      <h2 class="h2" id="time-title" style="color:var(--oak)">When to Schedule a Lawn Cleanup in <em class="acc">New Orleans</em></h2>
-      <p class="lede">Debris lands on New Orleans yards on more than one schedule. These are the times a cleanup pays off most.</p>
-    </div>
-    <ol class="time-list">
-      <li class="time-card reveal"><span class="time-k">Spring</span><h3>Before the First Mow</h3><p>Clear the sticks and debris that built up over winter, plus the leaves live oaks drop when they push out new growth.</p></li>
-      <li class="time-card reveal"><span class="time-k">June to November</span><h3>After Storms in Hurricane Season</h3><p>Wind and rain can leave limbs, leaves and trash across a spotless lawn. Clean up before the grass underneath starts to suffer.</p></li>
-      <li class="time-card reveal"><span class="time-k">Fall</span><h3>As the Grass Slows Down</h3><p>Clear leaves and debris as warm-season grass heads toward dormancy, without tearing up the turf.</p></li>
-      <li class="time-card reveal"><span class="time-k">Monthly or as Needed</span><h3>Regular Cleanups</h3><p>For most yards, a cleanup at least once a month or as needed keeps the lawn looking good and staying healthy.</p></li>
-    </ol>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#ECE6D2;--to:#0F2A17" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<div class="fa">
-<!-- 7. PROCESS -->
-<section class="process on-deep" id="process" aria-labelledby="proc-title">
-  <div class="wrap">
-    <div class="process-head reveal">
-      <p class="eyebrow">How It Works</p>
-      <h2 id="proc-title">How Our Lawn Cleanup Service Works</h2>
-      <p class="lede">Scroll along and watch the mower work the path.</p>
-    </div>
-    <svg class="proc-svg" id="proc-svg" viewBox="0 0 1000 230" aria-hidden="true">
-      <path class="proc-base" id="proc-path" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <path class="proc-cut" id="proc-cut" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <path class="proc-cut-2" id="proc-cut-2" d="M30 170 C 90 170 110 90 167 90 C 250 90 360 175 500 165 C 640 155 720 80 833 90 C 905 96 940 150 970 150"/>
-      <g class="proc-node" data-at="0.2"><circle cx="167" cy="90" r="26"/><text x="167" y="90">1</text></g>
-      <g class="proc-node" data-at="0.5"><circle cx="500" cy="165" r="26"/><text x="500" y="165">2</text></g>
-      <g class="proc-node" data-at="0.8"><circle cx="833" cy="90" r="26"/><text x="833" y="90">3</text></g>
-      <g id="proc-mower"><use href="#mower" x="-33" y="-22" width="66" height="45"/></g>
-    </svg>
-    <div class="proc-body" id="proc-body">
-      <div class="proc-rail" aria-hidden="true"><div class="proc-rail-fill"></div><svg class="proc-rail-mower" viewBox="0 0 130 88"><use href="#mower"/></svg></div>
-      <ol class="proc-steps">
-        <li class="proc-step" data-at="0.2">
-          <span class="step-k" aria-hidden="true">Step 1</span>
-          <h3>Schedule a Consultation</h3>
-          <p>Contact us to talk through your lawn care needs. Our team visits your property to assess its size, condition and specific requirements.</p>
-        </li>
-        <li class="proc-step" data-at="0.5">
-          <span class="step-k" aria-hidden="true">Step 2</span>
-          <h3>Tailored Lawn Care Plan</h3>
-          <p>Based on that assessment, we build a customized plan that suits what your lawn needs.</p>
-        </li>
-        <li class="proc-step" data-at="0.8">
-          <span class="step-k" aria-hidden="true">Step 3</span>
-          <h3>Professional Maintenance</h3>
-          <p>Sit back and relax while our experienced team carries out the plan with attention to detail and professional-grade equipment.</p>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
-</div>
-<div class="fa"><div class="edge" style="--from:#0F2A17;--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Pair it with -->
-<section class="section sv-pair" aria-labelledby="pair-title">
-  <div class="wrap">
-    <div class="sv-head reveal">
-      <p class="eyebrow">Pair It With</p>
-      <h2 class="h2" id="pair-title" style="color:var(--oak)">Services That Pair With <em class="acc">Lawn Cleanup</em></h2>
-      <p class="lede">Every lawn is unique. Add any of these and we build them into one tailored plan.</p>
-    </div>
-    <ul class="pair-grid">
-      <li class="pair-card reveal"><a href="residential-lawn-mowing.html"><img src="assets/svc-residential-lawn-mowing.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Residential Lawn Mowing</span><span class="pair-d">Lawn perfection at your doorstep.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="lawn-edging.html"><img src="assets/svc-lawn-edging.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Edging</span><span class="pair-d">Picture-perfect precision along every bed, walk and drive.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="lawn-aeration.html"><img src="assets/svc-lawn-aeration.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Lawn Aeration</span><span class="pair-d">Breathing life into compacted soil.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li class="pair-card reveal"><a href="commercial-lawn-maintenance.html"><img src="assets/svc-commercial-lawn-maintenance.png" alt="" width="56" height="56" loading="lazy"><span class="pair-t">Commercial Lawn Maintenance</span><span class="pair-d">Greening your business with professional upkeep.</span><span class="pair-go">View Service <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-    </ul>
-    <p class="pair-all"><a class="btn btn-ghost" href="services.html">See All 10 Services <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:#F4EFE3;--to:var(--oak)" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
-<!-- Areas strip -->
-<section class="section dark sv-areas" aria-labelledby="areas-title">
-  <div class="wrap sv-areas-grid">
-    <div class="reveal">
-      <p class="eyebrow">Where We Work</p>
-      <h2 class="h2" id="areas-title">Lawn Cleanup Across <em class="acc">Greater New Orleans</em></h2>
-      <p class="lede">Home base is New Orleans, with crews serving the Southshore, West Bank, River Parishes and Northshore.</p>
-    </div>
-    <ul class="town-chips reveal" aria-label="Service Areas"><li><button type="button" data-open-estimate>New Orleans</button></li><li><a href="metairie.html">Metairie</a></li><li><a href="kenner.html">Kenner</a></li><li><a href="harahan.html">Harahan</a></li><li><a href="river-ridge.html">River Ridge</a></li><li><a href="gretna.html">Gretna</a></li><li><a href="laplace.html">LaPlace</a></li><li><a href="covington.html">Covington</a></li><li><a href="mandeville.html">Mandeville</a></li><li><a href="madisonville.html">Madisonville</a></li><li><a href="slidell.html">Slidell</a></li><li><a href="hammond.html">Hammond</a></li><li><a href="baton-rouge.html">Baton Rouge</a></li></ul>
-  </div>
-</section>
-<div class="fa"><div class="edge" style="--from:var(--oak);--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
+<div class="fa"><div class="edge" style="--from:#ECE6D2;--to:#F4EFE3" aria-hidden="true"><svg><use href="#grass"/></svg></div></div>
 <!-- Page FAQ -->
 <section class="section faq-light" aria-labelledby="faq-title" id="faq">
   <div class="wrap">
     <div class="reveal">
       <p class="eyebrow">Common Questions</p>
-      <h2 class="h2" id="faq-title" style="color:var(--oak)">Lawn Cleanup <em class="acc">FAQs</em></h2>
+      <h2 class="h2" id="faq-title" style="color:var(--oak)">Lawn Care Blog <em class="acc">FAQs</em></h2>
     </div>
     <div class="faq-grid">
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b1"><span class="n" aria-hidden="true">01</span><span class="q">What Does a Lawn Cleanup Service Include?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-b1"><p>A lawn cleanup service usually encompasses a range of essential tasks, ensuring your lawn is expertly cared for. Our services encompass meticulous lawn mowing, precise trimming of unruly plants and bushes, thorough removal of leaves and debris, exact lawn edging, and efficient disposal of all waste materials. Some services may also offer additional services like weed control or fertilization.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-b2"><span class="n" aria-hidden="true">02</span><span class="q">How Often Should I Schedule a Lawn Cleanup Service?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-b2"><p>The frequency of lawn cleanup services depends on various factors, such as the size of your lawn, the growth rate of plants, and your personal preferences. Generally, it is recommended to schedule a lawn cleanup service at least once a month or as needed to maintain the appearance and health of your lawn.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b3"><span class="n" aria-hidden="true">03</span><span class="q">How Much Does a Lawn Cleanup Service Cost?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-b3"><p>The cost of a lawn cleanup service in New Orleans can vary depending on various factors, such as the size of your lawn, the extent of work required, and the range of services provided. We provide free estimates so you can get an idea of the cost before committing to any services. We are proud to offer competitive rates on all lawn care and maintenance services in New Orleans.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b4"><span class="n" aria-hidden="true">04</span><span class="q">Do I Need to Be Present During the Lawn Cleanup Service?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-b4"><p>In most cases, no. However, it is recommended to communicate your specific requirements and expectations to the service provider before the scheduled service. You can also provide access to your lawn if you won’t be home during the service.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b5"><span class="n" aria-hidden="true">05</span><span class="q">Can I Customize the Services Included in a Lawn Cleanup?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-b5"><p>Yes. You can discuss your specific needs and preferences with us to create a package that suits your requirements. This may include adding or removing certain services or adjusting the frequency of the service.</p></div></div>
-      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b6"><span class="n" aria-hidden="true">06</span><span class="q">Do You Haul Away the Yard Waste?</span><span class="pm" aria-hidden="true"></span></button></h3>
-        <div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-b6"><p>Yes. Disposal is part of our lawn cleanup, so the waste leaves the property with us. That helps in New Orleans, where the city limits how much yard waste it picks up from the curb on a single collection day.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b1"><span class="n" aria-hidden="true">01</span><span class="q">Are These Tips Written for New Orleans Lawns?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-b1"><p>Yes. Each guide is written for Greater New Orleans conditions, like heavy clay soil, heat, humidity and frequent rain.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-b2"><span class="n" aria-hidden="true">02</span><span class="q">Which Article Should I Read First?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-b2"><p>Start with Seasonal Lawn Care Tips for a year-round overview, then the month-by-month fertilizing schedule.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b3"><span class="n" aria-hidden="true">03</span><span class="q">Can Your Crew Do the Work These Guides Describe?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-b3"><p>Yes. Fertilizing, weed control, overseeding, yard cleanup and mowing are all services we offer, and every one starts with a free estimate.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b4"><span class="n" aria-hidden="true">04</span><span class="q">Do You Have Guides for Specific Towns?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-b4"><p>Yes. There are local guides for Kenner and Covington, and our service area pages cover all 12 towns we work in.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b5"><span class="n" aria-hidden="true">05</span><span class="q">Can a Guide Replace a Look at My Actual Lawn?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-b5"><p>The guides cover general care. For your yard, our team visits to assess its size, condition and specific needs.</p></div></div>
+      <div class="faq-item"><h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b6"><span class="n" aria-hidden="true">06</span><span class="q">How Can I Ask a Question About My Lawn?</span><span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-b6"><p>Call 504-910-7829, Monday through Friday from 8am to 3pm, or send a message from our contact page.</p></div></div>
     </div>
   </div>
 </section>
@@ -1331,7 +1391,7 @@ html.js .fa .cal-day.visit{animation:none}
   <div class="wrap est-grid">
     <div class="est-info reveal">
       <p class="eyebrow">Free Estimate</p>
-      <h2 class="h2" id="est-title">Looking for a Cleanup Service Provider in <em class="acc" style="color:var(--brass-lite)">New Orleans?</em></h2>
+      <h2 class="h2" id="est-title">Rather Leave the Lawn to Us? Get a <em class="acc" style="color:var(--brass-lite)">Free Estimate</em></h2>
       <p class="lede" style="margin-top:1rem">Trusted by homeowners and businesses across New Orleans. Get a free, no-obligation quote today.</p>
       <ul>
         <li><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Rather talk? Call <a href="tel:+15049107829">504-910-7829</a></span></li>
@@ -2248,6 +2308,34 @@ html.js .fa .cal-day.visit{animation:none}
   }
   window.addEventListener('scroll', function(){ if (!tick) { tick = true; setTimeout(check, 160); } }, { passive: true });
   window.addEventListener('load', check);
+})();
+</script>
+<script>
+/* Blog page: topic filter, search, card reveal (with a backup for fast scrolling) */
+(function(){
+  var d = document, cards = [].slice.call(d.querySelectorAll('.bl-card')), tabs = [].slice.call(d.querySelectorAll('.pa-tab'));
+  var q = d.getElementById('bl-q'), none = d.getElementById('bl-none'), status = d.getElementById('bl-status'), topic = 'all', total = cards.length;
+  function apply(){
+    var term = (q && q.value || '').trim().toLowerCase(), shown = 0;
+    cards.forEach(function(c){
+      var ok = (topic === 'all' || c.getAttribute('data-topic') === topic) && (!term || c.getAttribute('data-q').indexOf(term) > -1);
+      c.hidden = !ok; if (ok) { shown++; c.classList.add('on'); }
+    });
+    none.hidden = shown > 0;
+    status.textContent = shown === total ? 'Showing all ' + total + ' more articles' : 'Showing ' + shown + ' of ' + total + ' articles';
+  }
+  tabs.forEach(function(t){ t.addEventListener('click', function(){
+    topic = t.getAttribute('data-filter');
+    tabs.forEach(function(x){ x.setAttribute('aria-pressed', x === t ? 'true' : 'false'); });
+    apply();
+  }); });
+  if (q) q.addEventListener('input', apply);
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -8% 0px'});
+    cards.forEach(function(c, i){ c.style.transitionDelay = (i % 3) * 80 + 'ms'; io.observe(c); });
+  } else { cards.forEach(function(c){ c.classList.add('on'); }); }
+  function sweep(){ var h = window.innerHeight; cards.forEach(function(c){ if (!c.classList.contains('on') && c.getBoundingClientRect().top < h) c.classList.add('on'); }); }
+  window.addEventListener('scroll', sweep, {passive:true}); window.addEventListener('resize', sweep); sweep();
 })();
 </script>
 </body>
